@@ -687,7 +687,247 @@
             },
             "correcta": "c",
             "type": "multi"
-           }
+           },
+           {
+            "id": 64,
+            "text": "Quin paràmetre queda fixat per la mida del bus d’adreces?",
+            "respostes": {
+                "a": "L’ample de banda de transferència de dades entre CPU i memòria principal.",
+                "b": "L’ample de banda de transferència de dades entre CPU i interfícies d’E/S.",
+                "c": "La mida màxima del espai d’adreces lògiques.",
+                "d": "La mida màxima del espai d’adreces físiques."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 65,
+            "text": "A un processador amb pipeline (sense ser superescalar) què aconseguim?",
+            "respostes": {
+                "a": "Executar una instrucció per cicle de rellotge.",
+                "b": "Executar més d’una instrucció per cicle de rellotge.",
+                "c": "Executar dues instruccions per cicles de rellotge.",
+                "d": "Què el número d’instruccions que se executen per cicle de rellotge tendeix a 1."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+          "id": 66,
+          "text": "Als pipeline, quina és una solució dinàmica per les dependències de dades?",
+          "respostes": {
+              "a": "Reordenació d’instruccions.",
+              "b": "Implementació de “Data Path Forwarding”.",
+              "c": "Subdivisió de etapes en altres més petites.",
+              "d": "Separació de busos d’instruccions i dades."
+          },
+          "correcta": "b",
+          "type": "multi"
+      },{
+        "id": 67,
+        "text": "Quin tipus de processador està optimitzat per processar vàries instruccions en paral·lel?",
+        "respostes": {
+            "a": "Els d’arquitectura Von Newman.",
+            "b": "Els processadors tipus SISD.",
+            "c": "Els processadors tipus MISD.",
+            "d": "Els processadors VLIW."
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 68,
+        "text": "Les instruccions SSE (similars a les MMX però amb reals) de quin tipus de processadors són pròpies?",
+        "respostes": {
+            "a": "SISD",
+            "b": "SIMD",
+            "c": "MISD",
+            "d": "MIMD"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 69,
+        "text": "Quina és la funció de la unitat de Dispatch?",
+        "respostes": {
+            "a": "Predir els salts a les instruccions de control de fluxe.",
+            "b": "Distribuir les instruccions durant l’execució a les diferents etapes del pipeline.",
+            "c": "Distribuir les instruccions durant l’execució a les diferents unitats d’execució.",
+            "d": "Distribuir les instruccions durant la compilació."
+        },
+        "correcta": "c",
+        "type": "multi"
+    },
+    {
+      "id": 70,
+      "text": "Que és el que veritablement ens permet obtenir la paginació?",
+      "respostes": {
+          "a": "Aconseguir CPI que tendeixi a 1.",
+          "b": "Protecció entre tasques i de dades de diferent nivell de privilegi.",
+          "c": "Executar d’una forma efectiva multitasques.",
+          "d": "Organitzar d’una forma estructurada els diferents segments de codi i dades."
+      },
+      "correcta": "c",
+      "type": "multi"
+  },
+  {
+      "id": 71,
+      "text": "Quin dels següents elements no és propi de la segmentació?",
+      "respostes": {
+          "a": "Transparent al programador.",
+          "b": "Divisió de la memòria en blocs.",
+          "c": "Utilització de taules de descriptors.",
+          "d": "Utilització d’adreces lògiques."
+      },
+      "correcta": "a",
+      "type": "multi"
+  },
+  {
+    "id": 72,
+    "text": "Si volem agafar una dada de memòria amb un Pentium (suposant que la seva entrada no està a la TLB, i que es fa servir paginació) Quants accessos a memòria es necessiten per obtenir la dada? (teniu en compte els accessos necessaris per llegir les diferents taules)",
+    "respostes": {
+        "a": "2.",
+        "b": "3.",
+        "c": "4.",
+        "d": "5."
+    },
+    "correcta": "c",
+    "type": "multi"
+},
+{
+    "id": 73,
+    "text": "Quin és el paper del selector de segment (índex de segment) al càlcul d’adreces als IA-32?",
+    "respostes": {
+        "a": "Proporciona la mida del segment.",
+        "b": "Proporciona la base del segment.",
+        "c": "Proporciona el offset del segment.",
+        "d": "Proporciona la entrada al descriptor del segment a la taula de descriptors de segments."
+    },
+    "correcta": "d",
+    "type": "multi"
+},
+{
+  "id": 74,
+  "text": "Per quin procés és necessari l’implementació del Dirty bit?",
+  "respostes": {
+      "a": "Write Through a les cachés.",
+      "b": "Write Back a les cachés.",
+      "c": "Control de la paginació.",
+      "d": "Control de la segmentació."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 75,
+  "text": "Quin és l’avantatge de que la caché de nivell 2 sigui interna en comptes d’externa?",
+  "respostes": {
+      "a": "L’amplada del bus de dades de connexió entre la CPU i la caché és més gran.",
+      "b": "L’amplada del bus de dades de connexió entre la CPU i la caché és més petit.",
+      "c": "La freqüència de rellotge del bus de dades entre CPU i la memòria principal és més gran.",
+      "d": "La mida de la caché pot ser més gran."
+  },
+  "correcta": "a",
+  "type": "multi"
+}, {
+  "id": 76,
+  "text": "Quin algoritme de reemplaçament implentaries a una caché associativa en 4-camins econòmica?",
+  "respostes": {
+      "a": "LRU (Least Recent Used).",
+      "b": "LFU (Least Frequently Used).",
+      "c": "Random.",
+      "d": "Cap dels anteriors."
+  },
+  "correcta": "c",
+  "type": "multi"
+},
+{
+  "id": 77,
+  "text": "Quin estat del protocol MESI no permet que es segueixi una política Write-Back completament?",
+  "respostes": {
+      "a": "M",
+      "b": "S",
+      "c": "E",
+      "d": "I"
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 78,
+  "text": "Quantes sortides necessita un decodificador de una caché completament associativa per seleccionar conjunt?",
+  "respostes": {
+    "a": "Cap.",
+    "b": "Tantes com conjunts tingui.",
+    "c": "Tantes com camins tingui.",
+    "d": "Cap de les anteriors respostes és correcte."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 79,
+  "text": "Quin paràmetre d’un processador queda deteriorat quan es multiplexen senyals de dades i adreces?",
+  "respostes": {
+    "a": "El número de pins del xip queda incrementat.",
+    "b": "El temps de cicle de rellotge.",
+    "c": "El temps de cicle de Bus.",
+    "d": "El sincronisme amb dispositiu lents."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 80,
+  "text": "A quin tipus de bus connectaries una caché externa a un sistema modern?",
+  "respostes": {
+    "a": "Backside Bus.",
+    "b": "Frontside Bus.",
+    "c": "AGP.",
+    "d": "PCI."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 81,
+  "text": "Quin tipus de connexió és la més adient per la connexió de un sistema de presentació en pantalla?",
+  "respostes": {
+    "a": "AGP.",
+    "b": "RS232.",
+    "c": "Firewire.",
+    "d": "USB."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 82,
+  "text": "Què implica que un disc dur (HD) treballi a velocitat angular costant (CAV)?",
+  "respostes": {
+    "a": "La velocitat de gir és independent de la localització del capsal i es desaprofita superfície del HD.",
+    "b": "La velocitat de gir és independent de la localització del capsal i s’aprofita millor la superfície del HD.",
+    "c": "La velocitat de gir varia en funció de la localització del capsal i es desaprofita superfície del HD.",
+    "d": "La velocitat de gir varia en funció de la localització del capsal i s’aprofita millor superfície del HD."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 83,
+  "text": "Perquè permet incrementar la densitat d’informació per unitat de superfície els DVDs respecte als CDs?",
+  "respostes": {
+    "a": "Es fan servir les dues cares del disc.",
+    "b": "S’aprofiten les propietats de polarització de la llum.",
+    "c": "Es fa servir una longitud d’ona més gran pel laser.",
+    "d": "Es fa servir una longitud d’ona més petita pel laser."
+  },
+  "correcta": "d",
+  "type": "multi"
+}
+
+
 
       ]
     }
