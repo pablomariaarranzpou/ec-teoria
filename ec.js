@@ -5,7 +5,7 @@ let correctas = 0;
 let incorrectas = 0;
 let totalPreguntas = 0;
 
-fetch('PREGUNTAS.JSON')
+fetch('PREGUNTAS.json')
   .then(response => response.json())
   .then(data => {
     preguntas = data.preguntes;
