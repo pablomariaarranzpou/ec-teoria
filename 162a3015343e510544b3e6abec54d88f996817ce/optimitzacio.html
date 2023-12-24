@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC TEORÍA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="optimitzacio/optimitzacio.js" defer></script>
+    <style>
+        /* Estilo adicional si es necesario */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Botón para abrir el menú -->
+    <button id="menu-button" class="p-4 focus:outline-none focus:shadow-outline">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="flex" >
+        <!-- Menú Lateral Ocultable -->
+
+        <div id="sidebar" class="hidden w-64 h-screen bg-gray-800 shadow-md">
+            <h2 class="text-3xl font-bold text-white text-center my-4">ZONA EN CONSTRUCCIÓN</h2>
+            <nav class="text-white text-base font-semibold pt-3">
+                <a href= "/162a3015343e510544b3e6abec54d88f996817ce/index.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                    Tot
+                </a>
+                <a href= "optimitzacio.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                    Optimització de processadors
+                </a>
+
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    Memória Cache
+                </a>
+
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    Memória Principal
+                </a>
+
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    Memória Secundaria
+                </a>
+
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    Administració de Memòria
+                </a>
+
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    E/S
+                </a>
+                
+
+                <!-- Más tests... -->
+            </nav>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="flex-1 p-4 md:p-8">
+            <div class="flex-1 p-4 md:p-8">
+                <h1 class="text-2xl md:text-3xl font-bold text-center my-6">Optimització de Processadors</h1>
+                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+                    <div id="pregunta" class="mb-4 text-lg font-medium"></div>
+                    <div id="opciones" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"></div>
+                    <div id="resultado" class="mt-4 text-green-600"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para abrir y cerrar el menú lateral
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

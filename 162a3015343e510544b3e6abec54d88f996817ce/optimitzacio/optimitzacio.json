@@ -1,0 +1,261 @@
+{
+  "preguntes": [
+    {
+      "id": 18,
+      "text": "Quin tipus de processadors fan servir una solució estàtica equivalent a la que fa la unitat de “Dispatch”?",
+      "respostes": {
+        "a": "Pipeline o Superpipeline",
+        "b": "VLIW",
+        "c": "Von Neumann",
+        "d": "Escalar"
+      },
+      "correcta": "b",
+      "type": "multi"
+    },
+    {
+      "id": 19,
+      "text": "A quina instrucció representa els següents valors decimals? : '32 9 10 000 11 51'",
+      "respostes": {
+        "a": "sub x11, x9, x10",
+        "b": "and x11, x9, x10",
+        "c": "sub x11, x10, x9",
+        "d": "sub x9, x10, x11",
+        "e": "add x11, x9, x10"
+      },
+      "correcta": "c",
+      "type": "multi"
+    },
+    {
+      "id": 25,
+      "text": "Quin/es de les següents característiques és/són habitual/s als processadors tipus RISC?",
+      "respostes": {
+        "a": "Ampli conjunt d'instruccions",
+        "b": "Molts modes d'adreçament",
+        "c": "Mida d'instrucció fixa",
+        "d": "Operacions aritmètiques que permeten accés a memòria simultàniament"
+      },
+      "correcta": "c",
+      "type": "multi"
+    },
+        {
+          "id": 26,
+          "text": "Als pipeline, quina d'aquestes tècniques és més eficient per tractar salts condicionals?",
+          "respostes": {
+            "a": "Prediccions de salts de manera estàtica. (per exemple, no saltar mai i seguir executant codi fins que es resolgui el salt)",
+            "b": "Prediccions de salts mitjançant taules històriques.",
+            "c": "Resoldre dependències de dades de manera dinàmica.",
+            "d": "Resoldre dependències de dades de manera estàtica."
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        {
+          "id": 27,
+          "text": "Quin tipus de processador està optimitzat per processar vàries instruccions en paral·lel?",
+          "respostes": {
+            "a": "Els d’arquitectura Von Newman.",
+            "b": "Els processadors tipus SISD.",
+            "c": "Els processadors tipus MISD.",
+            "d": "Els processadors VLIW."
+          },
+          "correcta": "d",
+          "type": "multi"
+        },
+        {
+          "id": 28,
+          "text": "Les instruccions SSE (similars a les MMX però amb reals) de quin tipus de processadors són pròpies?",
+          "respostes": {
+            "a": "SISD",
+            "b": "SIMD",
+            "c": "MISD",
+            "d": "MIMD"
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        {
+          "id": 51,
+          "text": "Per què s’implementen entrades d’interrupció als microprocessadors?",
+          "respostes": {
+            "a": "Per poder implementar aplicacions en temps real.",
+            "b": "Per millorar l'eficiència del processador.",
+            "c": "Per gestionar millor els processos.",
+            "d": "Per minimitzar el temps de resposta."
+          },
+          "correcta": "a",
+          "type": "multi"
+        },
+        {
+          "id": 52,
+          "text": "Com sorgeixen els processadors VLIW?",
+          "respostes": {
+            "a": "Com a millora dels processadors escalars.",
+            "b": "Com a solució estàtica al problema de la complexitat de la unitat de Dispatch.",
+            "c": "Per augmentar l'eficiència en processos paral·lels.",
+            "d": "Per reduir el cost de fabricació dels processadors."
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        {
+          "id": 53,
+          "text": "La unitat de Dispatch és una solució estàtica emprada en processadors escalars que serveix per a:",
+          "respostes": {
+            "a": "Millorar l'eficiència dels processadors.",
+            "b": "Distribuir les instruccions durant l’execució a les diferents unitats d’execució.",
+            "c": "Reduir el cost de producció dels processadors.",
+            "d": "Optimitzar l'ús de la memòria."
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        {
+          "id": 54,
+          "text": "Per què els processadors superescalars no implementen milers d’unitats d’execució per aconseguir un CPI molt petit?",
+          "respostes": {
+            "a": "Per limitacions de consum energètic.",
+            "b": "Per la complexitat de programació.",
+            "c": "La complexitat de la unitat de Dispatch creix augmentant també el cost en àrea i preu.",
+            "d": "Per limitacions de l'arquitectura del processador."
+          },
+          "correcta": "c",
+          "type": "multi"
+        },
+        {
+          "id": 55,
+          "text": "El “retard de salt” és una tècnica dinàmica per a solucionar:",
+          "respostes": {
+            "a": "Riscs de control.",
+            "b": "Problemes de sincronització.",
+            "c": "Retards en l'execució de processos.",
+            "d": "Riscs de memòria."
+          },
+          "correcta": "a",
+          "type": "multi"
+        },
+        {
+          "id": 56,
+          "text": "El “Data Forwarding paths” és una tècnica dinàmica per a solucionar:",
+          "respostes": {
+            "a": "Problemes de rendiment.",
+            "b": "Riscs de dades (dependència de dades).",
+            "c": "Conflictes de memòria.",
+            "d": "Riscs de control."
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        {
+          "id": 57,
+          "text": "Als pipeline quina és la tècnica més eficient per tractar salts condicionals?",
+          "respostes": {
+            "a": "Implementació de salts dinàmics.",
+            "b": "Prediccions de salts mitjançant taules històriques.",
+            "c": "Optimització del codi font.",
+            "d": "Reducció del nombre de salts."
+          },
+          "correcta": "b",
+          "type": "multi"
+        },
+        
+           {
+            "id": 64,
+            "text": "Quin paràmetre queda fixat per la mida del bus d’adreces?",
+            "respostes": {
+                "a": "L’ample de banda de transferència de dades entre CPU i memòria principal.",
+                "b": "L’ample de banda de transferència de dades entre CPU i interfícies d’E/S.",
+                "c": "La mida màxima del espai d’adreces lògiques.",
+                "d": "La mida màxima del espai d’adreces físiques."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 65,
+            "text": "A un processador amb pipeline (sense ser superescalar) què aconseguim?",
+            "respostes": {
+                "a": "Executar una instrucció per cicle de rellotge.",
+                "b": "Executar més d’una instrucció per cicle de rellotge.",
+                "c": "Executar dues instruccions per cicles de rellotge.",
+                "d": "Què el número d’instruccions que se executen per cicle de rellotge tendeix a 1."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+          "id": 66,
+          "text": "Als pipeline, quina és una solució dinàmica per les dependències de dades?",
+          "respostes": {
+              "a": "Reordenació d’instruccions.",
+              "b": "Implementació de “Data Path Forwarding”.",
+              "c": "Subdivisió de etapes en altres més petites.",
+              "d": "Separació de busos d’instruccions i dades."
+          },
+          "correcta": "b",
+          "type": "multi"
+      },{
+        "id": 67,
+        "text": "Quin tipus de processador està optimitzat per processar vàries instruccions en paral·lel?",
+        "respostes": {
+            "a": "Els d’arquitectura Von Newman.",
+            "b": "Els processadors tipus SISD.",
+            "c": "Els processadors tipus MISD.",
+            "d": "Els processadors VLIW."
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 68,
+        "text": "Les instruccions SSE (similars a les MMX però amb reals) de quin tipus de processadors són pròpies?",
+        "respostes": {
+            "a": "SISD",
+            "b": "SIMD",
+            "c": "MISD",
+            "d": "MIMD"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 69,
+        "text": "Quina és la funció de la unitat de Dispatch?",
+        "respostes": {
+            "a": "Predir els salts a les instruccions de control de fluxe.",
+            "b": "Distribuir les instruccions durant l’execució a les diferents etapes del pipeline.",
+            "c": "Distribuir les instruccions durant l’execució a les diferents unitats d’execució.",
+            "d": "Distribuir les instruccions durant la compilació."
+        },
+        "correcta": "c",
+        "type": "multi"
+    },
+{
+  "id": 74,
+  "text": "Per quin procés és necessari l’implementació del Dirty bit?",
+  "respostes": {
+      "a": "Write Through a les cachés.",
+      "b": "Write Back a les cachés.",
+      "c": "Control de la paginació.",
+      "d": "Control de la segmentació."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 79,
+  "text": "Quin paràmetre d’un processador queda deteriorat quan es multiplexen senyals de dades i adreces?",
+  "respostes": {
+    "a": "El número de pins del xip queda incrementat.",
+    "b": "El temps de cicle de rellotge.",
+    "c": "El temps de cicle de Bus.",
+    "d": "El sincronisme amb dispositiu lents."
+  },
+  "correcta": "b",
+  "type": "multi"
+}
+
+
+
+      ]
+    }
+
