@@ -1,21 +1,56 @@
 {
     "preguntes": [
         {
-            "id": 6,
-            "text": "Una imagen integral se utiliza para:",
+            "id": 7,
+            "text": "En una imagen integral construida a partir de cualquier imagen, el píxel más abajo y a la derecha:",
             "respostes": {
-                "a": "Calcular rápidamente la suma de valores en una sub-región rectangular de la imagen",
-                "b": "Detectar esquinas en la imagen",
-                "c": "Calcular el histograma de una imagen",
+                "a": "Es la suma de todos los píxeles de la imagen integral",
+                "b": "Es la suma de todos los píxeles de la imagen original",
+                "c": "Es el resultado de aplicar una convolución sobre la imagen original con una máscara de tamaño de la imagen original",
                 "d": "Ninguno de los anteriores"
             },
-            "correcta": "a",
+            "correcta": "b",
             "type": "multi"
         },
-
+        {
+            "id": 8,
+            "text": "Los clasificadores débiles en el clasificador Adaboost se necesitan para construir el clasificador Adaboost donde añadimos el siguiente clasificador débil para",
+            "respostes": {
+                "a": "mejorar el último clasificador débil añadido",
+                "b": "mejorar clasificador Adaboost construido hasta la iteración actual",
+                "c": "para convolucionar con alguna de las características Haar",
+                "d": "ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 9,
+            "text": "El clasificador cascada para detectar caras en imágenes combina:",
+            "respostes": {
+                "a": "Características Haar",
+                "b": "Clasificadores débiles",
+                "c": "Clasificadores Adaboost",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 10,
+            "text": "El clasificador cascada para detectar caras en imágenes:",
+            "respostes": {
+                "a": "Sirve sólo para detectar caras ya que las características Haar están diseñadas para 'imitar' características faciales",
+                "b": "Es aplicable para detectar cualquier tipo de objetos siempre y cuando se utilizan imágenes etiquetadas de estos objetos para entrenar los adalboosts",
+                "c": "Es aplicable para detectar los eigenfaces y así reconocer las caras",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
         {
             "id": 11,
-            "text": "En los eigenfaces usamos el trick de los eigenfaces para:",
+            "text": "En los eigenfaces, usamos el trick de los eigenfaces para",
             "respostes": {
                 "a": "Simplificar el proceso de obtener los vectores propios a partir de imágenes de tamaño más pequeño",
                 "b": "Poder aprender a reconocer las caras con menos ejemplos de caras de aprendizaje",
@@ -27,7 +62,7 @@
         },
         {
             "id": 12,
-            "text": "En los eigenfaces el trick de los eigenfaces tiene sentido cuando:",
+            "text": "En los eigenfaces, el trick de los eigenfaces tiene sentido cuando:",
             "respostes": {
                 "a": "El número de datos de aprendizaje es menor que el número de píxeles de las imágenes",
                 "b": "El número de datos de aprendizaje es mayor que el número de píxeles de las imágenes",
@@ -39,7 +74,7 @@
         },
         {
             "id": 13,
-            "text": "En las redes neuronales convolucionales la función de pérdida (loss) se utiliza:",
+            "text": "En las redes neuronales convolucionales, la función de pérdida (loss) se utiliza:",
             "respostes": {
                 "a": "Dentro del descenso del gradiente para actualizar los pesos de la red",
                 "b": "Para calcular cuántas neuronas ha de tener cada capa",
@@ -63,24 +98,12 @@
         },
         {
             "id": 15,
-            "text": "En una red UNET la última capa contiene tantas neuronas:",
+            "text": "En una red UNET, la última capa contiene tantas neuronas:",
             "respostes": {
-                "a": "Cuantas clases estamos segmentando",
-                "b": "Cuantos píxeles contiene la imagen original",
-                "c": "Cuantos objetos hay en la imagen",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "a",
-            "type": "multi"
-        },
-        {
-            "id": 16,
-            "text": "En una red UNET la primera capa contiene tantas neuronas:",
-            "respostes": {
-                "a": "Cuantas clases estamos segmentando",
-                "b": "Cuantos píxeles contiene la imagen original",
-                "c": "Cuantos objetos hay en la imagen",
-                "d": "Ninguno de los anteriores"
+                "a": "cuantas clases estamos segmentando",
+                "b": "cuantos píxeles contiene la imagen original",
+                "c": "cuantos objetos hay en la imagen",
+                "d": "ninguno de los anteriores"
             },
             "correcta": "b",
             "type": "multi"

@@ -2,11 +2,11 @@
     "preguntes": [
         {
             "id": 1,
-            "text": "Dada una imagen I de tipo float e I2=I/2",
+            "text": "Dada una imagen I de tipo float, e I2=I/2",
             "respostes": {
                 "a": "La localización de los puntos SIFT de I e I2 coincide",
                 "b": "La localización de la mitad de los puntos SIFT de I coinciden con los puntos SIFT de I2",
-                "c": "No solo la localización de los puntos SIFT de I e I2 coincide pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
+                "c": "No solo la localización de los puntos SIFT de I e I2 coincide, pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
                 "d": "Ninguno de los anteriores"
             },
             "correcta": "a",
@@ -36,29 +36,40 @@
             "correcta": "b",
             "type": "multi"
         },
-
         {
             "id": 4,
-            "text": "El banco de filtros de Gausiana se utiliza para:",
+            "text": "El banco de filtros de la Gausiana visto en clase para caracterizar texturas:",
             "respostes": {
-                "a": "Suavizar la imagen",
-                "b": "Detectar puntos SIFT en la imagen",
-                "c": "Detectar bordes en la imagen",
+                "a": "Contiene derivadas de la Gausiana de orden 1",
+                "b": "Contiene derivadas de la Gausiana de orden 2",
+                "c": "Contiene derivadas de la Gausiana de orden 0, 1 y 2",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 5,
+            "text": "En el Local Binary Patterns, usamos el histograma para:",
+            "respostes": {
+                "a": "Calcular la frecuencia de los números decimales que codifican los correspondientes números binarios representando la relación entre las intensidades del píxel central y sus vecinos",
+                "b": "Para construir un histograma del gradiente",
+                "c": "Para calcular la frecuencia de los valores del pixel central y de los vecinos",
                 "d": "Ninguno de los anteriores"
             },
             "correcta": "a",
             "type": "multi"
         },
         {
-            "id": 5,
-            "text": "Los Local Binary Patterns se utilizan para:",
+            "id": 6,
+            "text": "El descriptor de texturas basado en Local binary patterns es invariante a:",
             "respostes": {
-                "a": "Detectar puntos característicos en la imagen",
-                "b": "Describir texturas en la imagen",
-                "c": "Detectar bordes en la imagen",
+                "a": "La orientación de la textura",
+                "b": "La escala de la textura",
+                "c": "El cambio de contraste de las imágenes",
                 "d": "Ninguno de los anteriores"
             },
-            "correcta": "b",
+            "correcta": "c",
             "type": "multi"
         }
     ]
