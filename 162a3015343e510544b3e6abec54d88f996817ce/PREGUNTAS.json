@@ -948,10 +948,179 @@
         },
         "correcta": "c",
         "type": "multi"
+    },
+    {
+        "id": 86,
+        "text": "Dividim el datapath d'un RISC-V single cycle en m etapes temporalment balancejades. Si no tenim cap tipus de dependència en el nostre programa, augmentarem el rendiment del processador?",
+        "respostes": {
+            "a": "No, el CPI tendeix a 1",
+            "b": "Sí, executarem m instruccions més per unitat de temps",
+            "c": "Sí, l'augment de rendiment és m/N on N son el nombre d'instruccions",
+            "d": "No, l'IPC tendeix a 1"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 87,
+        "text": "Quin/es de les següents característiques és/són habitual/s als processadors tipus RISC?:",
+        "respostes": {
+            "a": "Molts modes d'adreçament",
+            "b": "Mida d'instrucció fixa",
+            "c": "Ampli conjunt d'instruccions",
+            "d": "Operacions aritmètiques que permeten accés a memòria simultàniament"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 88,
+        "text": "En un processador amb pipeline de m=15 etapes, Quina és el CPI teòric que podem assolir?:",
+        "respostes": {
+            "a": "1",
+            "b": "0",
+            "c": "15",
+            "d": "m/n, sent “n” el número d’instruccions que s’executen"
+        },
+        "correcta": "a",
+        "type": "multi"
+    },
+    {
+        "id": 89,
+        "text": "Per quin motiu voldrien els dissenyadors dividir l'etapa més lenta en un processador amb pipeline?",
+        "respostes": {
+            "a": "Per augmentar, en teoria, la freqüència del processador",
+            "b": "Per minimitzar el nombre de dependències de dades",
+            "c": "Per minimitzar el nombre de dependències de control",
+            "d": "Per reduir el nombre d'aturades de processador (bubbles, noops)"
+        },
+        "correcta": "a",
+        "type": "multi"
+    },
+    {
+        "id": 90,
+        "text": "Qui marca el mínim període de rellotge en un RISC-V de 5 etapes?",
+        "respostes": {
+            "a": "El temps d'execució de la instrucció més lenta",
+            "b": "El temps d'accés i escriptura a la memòria de dades",
+            "c": "El temps d'accés a la memòria d'instruccions",
+            "d": "El temps d'execució de l'etapa més lenta",
+            "e": "Cap de les anteriors"
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 91,
+        "text": "Als pipeline, quina d'aquestes tècniques és més eficient per tractar salts condicionals?:",
+        "respostes": {
+            "a": "Resoldre dependències de dades de manera estàtica.",
+            "b": "Resoldre dependències de dades de manera dinàmica.",
+            "c": "Prediccions de salts mitjançant taules històriques.",
+            "d": "Prediccions de salts de manera estàtica."
+        },
+        "correcta": "c",
+        "type": "multi"
+    },
+    {
+        "id": 92,
+        "text": "En un processador amb pipeline de m=15 etapes, Quina és l' IPC teòric que podem assolir?:",
+        "respostes": {
+            "a": "15",
+            "b": "1",
+            "c": "m/n, sent “n” el número d’instruccions que s’executen",
+            "d": "0"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 93,
+        "text": "Qui s'encarrega de solucionar de forma estàtica les possibles dependències de dades i control en un RISC-V de 5 etapes?",
+        "respostes": {
+            "a": "La unitat de hazards",
+            "b": "El programador",
+            "c": "La unitat de dreceres (forwarding unit)",
+            "d": "El compilador"
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 94,
+        "text": "Quin tipus de processadors fan servir una solució estàtica equivalent a la que fa la unitat de “Dispatch”?:",
+        "respostes": {
+            "a": "Escalars",
+            "b": "Von Neumann",
+            "c": "Pipeline o Superpipeline",
+            "d": "VLIW"
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 95,
+        "text": "Quina és la funció de la unitat Branch Prediction?",
+        "respostes": {
+            "a": "Distribuir les instruccions durant l’execució a les diferents etapes del pipeline.",
+            "b": "Optimitzar l’execució dels salts a les instruccions de control de fluxe.",
+            "c": "Distribuir les instruccions durant l’execució a les diferents unitats d’execució.",
+            "d": "Distribuir les instruccions durant la compilació."
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 96,
+        "text": "En un processador amb pipeline de m=15 etapes, Quina és l' IPC teòric que podem assolir?:",
+        "respostes": {
+            "a": "15",
+            "b": "1",
+            "c": "m/n, sent “n” el número d’instruccions que s’executen",
+            "d": "0"
+        },
+        "correcta": "b",
+        "type": "multi"
+    },
+    {
+        "id": 97,
+        "text": "Qui s'encarrega de solucionar de forma estàtica les possibles dependències de dades i control en un RISC-V de 5 etapes?",
+        "respostes": {
+            "a": "La unitat de hazards",
+            "b": "El programador",
+            "c": "La unitat de dreceres (forwarding unit)",
+            "d": "El compilador"
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 98,
+        "text": "Quin tipus de processadors fan servir una solució estàtica equivalent a la que fa la unitat de “Dispatch”?:",
+        "respostes": {
+            "a": "Escalars",
+            "b": "Von Neumann",
+            "c": "Pipeline o Superpipeline",
+            "d": "VLIW"
+        },
+        "correcta": "d",
+        "type": "multi"
+    },
+    {
+        "id": 99,
+        "text": "Quina és la funció de la unitat Branch Prediction?",
+        "respostes": {
+            "a": "Distribuir les instruccions durant l’execució a les diferents etapes del pipeline.",
+            "b": "Optimitzar l’execució dels salts a les instruccions de control de fluxe.",
+            "c": "Distribuir les instruccions durant l’execució a les diferents unitats d’execució.",
+            "d": "Distribuir les instruccions durant la compilació."
+        },
+        "correcta": "b",
+        "type": "multi"
     }
   
   
   
         ]
-      }
+    }
   
