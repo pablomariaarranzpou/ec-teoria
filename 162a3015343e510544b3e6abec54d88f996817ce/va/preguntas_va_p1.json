@@ -1,0 +1,65 @@
+{
+    "preguntes": [
+        {
+            "id": 1,
+            "text": "Dada una imagen I de tipo float e I2=I/2",
+            "respostes": {
+                "a": "La localización de los puntos SIFT de I e I2 coincide",
+                "b": "La localización de la mitad de los puntos SIFT de I coinciden con los puntos SIFT de I2",
+                "c": "No solo la localización de los puntos SIFT de I e I2 coincide pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 2,
+            "text": "El ORB es una alternativa de:",
+            "respostes": {
+                "a": "El detector de esquina de Harris",
+                "b": "El detector SIFT de características de la imagen",
+                "c": "Los puntos CENSURE",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 3,
+            "text": "El método RANSAC se utiliza:",
+            "respostes": {
+                "a": "Para detectar puntos característicos (esquinas) en la imagen equivalentes a los puntos SIFT",
+                "b": "Para detectar la transformación de los puntos SIFT de una imagen a otra",
+                "c": "Para calcular la precisión de la detección de puntos características en una imagen (como por ejemplo puntos SIFT)",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+
+        {
+            "id": 4,
+            "text": "El banco de filtros de Gausiana se utiliza para:",
+            "respostes": {
+                "a": "Suavizar la imagen",
+                "b": "Detectar puntos SIFT en la imagen",
+                "c": "Detectar bordes en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 5,
+            "text": "Los Local Binary Patterns se utilizan para:",
+            "respostes": {
+                "a": "Detectar puntos característicos en la imagen",
+                "b": "Describir texturas en la imagen",
+                "c": "Detectar bordes en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        }
+    ]
+}

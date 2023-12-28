@@ -1,0 +1,150 @@
+{
+    "preguntes": [
+        {
+            "id": 1,
+            "text": "Dada una imagen I de tipo float e I2=I/2",
+            "respostes": {
+                "a": "La localización de los puntos SIFT de I e I2 coincide",
+                "b": "La localización de la mitad de los puntos SIFT de I coinciden con los puntos SIFT de I2",
+                "c": "No solo la localización de los puntos SIFT de I e I2 coincide pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 2,
+            "text": "El ORB es una alternativa de:",
+            "respostes": {
+                "a": "El detector de esquina de Harris",
+                "b": "El detector SIFT de características de la imagen",
+                "c": "Los puntos CENSURE",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 3,
+            "text": "El método RANSAC se utiliza:",
+            "respostes": {
+                "a": "Para detectar puntos característicos (esquinas) en la imagen equivalentes a los puntos SIFT",
+                "b": "Para detectar la transformación de los puntos SIFT de una imagen a otra",
+                "c": "Para calcular la precisión de la detección de puntos características en una imagen (como por ejemplo puntos SIFT)",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+
+        {
+            "id": 4,
+            "text": "El banco de filtros de Gausiana se utiliza para:",
+            "respostes": {
+                "a": "Suavizar la imagen",
+                "b": "Detectar puntos SIFT en la imagen",
+                "c": "Detectar bordes en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 5,
+            "text": "Los Local Binary Patterns se utilizan para:",
+            "respostes": {
+                "a": "Detectar puntos característicos en la imagen",
+                "b": "Describir texturas en la imagen",
+                "c": "Detectar bordes en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 6,
+            "text": "Una imagen integral se utiliza para:",
+            "respostes": {
+                "a": "Calcular rápidamente la suma de valores en una sub-región rectangular de la imagen",
+                "b": "Detectar esquinas en la imagen",
+                "c": "Calcular el histograma de una imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+
+        {
+            "id": 11,
+            "text": "En los eigenfaces usamos el trick de los eigenfaces para:",
+            "respostes": {
+                "a": "Simplificar el proceso de obtener los vectores propios a partir de imágenes de tamaño más pequeño",
+                "b": "Poder aprender a reconocer las caras con menos ejemplos de caras de aprendizaje",
+                "c": "Para compactar el conjunto de imágenes de caras en un espacio de dimensionalidad menor",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 12,
+            "text": "En los eigenfaces el trick de los eigenfaces tiene sentido cuando:",
+            "respostes": {
+                "a": "El número de datos de aprendizaje es menor que el número de píxeles de las imágenes",
+                "b": "El número de datos de aprendizaje es mayor que el número de píxeles de las imágenes",
+                "c": "Cuando queremos reducir el número de vectores propios",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 13,
+            "text": "En las redes neuronales convolucionales la función de pérdida (loss) se utiliza:",
+            "respostes": {
+                "a": "Dentro del descenso del gradiente para actualizar los pesos de la red",
+                "b": "Para calcular cuántas neuronas ha de tener cada capa",
+                "c": "Para calcular cuántas capas ha de tener la red neuronal",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 14,
+            "text": "El proceso de entrenamiento de una red (sin capas congeladas) sirve para modificar:",
+            "respostes": {
+                "a": "Los pesos de las capas completamente conectadas",
+                "b": "Los pesos de las máscaras convolucionales",
+                "c": "Los parámetros de la función de pérdida",
+                "d": "a. y b."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 15,
+            "text": "En una red UNET la última capa contiene tantas neuronas:",
+            "respostes": {
+                "a": "Cuantas clases estamos segmentando",
+                "b": "Cuantos píxeles contiene la imagen original",
+                "c": "Cuantos objetos hay en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 16,
+            "text": "En una red UNET la primera capa contiene tantas neuronas:",
+            "respostes": {
+                "a": "Cuantas clases estamos segmentando",
+                "b": "Cuantos píxeles contiene la imagen original",
+                "c": "Cuantos objetos hay en la imagen",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        }
+    ]
+}
