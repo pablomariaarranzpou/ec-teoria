@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VA HTML</title>
+    <title>IA TEORÍA</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="va/va.js" defer></script>
+    <script src="ia/ia.js" defer></script>
     <style>
         /* Estilo adicional si es necesario */
     </style>
@@ -24,10 +24,10 @@
         <div id="sidebar" class="hidden w-64 h-screen bg-gray-800 shadow-md">
             <h2 class="text-3xl font-bold text-white text-center my-4">ZONA EN CONSTRUCCIÓN</h2>
             <nav class="text-white text-base font-semibold pt-3">
-                <a href= "index.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                <a href= "/162a3015343e510544b3e6abec54d88f996817ce/index.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
                     Tot
                 </a>
-                <a href="optimitzacio.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                <a onclick="location.reload();" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
                     Optimització de processadors
                 </a>
 
@@ -54,26 +54,22 @@
                 <a  href= "va.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
                     VISIÓ ARTIFICIAL 🆕
                 </a>
-                
+
                 <a href= "ia.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
                     INTEL·LIGÈNCIA ARTIFICIAL 🆕
                 </a>
+                
+                
+                
 
                 <!-- Más tests... -->
             </nav>
         </div>
 
-
         <!-- Contenido Principal -->
         <div class="flex-1 p-4 md:p-8">
-            <div id="seleccion-parcial" class="flex justify-center space-x-2 my-4">
-                <button onclick="cargarPreguntas('preguntas_va_p1.json')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Primer Parcial</button>
-                <button onclick="cargarPreguntas('preguntas_va_p2.json')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Segundo Parcial</button>
-                <button onclick="cargarPreguntas('preguntas_va.json')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Todos</button>
-            </div>
-            
             <div class="flex-1 p-4 md:p-8">
-                <h1 class="text-2xl md:text-3xl font-bold text-center my-6"> </h1>
+                <h1 class="text-2xl md:text-3xl font-bold text-center my-6">Optimització de Processadors</h1>
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
                     <div id="pregunta" class="mb-4 text-lg font-medium"></div>
                     <div id="opciones" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"></div>

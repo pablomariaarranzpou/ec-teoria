@@ -1,0 +1,76 @@
+{
+    "preguntes" : [
+        {
+            "id": 1,
+            "text": "Dí qué afirmación es verdadera sobre el algoritmo A*.",
+            "respostes": {
+                "a": "El algoritmo A* utiliza para calcular la función de evaluación de un estado la suma de la heurística aplicada a dicho estado más el coste de alcanzar dicho estado desde su estado anterior.",
+                "b": "En los algoritmos de búsqueda no informada se puede considerar como heurística de un problema una versión relajada del mismo problema.",
+                "c": "Si una heurística es admisible, la búsqueda A* usando búsqueda en grafos es óptima.",
+                "d": "Una heurística admisible cumple la desigualdad triangular."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 2,
+            "text": "Dí qué afirmación es falsa sobre el algoritmo minimax.",
+            "respostes": {
+                "a": "El algoritmo minimax requiere que el juego sea de dos jugadores y de suma cero.",
+                "b": "El algoritmo minimax asume un escenario determinista.",
+                "c": "Cuando el algoritmo minimax invoca el min-value está calculando la mínima ganancia del contrincante.",
+                "d": "Dentro de la poda alfa-beta, se realiza una poda en la función MAX-VALUE cuando v es mayor o igual a β."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 3,
+            "text": "Dí qué afirmación es verdadera si se aplica el algoritmo de poda alfa-beta en el árbol de la figura:",
+            "respostes": {
+                "a": "No se realiza ninguna poda.",
+                "b": "Se realiza una poda en el min-value porque 2 ≥ α.",
+                "c": "Se realiza una poda en el min-value porque 2 ≤ α o 3 ≤ α en el max-value porque 2 ≤ β.",
+                "d": "Se realiza una poda en el max-value porque 2 ≥ γ y otra en el min-value porque 2 ≤ γ."
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 4,
+            "text": "Dí qué afirmación es falsa:",
+            "respostes": {
+                "a": "La definición de Inteligencia Artificial como 'El arte de desarrollar máquinas con capacidad para realizar funciones que cuando son realizadas por personas requieren de inteligencia' corresponde al enfoque 'prueba de Turing'.",
+                "b": "La Inteligencia Artificial se originó en la década de los 50 en la conferencia de Dartmouth.",
+                "c": "La inteligencia artificial está siendo aplicada en el ámbito militar a pesar de las críticas de una parte importante de la comunidad científica.",
+                "d": "Aunque se ha ganado al campeón mundial en el juego del go, aún no se puede afirmar que se haya conseguido superar la inteligencia humana en este problema concreto."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 5,
+            "text": "Dí qué afirmación es falsa:",
+            "respostes": {
+                "a": "Para resolver problemas con objetivos se definen 4 etapas. La primera es la formulación de objetivos, que permite identificar los estados objetivo.",
+                "b": "Para resolver problemas con objetivos se definen 4 etapas. En la etapa de búsqueda se obtiene la solución del problema, esta solución es la secuencia de acciones que partiendo de un estado inicial permiten alcanzar un estado objetivo.",
+                "c": "En la resolución de problemas con objetivos, la etapa de ejecución ejecuta la solución encontrada por la etapa de búsqueda.",
+                "d": "Para resolver problemas con objetivos se definen 4 etapas (1) formulación de objetivos, (2) formulación de acciones posibles, (3) Búsqueda y (4) Ejecución."
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 6,
+            "text": "Dí qué afirmación es verdadera:",
+            "respostes": {
+                "a": "El algoritmo A* es un algoritmo de búsqueda no-informada.",
+                "b": "En el algoritmo de búsqueda voraz (greedy search) la frontera es una cola FIFO.",
+                "c": "En los algoritmos de búsqueda en grafos la frontera solo queda vacía cuando no hay solución.",
+                "d": "En los algoritmos de búsqueda en grafos se comprueba si un estado está repetido una vez sacado de la frontera."
+            },
+            "correcta": "c",
+            "type": "multi"
+        }
+    ]
+}
