@@ -155,6 +155,106 @@
             },
             "correcta": "b",
             "type": "multi"
-        }
+        },
+        {
+            "id": 17,
+            "text": "¿Que técnica se utiliza para encontrar el subespacio reducido de los 'eigenfaces'?",
+            "respostes": {
+                "a": "Análisis de componentes principales (PCA)",
+                "b": "Análisis de componentes independientes (ICA)",
+                "c": "Análisis de componentes principales (PCA) y Análisis de componentes independientes (ICA)",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta":"a",
+            "type": "multi"
+        },
+        {
+            "id": 18,
+            "text": "¿Qué característica principal diferencia el aprendizaje supervisado del no supervisado en el contexto de las Redes Neuronales?",
+            "respostes": {
+            "a": "El tipo de funciones de activación utilizadas",
+            "b": "El uso de etiquetas en los datos de entrenamiento",
+            "c": "La velocidad de convergencia del modelo",
+            "d": "La arquitectura de la red neuronal"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 19,
+            "text": "En el contexto de las Redes Neuronales Convolucionales, ¿qué papel desempeña la función de activación ReLU?",
+            "respostes": {
+                "a": "Normalizar los datos de entrada",
+                "b": "Introducir no linealidad en el modelo",
+                "c": "Reducir el sobreajuste en la red",
+                "d": "Aumentar la velocidad de convergencia"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+
+        {
+            "id": 20,
+            "text": "Cuanto medirá la imagen resultante de aplicar una máscara de convolución de 3x3 a una imagen de 5x5?",
+            "respostes": {
+                "a": "3x3",
+                "b": "5x5",
+                "c": "7x7",
+                "d": "9x9"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        
+        {
+            "id": 21,
+            "text": "Cuanto medirá (normalmente) la última capa de una red neuronal convolucional para clasificar fotos 420x420 de tipos perro, gato, conejo?",
+            "respostes": {
+                "a": "3x1",
+                "b": "3x3",
+                "c": "3x(420x420)",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+
+        {
+            "id": 22,
+            "text": "Cuál de las siguientes afirmaciones es cierta?",
+            "respostes": {
+                "a": "El método de Viola & Jones es un método de detección de caras basado en características Haar",
+                "b": "El método de Viola & Jones es un método de detección de caras basado en características SIFT",
+                "c": "El método de Viola & Jones es un método de detección de caras basado en características AdaBoost",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+
+        {
+            "id": 23,
+            "text": "Cuál de las siguientes afirmaciones es cierta?",
+            "respostes": {
+                "a": "La función de pérdida (loss) se utiliza para calcular el score de una imagen",
+                "b": "La función de pérdida (loss) se utiliza para calcular el error de una imagen",
+                "c": "La función de pérdida (loss) se utiliza para calcular el error de una red neuronal",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+
+        { "id": 24,
+        "text": "Cuál de las siguientes afirmaciones es FALSA ?",
+        "respostes": {
+            "a": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el error de una red neuronal",
+            "b": "La función de entropía cruzada (cross-entropy) se utiliza para dividir la imagen en regiones",
+            "c": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el score de una imagen",
+            "d": "Ninguna de las anteriores"
+        },
+        "correcta": "b"    
+    }
+    
     ]
 }
