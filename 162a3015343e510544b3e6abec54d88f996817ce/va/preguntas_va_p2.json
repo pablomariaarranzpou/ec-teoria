@@ -165,17 +165,17 @@
                 "c": "Análisis de componentes principales (PCA) y Análisis de componentes independientes (ICA)",
                 "d": "Ninguna de las anteriores"
             },
-            "correcta":"a",
+            "correcta": "a",
             "type": "multi"
         },
         {
             "id": 21,
             "text": "¿Qué característica principal diferencia el aprendizaje supervisado del no supervisado en el contexto de las Redes Neuronales?",
             "respostes": {
-            "a": "El tipo de funciones de activación utilizadas",
-            "b": "El uso de etiquetas en los datos de entrenamiento",
-            "c": "La velocidad de convergencia del modelo",
-            "d": "La arquitectura de la red neuronal"
+                "a": "El tipo de funciones de activación utilizadas",
+                "b": "El uso de etiquetas en los datos de entrenamiento",
+                "c": "La velocidad de convergencia del modelo",
+                "d": "La arquitectura de la red neuronal"
             },
             "correcta": "b",
             "type": "multi"
@@ -192,7 +192,6 @@
             "correcta": "b",
             "type": "multi"
         },
-
         {
             "id": 23,
             "text": "Cuanto medirá la imagen resultante de aplicar una máscara de convolución de 3x3 a una imagen de 5x5? (PENDIENTE DE REVISAR)",
@@ -205,7 +204,6 @@
             "correcta": "b",
             "type": "multi"
         },
-        
         {
             "id": 24,
             "text": "Cuanto medirá (normalmente) la última capa de una red neuronal convolucional para clasificar fotos 420x420 de tipos perro, gato, conejo?(PENDIENTE DE REVISAR)",
@@ -218,7 +216,6 @@
             "correcta": "a",
             "type": "multi"
         },
-
         {
             "id": 25,
             "text": "Cuál de las siguientes afirmaciones es cierta?",
@@ -231,7 +228,6 @@
             "correcta": "a",
             "type": "multi"
         },
-
         {
             "id": 26,
             "text": "Cuál de las siguientes afirmaciones es cierta?",
@@ -244,32 +240,65 @@
             "correcta": "c",
             "type": "multi"
         },
-
-        { "id": 27,
-        "text": "Cuál de las siguientes afirmaciones es FALSA ? (PENDIENTE DE REVISAR)",
-        "respostes": {
-            "a": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el error de una red neuronal",
-            "b": "La función de entropía cruzada (cross-entropy) se utiliza para dividir la imagen en regiones",
-            "c": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el score de una imagen",
-            "d": "Ninguna de las anteriores"
+        {
+            "id": 27,
+            "text": "Cuál de las siguientes afirmaciones es FALSA ? (PENDIENTE DE REVISAR)",
+            "respostes": {
+                "a": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el error de una red neuronal",
+                "b": "La función de entropía cruzada (cross-entropy) se utiliza para dividir la imagen en regiones",
+                "c": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el score de una imagen",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
         },
-        "correcta": "b",
-        "type": "multi"
-
-    },
-    
-        { "id": 28,
-        "text": "¿De que otra forma se les conoce a los eigenfaces?",
-        "respostes": {
-            "a": "Vectores propios",
-            "b": "Lambda",
-            "c": "Valores Propios",
-            "d": "Ninguna de las anteriores"
+        {
+            "id": 28,
+            "text": "¿De que otra forma se les conoce a los eigenfaces?",
+            "respostes": {
+                "a": "Vectores propios",
+                "b": "Lambda",
+                "c": "Valores Propios",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
         },
-        "correcta": "a",
-        "type": "multi"
-        
-    }
-    
+        {
+            "id": 29,
+            "text": "¿En la formula argmin_f(sum(error(y_i(f),y_i))) ¿Que es f?",
+            "respostes": {
+                "a": "La función de pérdida",
+                "b": "La función de activación",
+                "c": "La función de clasificación",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 30,
+            "text": "¿En la formula argmin_f(sum(error(y_i(f),y_i))) ¿Que es y_i?",
+            "respostes": {
+                "a": "El valor de la imagen",
+                "b": "El valor de la etiqueta",
+                "c": "El valor de la función de pérdida",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 31,
+            "text": "¿En la formula argmin_f(sum(error(y_i(f),y_i))) ¿Que es y_i(f)?",
+            "respostes": {
+                "a": "El valor de la predicción",
+                "b": "El valor de la etiqueta",
+                "c": "El valor de la función de pérdida",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        }
     ]
 }
