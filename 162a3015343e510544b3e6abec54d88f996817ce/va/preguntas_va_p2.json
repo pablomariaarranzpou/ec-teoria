@@ -95,18 +95,6 @@
             },
             "correcta": "d",
             "type": "multi"
-        },
-        {
-            "id": 15,
-            "text": "En una red UNET, la última capa contiene tantas neuronas:",
-            "respostes": {
-                "a": "cuantas clases estamos segmentando",
-                "b": "cuantos píxeles contiene la imagen original",
-                "c": "cuantos objetos hay en la imagen",
-                "d": "ninguno de los anteriores"
-            },
-            "correcta": "b",
-            "type": "multi"
         }
     ]
 }
