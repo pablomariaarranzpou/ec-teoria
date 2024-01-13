@@ -195,7 +195,7 @@
 
         {
             "id": 20,
-            "text": "Cuanto medirá la imagen resultante de aplicar una máscara de convolución de 3x3 a una imagen de 5x5?",
+            "text": "Cuanto medirá la imagen resultante de aplicar una máscara de convolución de 3x3 a una imagen de 5x5? (PENDIENTE DE REVISAR)",
             "respostes": {
                 "a": "3x3",
                 "b": "5x5",
@@ -208,7 +208,7 @@
         
         {
             "id": 21,
-            "text": "Cuanto medirá (normalmente) la última capa de una red neuronal convolucional para clasificar fotos 420x420 de tipos perro, gato, conejo?",
+            "text": "Cuanto medirá (normalmente) la última capa de una red neuronal convolucional para clasificar fotos 420x420 de tipos perro, gato, conejo?(PENDIENTE DE REVISAR)",
             "respostes": {
                 "a": "3x1",
                 "b": "3x3",
@@ -253,7 +253,22 @@
             "c": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el score de una imagen",
             "d": "Ninguna de las anteriores"
         },
-        "correcta": "b"    
+        "correcta": "b",
+        "type": "multi"
+
+    },
+    
+        { "id": 25,
+        "text": "¿De que otra forma se les conoce a los eigenfaces?",
+        "respostes": {
+            "a": "Vectores propios",
+            "b": "Lambda",
+            "c": "Valores Propios",
+            "d": "Ninguna de las anteriores"
+        },
+        "correcta": "a",
+        "type": "multi"
+        
     }
     
     ]
