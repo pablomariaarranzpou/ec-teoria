@@ -299,6 +299,46 @@
             },
             "correcta": "a",
             "type": "multi"
+        },
+
+        {
+            "id": 32,
+            "text": "¿Si estamos en un clasificador con la formula f(x)=w*x+b, que es w?",
+            "respostes": {
+                "a": "El nodo actual",
+                "b": "La imagen de entrada",
+                "c": "Las clases de salida",
+                "d": "La matriz de pesos"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 33,
+            "text": "¿Si estamos en un clasificador con la formula f(x)=w*x+b, que es b?",
+            "respostes": {
+                "a": "El nodo actual",
+                "b": "La imagen de entrada",
+                "c": "El residuo",
+                "d": "El bias"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+
+        {
+            "id": 34,
+            "text": "¿Si estamos en un clasificador con la formula f(x)=w*x+b, que es x?",
+            "respostes": {
+                "a": "El nodo actual",
+                "b": "La imagen de entrada",
+                "c": "El residuo",
+                "d": "El bias"
+            },
+            "correcta": "b",
+            "type": "multi"
         }
+        
+
     ]
 }
