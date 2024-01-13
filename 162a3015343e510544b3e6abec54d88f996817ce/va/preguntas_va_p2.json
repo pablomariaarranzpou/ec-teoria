@@ -145,7 +145,7 @@
             "type": "multi"
         },
         {
-            "id": 16,
+            "id": 19,
             "text": "En la detección de caras, ¿qué método se utiliza para calcular rápidamente las características Haar?",
             "respostes": {
                 "a": "Transformada de Fourier",
@@ -157,7 +157,7 @@
             "type": "multi"
         },
         {
-            "id": 17,
+            "id": 20,
             "text": "¿Que técnica se utiliza para encontrar el subespacio reducido de los 'eigenfaces'?",
             "respostes": {
                 "a": "Análisis de componentes principales (PCA)",
@@ -169,7 +169,7 @@
             "type": "multi"
         },
         {
-            "id": 18,
+            "id": 21,
             "text": "¿Qué característica principal diferencia el aprendizaje supervisado del no supervisado en el contexto de las Redes Neuronales?",
             "respostes": {
             "a": "El tipo de funciones de activación utilizadas",
@@ -181,7 +181,7 @@
             "type": "multi"
         },
         {
-            "id": 19,
+            "id": 22,
             "text": "En el contexto de las Redes Neuronales Convolucionales, ¿qué papel desempeña la función de activación ReLU?",
             "respostes": {
                 "a": "Normalizar los datos de entrada",
@@ -194,7 +194,7 @@
         },
 
         {
-            "id": 20,
+            "id": 23,
             "text": "Cuanto medirá la imagen resultante de aplicar una máscara de convolución de 3x3 a una imagen de 5x5? (PENDIENTE DE REVISAR)",
             "respostes": {
                 "a": "3x3",
@@ -207,7 +207,7 @@
         },
         
         {
-            "id": 21,
+            "id": 24,
             "text": "Cuanto medirá (normalmente) la última capa de una red neuronal convolucional para clasificar fotos 420x420 de tipos perro, gato, conejo?(PENDIENTE DE REVISAR)",
             "respostes": {
                 "a": "3x1",
@@ -220,7 +220,7 @@
         },
 
         {
-            "id": 22,
+            "id": 25,
             "text": "Cuál de las siguientes afirmaciones es cierta?",
             "respostes": {
                 "a": "El método de Viola & Jones es un método de detección de caras basado en características Haar",
@@ -233,7 +233,7 @@
         },
 
         {
-            "id": 23,
+            "id": 26,
             "text": "Cuál de las siguientes afirmaciones es cierta?",
             "respostes": {
                 "a": "La función de pérdida (loss) se utiliza para calcular el score de una imagen",
@@ -245,7 +245,7 @@
             "type": "multi"
         },
 
-        { "id": 24,
+        { "id": 27,
         "text": "Cuál de las siguientes afirmaciones es FALSA ? (PENDIENTE DE REVISAR)",
         "respostes": {
             "a": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el error de una red neuronal",
@@ -258,7 +258,7 @@
 
     },
     
-        { "id": 25,
+        { "id": 28,
         "text": "¿De que otra forma se les conoce a los eigenfaces?",
         "respostes": {
             "a": "Vectores propios",
