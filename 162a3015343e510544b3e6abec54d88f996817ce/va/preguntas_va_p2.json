@@ -95,6 +95,66 @@
             },
             "correcta": "d",
             "type": "multi"
+        },
+        {
+            "id": 15,
+            "text": "En la detección de caras utilizando el método de Viola & Jones, ¿qué papel juegan las 'imágenes integrales'?",
+            "respostes": {
+                "a": "Identificar características únicas de cada cara",
+                "b": "Calcular rápidamente características de Haar",
+                "c": "Clasificar imágenes en caras y no caras",
+                "d": "Reducir el tamaño de las imágenes para procesamiento"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 16,
+            "text": "¿Qué tipo de aprendizaje se utiliza en la Red Neuronal Convolucional (CNN)?",
+            "respostes": {
+                "a": "Aprendizaje supervisado",
+                "b": "Aprendizaje no supervisado",
+                "c": "Aprendizaje por refuerzo",
+                "d": "Aprendizaje semi-supervisado"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 17,
+            "text": "En el contexto de las Redes Neuronales Convolucionales, ¿qué función cumple la técnica de 'Max Pooling'?",
+            "respostes": {
+                "a": "Normalizar los pesos de la red",
+                "b": "Aumentar el tamaño de la imagen de entrada",
+                "c": "Reducir la dimensionalidad espacial de la representación",
+                "d": "Intensificar las características de color en la imagen"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 18,
+            "text": "¿Qué representa el espacio definido por los 'eigenfaces'?",
+            "respostes": {
+                "a": "Un subespacio de imágenes no relacionadas con caras",
+                "b": "Un subespacio del espacio de imágenes que puede incluir cualquier tipo de objeto",
+                "c": "Un subespacio del espacio de imágenes que representa variaciones de caras",
+                "d": "Un espacio que solo contiene la imagen media deuna cara"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 16,
+            "text": "En la detección de caras, ¿qué método se utiliza para calcular rápidamente las características Haar?",
+            "respostes": {
+                "a": "Transformada de Fourier",
+                "b": "Imágenes integrales",
+                "c": "Redes Neuronales Convolucionales",
+                "d": "Algoritmo de Viola-Jones"
+            },
+            "correcta": "b",
+            "type": "multi"
         }
     ]
 }
