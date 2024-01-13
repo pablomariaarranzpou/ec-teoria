@@ -337,7 +337,20 @@
             },
             "correcta": "b",
             "type": "multi"
+        },
+        {
+            "id": "35",
+            "text": "En una CNN, ¿cómo se suele estructurar la secuencia de capas para el procesamiento efectivo de imágenes? (PENDIENTE DE REVISAR)",
+            "respostes": {
+                "a": "Capa convolucional - ReLU - max-pooling y finalmente una capa completamente conectada.",
+                "b": "Capa completamente conectada, seguida de max-pooling, luego ReLU y finalmente una capa convolucional.",
+                "c": "Capa convolucional - luego max-pooling - RELU y finalmente una capa completamente conectada.",
+                "d": "Capa max-pooling, seguida de ReLU, luego una capa convolucional y finalmente una capa completamente conectada."
+            },
+            "correcta": "c",
+            "type": "multi"
         }
+        
         
 
     ]
