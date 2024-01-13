@@ -1,0 +1,244 @@
+{
+    "preguntes": [
+        {
+            "id": "2vSIn02YaTatfqozFJtI",
+            "text": "Los casos de uso son modelos gráficos que se usan para representar:",
+            "respostes": {
+                "a": "Vistas de alto nivel de las aplicaciones de los usuarios, de los componentes y las funcionalidades.",
+                "b": "Un resumen de las interfaces de usuario.",
+                "c": "Un resumen de las interacciones entre usuarios.",
+                "d": "Requisitos detallados de la aplicación"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "7YYP3NCRAjRbljK9TyQL",
+            "text": "¿Cuál de estos ciclos de vida en software development es incorrecto?",
+            "respostes": {
+                "a": "Casos de uso, documentación de requisitos, mock-up, diseño, programación, testing.",
+                "b": "Identificación de usuario, análisis de requisitos, diseño, programación, testing.",
+                "c": "Documentación de requisitos, diseño, programación, test funcional, test de usabilidad.",
+                "d": "Análisis de producto, requisitos, diseño, programación, testing."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "7cjQAE1PffQp65wUWteq",
+            "text": "¿Qué lenguaje se debería usar para la documentación de requisitos?",
+            "respostes": {
+                "a": "Inglés para garantizar que todos los clientes/usuarios lo pueden entender.",
+                "b": "Lenguaje simple que todos puedan entender.",
+                "c": "Detallado y especifico, sin ambigüedades.",
+                "d": "Lenguaje técnico del ámbito de la aplicación."
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": "8DtKq4j2E4czxOMHKXGQ",
+            "text": "El proceso OnRestart() se inicia después de:",
+            "respostes": {
+                "a": "OnStop()",
+                "b": "OnPause()",
+                "c": "OnPause() y OnStop()",
+                "d": "OnDestroy()"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "FK5hxW6XROs09cQ8b7wT",
+            "text": "Una nueva iteración del análisis de requisitos es necesario dependiendo de:",
+            "respostes": {
+                "a": "Feedback de los usuarios que hayan testeado  el primer prototipo.",
+                "b": "Feedback de los developers.",
+                "c": "Feedback del diseño del Sistema.",
+                "d": "La calidad de los Mock-ups."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "FSdyK4Ayb9W78Ozz6NPG",
+            "text": "Una buena implementación del ciclo de vida puede ayudar a garantizar que tu aplicación:",
+            "respostes": {
+                "a": "No falle si el usuario recibe una llamada telefónica o cambia a otra app mientras usa la tuya.",
+                "b": "No consuma recursos valiosos del sistema cuando el usuario no la use de forma activa.",
+                "c": "No pierda el progreso del usuario si este abandona tu app y regresa a ella posteriormente.",
+                "d": "Todas las anteriores"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": "Kh6aOVVUY8qWUj7T5I4X",
+            "text": "¿Qué elemento se debe declarar solo en un intent explícito, a diferencia de un intent implícito?",
+            "respostes": {
+                "a": "Component Name",
+                "b": "Data",
+                "c": "Action",
+                "d": "Filter ID"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "L6PiBAcSx5RZnaoDtSGM",
+            "text": "¿Dónde se declaran las características necesarias para interpretar un intent?",
+            "respostes": {
+                "a": "Filtro de intents en el Manifest.xml",
+                "b": "Filtro de intents en build.graddle de app",
+                "c": "Filtro de intents en Activity principal",
+                "d": "En ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "NysatlmvDm1HD4ekp6k3",
+            "text": "¿Qué parámetro XML sirve para declarar el formato de datos que acepta un intent filter en su etiqueta <data>?",
+            "respostes": {
+                "a": "android:mimeType",
+                "b": "android:layout_height",
+                "c": "android:id",
+                "d": "android:scheme"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "R2FbtkAiBIKQSOnZRfd0",
+            "text": "¿Qué ventaja otorga el Frame Layout sobre otros layouts?",
+            "respostes": {
+                "a": "Permite reservar un espacio en la pantalla para mostrar un único ítem",
+                "b": "Evita que los elementos que añades como hijos de layout se solapen",
+                "c": "Es la opción preferible para añadir recursos de imagen",
+                "d": "Permite distribuir los hijos en una estructura de cuadrícula rectangular"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "UoKSpfKBYVuHsEnXpERN",
+            "text": "¿Cuál de estos objetos pertenece al conjunto subclases de la clase View, también conocidos como widgets?",
+            "respostes": {
+                "a": "Button",
+                "b": "ImageView",
+                "c": "EditText",
+                "d": "Todos"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": "Wls8Jnw42rTAAtQniGj1",
+            "text": "¿Cuál de las siguientes características se deben declarar en el Manifest.xml?",
+            "respostes": {
+                "a": "Estilos y temas.",
+                "b": "Actividades de la app",
+                "c": "Permisos de acceso externos (Internet, etc.)",
+                "d": "Todas son correctas"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": "XLitEtsPnN70DPz808QB",
+            "text": "En el patrón Modelo – Vista - Controlador:",
+            "respostes": {
+                "a": "Modelo y las Vistas no están conectadas",
+                "b": "El Modelo, la Vista y el Controlador están conectados.",
+                "c": "El Modelo y la Vista están separados por el Controlador",
+                "d": "La Vista puede enviar información al Modelo."
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": "lU28SIPZBGuk32Rzv106",
+            "text": "En el patrón Model-View-Viewmodel, la Vista contiene:",
+            "respostes": {
+                "a": "Una instancia del Modelo.",
+                "b": "Una instancia del Viewmodel",
+                "c": "Una instancia del Model and Viewmodel",
+                "d": "Una instancia del Viewmodel y el Observer."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": "mkz91qwc6s6s6BIjrzgi",
+            "text": "En un Proyecto de Android que sigue el patrón de diseño Model-View-Viewmodel, el Modelo puede contener:",
+            "respostes": {
+                "a": "Objetos Android",
+                "b": "Una instancia del ViewModel para comunicación.",
+                "c": "Sólo código puro Java sin objetos Android.",
+                "d": "Una instancia de la Vista para mostrar cualquier actualización en las interfaces."
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": "oqV8Yj5Nqx3hIlbKR39e",
+            "text": "El ViewModel en Android puede contener:",
+            "respostes": {
+                "a": "La clase MutableLiveData para la comunicación con el Model.",
+                "b": "Una instancia de la vista para actualizar las interfaces.",
+                "c": "Sólo código puro Java sin objectos Android",
+                "d": "La clase Observer."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "qVaQ25QcTjMPUb3lZZdM",
+            "text": "¿Cuándo es el mejor momento para planificar el paso de software testing?",
+            "respostes": {
+                "a": "Después de definir/reunir los requisitos.",
+                "b": "Después de terminar de implementar el código.",
+                "c": "Durante la fase de implementación del código.",
+                "d": "Antes de definir/reunir los requisitos."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "sQEChxnPyr1JhfHkThMT",
+            "text": "Cuándo es el mejor momento para desarrollar/implementar el paso de software testing?",
+            "respostes": {
+                "a": "Durante y después de las tareas de programación.",
+                "b": "Después de las tareas de programación",
+                "c": "Antes de las tareas de programación.",
+                "d": "Después del diseño de software."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "tRgSx2HBGPGc2VfzoSev",
+            "text": "¿Cómo se desarrolla mejor la tarea de unit testing?",
+            "respostes": {
+                "a": "Implementando funciones dedicadas de unit testing.",
+                "b": "Mirando el código",
+                "c": "Otra persona revise el código.",
+                "d": "Testeando una serie de parámetros de entrada."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": "w6QYfBsOsxCER9ukyPGG",
+            "text": "¿Qué es integration testing?",
+            "respostes": {
+                "a": "Testear todos los elementos del código conjuntamente",
+                "b": "Testear múltiples dispositivos",
+                "c": "Testear múltiples usuarios.",
+                "d": "Testear usando varios grupos de datos."
+            },
+            "correcta": "a",
+            "type": "multi"
+        }
+    ]
+}
