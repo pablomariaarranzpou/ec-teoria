@@ -57,7 +57,7 @@
                 "c": "Para compactar el conjunto de imágenes de caras en un espacio de dimensionalidad menor",
                 "d": "Ninguno de los anteriores"
             },
-            "correcta": "c",
+            "correcta": "a",
             "type": "multi"
         },
         {
