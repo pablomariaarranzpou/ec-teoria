@@ -69,11 +69,14 @@ function mostrarPregunta() {
     let input = document.createElement('input');
     let boton = document.createElement('button');
     input.type = 'text';
+    input.id = 'respuestaTexto'; // Asignar un ID al input
     input.classList.add('border', 'border-gray-300', 'rounded', 'py-2', 'px-4');
     boton.innerText = 'Validar';
     boton.classList.add('bg-gray-200', 'hover:bg-gray-300', 'text-black', 'font-medium', 'py-2', 'px-4', 'rounded');
-    boton.onclick = () => validarRespuesta(input.value);
+    boton.onclick = () => validarRespuesta(document.getElementById('respuestaTexto').value); // Usar el ID para obtener el valor
     opcionesDiv.appendChild(input);
+    opcionesDiv.appendChild(boton);
+  
     input.addEventListener('keyup', (event) => {
       if (event.key === 'Enter') {
         validarRespuesta(input.value);
