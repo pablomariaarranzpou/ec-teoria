@@ -1398,7 +1398,74 @@
   },
   "correcta": "d",
   "type": "multi"
+},
+
+{
+  "id": 123,
+  "text": "Quin ha estat un dels mètodes per augmentar la densitat d’informació als diferents suports d’informació òptics (CD-DVD-BluRay)?",
+  "respostes": {
+    "a": "Augmentar la velocitat de rotació del disc.",
+    "b": "Fer servir velocitat de rotació variable per zones.",
+    "c": "Disminuir la freqüència del laser que llegeix/escriu la informació.",
+    "d": "Disminuir la longitud d’ona del laser que llegeix/escriu la informació."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+
+{
+  "id": 124,
+  "text": "Amb un USB, quin tipus de transferència triaries per a imprimir un document?",
+  "respostes": {
+    "a": "Control.",
+    "b": "Bulk.",
+    "c": "Isòcrona.",
+    "d": "Interrupció."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 125,
+  "text": "Quin tipus de connexió faries servir per transferir dades de vídeo d’una càmera a un ordinador en temps real?",
+  "respostes": {
+    "a": "PCI.",
+    "b": "PCI-Express.",
+    "c": "USB 2.0.",
+    "d": "Firewire tipus A."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+
+{
+  "id": 126,
+  "text": "Quin tipus de busos/connexions permeten treballar a freqüències més altes?",
+  "respostes": {
+    "a": "Paral·lel.",
+    "b": "Sèrie Single-Ended.",
+    "c": "Sèrie Diferencial.",
+    "d": "Sèrie amb Interrupcions."
+  },
+  "correcta": "c",
+  "type": "multi"
+},
+{
+  "id": 127,
+  "text": "Com s’aconsegueix augmentar l’ample de banda a les memòries DDR3 respecte a les DDR2?",
+  "respostes": {
+    "a": "Augmentant l’amplada del bus d’adreces intern amb més registres d’E/S el doble de ràpid.",
+    "b": "Augmentant l’amplada del bus de dades intern amb més registres d’E/S el doble de ràpids.",
+    "c": "Augmentant la freqüència del bus de memòria.",
+    "d": "Fent transferències a més flancs del senyal de rellotge."
+  },
+  "correcta": "b",
+  "type": "multi"
 }
+
+
+
+
 
 
 

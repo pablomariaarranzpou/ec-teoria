@@ -113,9 +113,10 @@ function validarRespuesta(respuestaUsuario) {
     });
   } else {
     // Si la respuesta es incorrecta
+    let respuestaCorrecta = preguntaActual.type === 'multi' ? obtenerRespuestaCorrecta(preguntaActual) : preguntaActual.correcta;
     Swal.fire({
       title: 'Incorrecto',
-      text: `La respuesta correcta era: ${preguntaActual.respostes[preguntaActual.correcta]}`,
+      text: `La respuesta correcta era: ${respuestaCorrecta}`,
       icon: 'error',
       confirmButtonText: 'Siguiente pregunta'
 }).then(() => {
@@ -129,6 +130,8 @@ function validarRespuesta(respuestaUsuario) {
           respostes: preguntaActual.respostes,
           correcta: preguntaActual.correcta
         });
+        // baraajar las preguntas otra vez para que no queden todas al final
+        preguntas = preguntas.sort(() => Math.random() - 0.5);
         preguntas_incial++;
         preguntaActualIndex++;
         mostrarPregunta();
