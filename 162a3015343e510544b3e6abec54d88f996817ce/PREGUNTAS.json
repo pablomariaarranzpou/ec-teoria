@@ -1239,6 +1239,171 @@
       },
       "correcta": "a",
       "type": "multi"
-    }
+    },
+
+    {
+      "id": 110,
+      "text": "Quin és el principal avantatge de fer servir un bus multiplexat a un microprocessador?",
+      "respostes": {
+        "a": "El temps de cicle de rellotge es pot optimitzar.",
+        "b": "El temps de cicle de bus es pot optimitzar.",
+        "c": "El temps de cicle d’instrucció es pot optimitzar.",
+        "d": "Es pot implementar amb menys pins al encapsulat."
+      },
+      "correcta": "d",
+      "type": "multi"
+    },
+    {
+      "id": 111,
+      "text": "Als processadors amb “pipeline”, que una solució sigui dinàmica vol dir què:",
+      "respostes": {
+        "a": "Es du a terme mentre es compila el programa.",
+        "b": "Es du a terme al moment de executar les instruccions al processador.",
+        "c": "Es du a terme mentre s’escriu el programa.",
+        "d": "Es du a terme quan es passa de memòria principal a caché. "
+      },
+      "correcta": "b",
+      "type": "multi"
+    },
+    {
+      "id": 112,
+      "text": "Quin tipus de processador està optimitzat per processar vàries instruccions en paral·lel?",
+      "respostes": {
+        "a": "Els d’arquitectura Von Newman.",
+        "b": "Els processadors tipus SISD.",
+        "c": "Els processadors tipus MISD.",
+        "d": "Els processadors VLIW."
+      },
+      "correcta": "d",
+      "type": "multi"
+    },
+    {
+      "id": 113,
+      "text": "Quin és el propòsit de realitzar una jerarquia amb tots els tipus de memòries als ordinadors?",
+      "respostes": {
+        "a": "Aconseguir un sistema de memòria gran com la memòria caché a la velocitat de la memòria principal.",
+        "b": "Aconseguir un sistema de memòria gran com la memòria principal a la velocitat de la caché.",
+        "c": "Aconseguir un sistema de memòria gran com la memòria secundària a la velocitat d’una caché.",
+        "d": "Aconseguir un sistema de memòria gran com la memòria secundària a la velocitat de la memòria principal."
+      },
+      "correcta": "c",
+      "type": "multi"
+    },
+    {
+      "id": 114,
+      "text": "Quantes sortides necessita un decodificador de una caché completament associativa per seleccionar conjunt?",
+      "respostes": {
+        "a": "Cap.",
+        "b": "Tantes com conjunts tingui.",
+        "c": "Tantes com camins tingui.",
+        "d": "Cap de les anteriors respostes és correcte."
+      },
+      "correcta": "a",
+      "type": "multi"
+    },
+    {
+      "id": 115,
+      "text": "Quin paràmetre d’un processador queda deteriorat quan es multiplexen senyals de dades i adreces?",
+      "respostes": {
+        "a": "El número de pins del xip queda incrementat.",
+        "b": "El temps de cicle de rellotge.",
+        "c": "El temps de cicle de Bus.",
+        "d": "El sincronisme amb dispositiu lents."
+      },
+      "correcta": "c",
+      "type": "multi"
+    },
+{
+  "id": 116,
+  "text": "Quin és el paper del selector de segment (índex de segment) al càlcul d’adreces als IA-32?",
+  "respostes": {
+    "a": "Proporciona la mida del segment.",
+    "b": "Proporciona la base del segment.",
+    "c": "Proporciona el offset del segment.",
+    "d": "Proporciona la entrada al descriptor del segment a la taula de descriptors de segments."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+{
+  "id": 117,
+  "text": "De quin paràmetre depèn el número de bits camp LRU?",
+  "respostes": {
+    "a": "Del número de camins de cada conjunt.",
+    "b": "Del número de conjunts de la caché.",
+    "c": "Del número de conjunts de cada camí.",
+    "d": "Del número de línies de la caché."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 118,
+  "text": "L’ample de banda de transferència entre CPU i memòria principal de què depèn?",
+  "respostes": {
+    "a": "Només de la mida del bus de dades.",
+    "b": "Només de la mida del bus d’adreces.",
+    "c": "De la mida del bus d’adreces i de la freqüència de rellotge del bus.",
+    "d": "De la mida del bus de dades i de la freqüència de rellotge del bus."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+{
+  "id": 119,
+  "text": "Si tenim un sistema de segmentació al qual els descriptors de segment ocupen 64bits i la mida màxima de la taula de segments es 32kBytes. Quin serà el número màxim de segments que podem tenir?",
+  "respostes": {
+    "a": "4096.",
+    "b": "8192.",
+    "c": "16384.",
+    "d": "65535."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 120,
+  "text": "Quin dels següents interfícies NO es connecta al “Southbridge” o ICH?",
+  "respostes": {
+    "a": "Bus PCI-Express per video.",
+    "b": "Bus PCI.",
+    "c": "Controladors USB.",
+    "d": "Discos Duros SATA."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 121,
+  "text": "Estàs escoltant música que tens a un disc dur connectat a l’ordinador mitjançant un USB. Quin tipus de transferència és?",
+  "respostes": {
+    "a": "Control.",
+    "b": "Interrupció.",
+    "c": "Isòcrona.",
+    "d": "BULK."
+  },
+  "correcta": "c",
+  "type": "multi"
+},
+
+
+{
+  "id": 122,
+  "text": "Estàs escoltant música que tens a un disc dur connectat a l’ordinador mitjançant un USB. Quin tipus de transferència és?",
+  "respostes": {
+    "a": "Control.",
+    "b": "Interrupció.",
+    "c": "Isòcrona.",
+    "d": "BULK."
+  },
+  "correcta": "d",
+  "type": "multi"
+}
+
+
+
+
+
+
   ]
 }
