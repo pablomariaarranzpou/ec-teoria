@@ -4,11 +4,14 @@ let preguntasRespondidas = [];
 let correctas = 0;
 let incorrectas = 0;
 let totalPreguntas = 0;
+let preguntas_incial = 0;
 
 fetch('PREGUNTAS.json')
   .then(response => response.json())
   .then(data => {
+
     preguntas = data.preguntes;
+    preguntas_incial = preguntas.length;
     //shuffle preguntas
     preguntas = preguntas.sort(() => Math.random() - 0.5);
     //eliminar preguntas que sean iguales su text
@@ -23,6 +26,7 @@ fetch('PREGUNTAS.json')
   });
 
 function mostrarPregunta() {
+  totalPreguntas = preguntas.length;
   document.querySelector('h1').innerText = ` Pregunta ${preguntaActualIndex + 1} de ${totalPreguntas}`;
   if (preguntaActualIndex >= preguntas.length) {
     document.getElementById('pregunta').innerText = 'No hay más preguntas.';
@@ -38,7 +42,7 @@ function mostrarPregunta() {
   }
 
   let preguntaActual = preguntas[preguntaActualIndex];
-  
+
   if (preguntasRespondidas.includes(preguntaActual.id)) {
     preguntaActualIndex++;
     mostrarPregunta();
@@ -89,11 +93,10 @@ function mezclarArray(array) {
 
 function validarRespuesta(respuestaUsuario) {
   let preguntaActual = preguntas[preguntaActualIndex];
-  preguntasRespondidas.push(preguntaActual.id);
   let esCorrecta = preguntaActual.correcta === respuestaUsuario;
 
   if (esCorrecta) {
-    // Si la respuesta es correcta, muestra una alerta con SweetAlert
+    // Si la respuesta es correcta
     Swal.fire({
       title: '¡Correcto!',
       text: 'Tu respuesta es correcta.',
@@ -101,35 +104,35 @@ function validarRespuesta(respuestaUsuario) {
       confirmButtonText: 'Siguiente pregunta'
     }).then(() => {
       correctas++;
+      preguntasRespondidas.push(preguntaActual.id); // Añadir a preguntas respondidas
       preguntaActualIndex++;
       mostrarPregunta();
     });
   } else {
-    // Si la respuesta es incorrecta, muestra una alerta con SweetAlert
-    let respuestaCorrecta;
-    switch (preguntaActual.correcta) {
-      case 'a':
-        respuestaCorrecta = preguntaActual.respostes.a;
-        break;
-      case 'b':
-        respuestaCorrecta = preguntaActual.respostes.b;
-        break;
-      case 'c':
-        respuestaCorrecta = preguntaActual.respostes.c;
-        break;
-      default:
-        respuestaCorrecta = '';
-    }
+    // Si la respuesta es incorrecta
     Swal.fire({
       title: 'Incorrecto',
-      text: `La respuesta correcta era: ${respuestaCorrecta}`,
+      text: `La respuesta correcta era: ${preguntaActual.respostes[preguntaActual.correcta]}`,
       icon: 'error',
       confirmButtonText: 'Siguiente pregunta'
-    }).then(() => {
-      incorrectas++;
-      preguntaActualIndex++;
-      mostrarPregunta();
-    });
-  }
-  
+}).then(() => {
+        incorrectas++;
+        preguntas.push(preguntaActual); // Añadir la pregunta al final de la lista
+        //Para asegurarnos que nos lo sepamos la añadiremos otra vez con una id diferente de todas las demás
+        preguntas.push({
+          id: preguntas_incial + 1,
+          text: preguntaActual.text,
+          type: preguntaActual.type,
+          respostes: preguntaActual.respostes,
+          correcta: preguntaActual.correcta
+        });
+        preguntas_incial++;
+        preguntaActualIndex++;
+        mostrarPregunta();
+      });
+}
+}
+
+function obtenerRespuestaCorrecta(pregunta) {
+  return pregunta.respostes[pregunta.correcta] || '';
 }
