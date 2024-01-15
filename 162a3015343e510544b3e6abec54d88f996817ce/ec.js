@@ -50,7 +50,11 @@ function mostrarPregunta() {
   opcionesDiv.innerHTML = '';
 
   if (preguntaActual.type === 'multi') {
-    Object.entries(preguntaActual.respostes).forEach(([key, value]) => {
+    // Convertir las respuestas a un array y barajarlo
+    let respuestas = Object.entries(preguntaActual.respostes);
+    mezclarArray(respuestas);
+
+    respuestas.forEach(([key, value]) => {
       let boton = document.createElement('button');
       boton.innerText = value;
       boton.classList.add('bg-gray-200', 'hover:bg-gray-300', 'text-black', 'font-medium', 'py-2', 'px-4', 'rounded');
@@ -72,6 +76,14 @@ function mostrarPregunta() {
       }
     });
     opcionesDiv.appendChild(boton);
+  }
+}
+
+// Función para mezclar un array (Algoritmo de Fisher-Yates)
+function mezclarArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
 }
 
@@ -119,4 +131,5 @@ function validarRespuesta(respuestaUsuario) {
       mostrarPregunta();
     });
   }
+  
 }
