@@ -1396,7 +1396,7 @@
     "c": "Isòcrona.",
     "d": "BULK."
   },
-  "correcta": "d",
+  "correcta": "c",
   "type": "multi"
 },
 
@@ -1461,7 +1461,20 @@
   },
   "correcta": "b",
   "type": "multi"
+},
+{
+  "id": 128,
+  "text": "Quan queden definits les pistes i sectors en un disc dur?",
+  "respostes": {
+    "a": "Quan es formata a alt nivell.",
+    "b": "Quan es formata a baix nivell.",
+    "c": "A instal·lar el sistema operatiu.",
+    "d": "Quan es defineix la FAT."
+  },
+  "correcta": "b",
+  "type": "multi"
 }
+
 
 
 

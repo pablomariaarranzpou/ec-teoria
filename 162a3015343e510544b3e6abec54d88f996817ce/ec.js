@@ -119,24 +119,32 @@ function validarRespuesta(respuestaUsuario) {
       text: `La respuesta correcta era: ${respuestaCorrecta}`,
       icon: 'error',
       confirmButtonText: 'Siguiente pregunta'
-}).then(() => {
-        incorrectas++;
-        preguntas.push(preguntaActual); // Añadir la pregunta al final de la lista
-        //Para asegurarnos que nos lo sepamos la añadiremos otra vez con una id diferente de todas las demás
-        preguntas.push({
-          id: preguntas_incial + 1,
-          text: preguntaActual.text,
-          type: preguntaActual.type,
-          respostes: preguntaActual.respostes,
-          correcta: preguntaActual.correcta
-        });
-        // baraajar las preguntas otra vez para que no queden todas al final
-        preguntas = preguntas.sort(() => Math.random() - 0.5);
-        preguntas_incial++;
-        preguntaActualIndex++;
-        mostrarPregunta();
+    }).then(() => {
+      incorrectas++;
+      // Añadir la pregunta en dos posiciones aleatorias
+      let posicionReintroduccion1 = preguntaActualIndex + 1 + Math.floor(Math.random() * preguntas.length); // Ejemplo: añadir de 1 a 3 posiciones adelante
+      let posicionReintroduccion2 = preguntaActualIndex + 1 + Math.floor(Math.random() * preguntas.length); // Ejemplo: añadir de 1 a 3 posiciones adelante
+      
+      preguntas.splice(posicionReintroduccion1, 0, preguntaActual); // Añadir la pregunta en la primera posición aleatoria
+      
+      // Para asegurarnos que no se repita, añadiremos otra vez con una id diferente de todas las demás
+      preguntas.splice(posicionReintroduccion2, 0,{
+        id: preguntas_incial + 1,
+        text: preguntaActual.text,
+        type: preguntaActual.type,
+        respostes: preguntaActual.respostes,
+        correcta: preguntaActual.correcta
       });
-}
+      
+      // Resetear el index de la pregunta siguiente si se falla
+      preguntas_incial++;
+      
+      // La pregunta actual será el nuevo index de la parte ordenada
+      preguntaActualIndex++;
+      
+      mostrarPregunta();
+    });
+  }
 }
 
 function obtenerRespuestaCorrecta(pregunta) {
