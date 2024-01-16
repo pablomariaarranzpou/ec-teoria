@@ -4,11 +4,14 @@ let preguntasRespondidas = [];
 let correctas = 0;
 let incorrectas = 0;
 let totalPreguntas = 0;
+let preguntas_incial = 0;
 
 fetch('optimitzacio/optimitzacio.json')
   .then(response => response.json())
   .then(data => {
+
     preguntas = data.preguntes;
+    preguntas_incial = preguntas.length;
     //shuffle preguntas
     preguntas = preguntas.sort(() => Math.random() - 0.5);
     //eliminar preguntas que sean iguales su text
@@ -23,6 +26,7 @@ fetch('optimitzacio/optimitzacio.json')
   });
 
 function mostrarPregunta() {
+  totalPreguntas = preguntas.length;
   document.querySelector('h1').innerText = ` Pregunta ${preguntaActualIndex + 1} de ${totalPreguntas}`;
   if (preguntaActualIndex >= preguntas.length) {
     document.getElementById('pregunta').innerText = 'No hay más preguntas.';
@@ -38,7 +42,7 @@ function mostrarPregunta() {
   }
 
   let preguntaActual = preguntas[preguntaActualIndex];
-  
+
   if (preguntasRespondidas.includes(preguntaActual.id)) {
     preguntaActualIndex++;
     mostrarPregunta();
@@ -50,7 +54,11 @@ function mostrarPregunta() {
   opcionesDiv.innerHTML = '';
 
   if (preguntaActual.type === 'multi') {
-    Object.entries(preguntaActual.respostes).forEach(([key, value]) => {
+    // Convertir las respuestas a un array y barajarlo
+    let respuestas = Object.entries(preguntaActual.respostes);
+    mezclarArray(respuestas);
+
+    respuestas.forEach(([key, value]) => {
       let boton = document.createElement('button');
       boton.innerText = value;
       boton.classList.add('bg-gray-200', 'hover:bg-gray-300', 'text-black', 'font-medium', 'py-2', 'px-4', 'rounded');
@@ -61,11 +69,14 @@ function mostrarPregunta() {
     let input = document.createElement('input');
     let boton = document.createElement('button');
     input.type = 'text';
+    input.id = 'respuestaTexto'; // Asignar un ID al input
     input.classList.add('border', 'border-gray-300', 'rounded', 'py-2', 'px-4');
     boton.innerText = 'Validar';
     boton.classList.add('bg-gray-200', 'hover:bg-gray-300', 'text-black', 'font-medium', 'py-2', 'px-4', 'rounded');
-    boton.onclick = () => validarRespuesta(input.value);
+    boton.onclick = () => validarRespuesta(document.getElementById('respuestaTexto').value); // Usar el ID para obtener el valor
     opcionesDiv.appendChild(input);
+    opcionesDiv.appendChild(boton);
+  
     input.addEventListener('keyup', (event) => {
       if (event.key === 'Enter') {
         validarRespuesta(input.value);
@@ -75,13 +86,20 @@ function mostrarPregunta() {
   }
 }
 
+// Función para mezclar un array (Algoritmo de Fisher-Yates)
+function mezclarArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 function validarRespuesta(respuestaUsuario) {
   let preguntaActual = preguntas[preguntaActualIndex];
-  preguntasRespondidas.push(preguntaActual.id);
   let esCorrecta = preguntaActual.correcta === respuestaUsuario;
 
   if (esCorrecta) {
-    // Si la respuesta es correcta, muestra una alerta con SweetAlert
+    // Si la respuesta es correcta
     Swal.fire({
       title: '¡Correcto!',
       text: 'Tu respuesta es correcta.',
@@ -89,25 +107,13 @@ function validarRespuesta(respuestaUsuario) {
       confirmButtonText: 'Siguiente pregunta'
     }).then(() => {
       correctas++;
+      preguntasRespondidas.push(preguntaActual.id); // Añadir a preguntas respondidas
       preguntaActualIndex++;
       mostrarPregunta();
     });
   } else {
-    // Si la respuesta es incorrecta, muestra una alerta con SweetAlert
-    let respuestaCorrecta;
-    switch (preguntaActual.correcta) {
-      case 'a':
-        respuestaCorrecta = preguntaActual.respostes.a;
-        break;
-      case 'b':
-        respuestaCorrecta = preguntaActual.respostes.b;
-        break;
-      case 'c':
-        respuestaCorrecta = preguntaActual.respostes.c;
-        break;
-      default:
-        respuestaCorrecta = '';
-    }
+    // Si la respuesta es incorrecta
+    let respuestaCorrecta = preguntaActual.type === 'multi' ? obtenerRespuestaCorrecta(preguntaActual) : preguntaActual.correcta;
     Swal.fire({
       title: 'Incorrecto',
       text: `La respuesta correcta era: ${respuestaCorrecta}`,
@@ -115,8 +121,32 @@ function validarRespuesta(respuestaUsuario) {
       confirmButtonText: 'Siguiente pregunta'
     }).then(() => {
       incorrectas++;
+      // Añadir la pregunta en dos posiciones aleatorias
+      let posicionReintroduccion1 = preguntaActualIndex + 1 + Math.floor(Math.random() * preguntas.length); // Ejemplo: añadir de 1 a 3 posiciones adelante
+      let posicionReintroduccion2 = preguntaActualIndex + 1 + Math.floor(Math.random() * preguntas.length); // Ejemplo: añadir de 1 a 3 posiciones adelante
+      
+      preguntas.splice(posicionReintroduccion1, 0, preguntaActual); // Añadir la pregunta en la primera posición aleatoria
+      
+      // Para asegurarnos que no se repita, añadiremos otra vez con una id diferente de todas las demás
+      preguntas.splice(posicionReintroduccion2, 0,{
+        id: preguntas_incial + 1,
+        text: preguntaActual.text,
+        type: preguntaActual.type,
+        respostes: preguntaActual.respostes,
+        correcta: preguntaActual.correcta
+      });
+      
+      // Resetear el index de la pregunta siguiente si se falla
+      preguntas_incial++;
+      
+      // La pregunta actual será el nuevo index de la parte ordenada
       preguntaActualIndex++;
+      
       mostrarPregunta();
     });
   }
+}
+
+function obtenerRespuestaCorrecta(pregunta) {
+  return pregunta.respostes[pregunta.correcta] || '';
 }
