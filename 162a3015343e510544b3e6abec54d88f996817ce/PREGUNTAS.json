@@ -1473,6 +1473,18 @@
   },
   "correcta": "b",
   "type": "multi"
+},
+{
+  "id": 129,
+  "text": "Quin avantatja té fer servir transferències DMA de 2 cicles en comptes de les 1 cicle?",
+  "respostes": {
+    "a": "Permeten fer transferències de blocs de dades entre dispositius diferents.",
+    "b": "Permeten fer transferències de blocs de dades al mateix dispositiu.",
+    "c": "Velocitat.",
+    "d": "Seguretat."
+  },
+  "correcta": "b",
+  "type": "multi"
 }
 
 
