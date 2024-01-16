@@ -1485,7 +1485,136 @@
   },
   "correcta": "b",
   "type": "multi"
+},
+{
+  "id": 130,
+  "text": "En quin tipus de memòria han de estar les instruccions d’un programa al moment de l’execució?",
+  "respostes": {
+      "a": "Memòria secundària (HD DVD...).",
+      "b": "Memòria principal.",
+      "c": "Registres del processador.",
+      "d": "És independent de la memòria en que es trobin les instruccions mentre el sistema tingui accés a elles."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 132,
+  "text": "Quin/s tipus de processador/s permet/en aconseguir CPI (Clocks per Instrucció) més petits de 1? (2 correctas si fallas es la otra que has dudado)",
+  "respostes": {
+      "a": "Processadors tipus Von Newman.",
+      "b": "Pipeline.",
+      "c": "Superpipeline.",
+      "d": "Escalars."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 133,
+  "text": "A un processador tipus VLIW qui fa les tasques de adreçar les instruccions a les diferents unitats d’execució?",
+  "respostes": {
+      "a": "El compilador.",
+      "b": "La unitat de “Dispatch” del processador.",
+      "c": "La unitat de “Scheduling” del processador.",
+      "d": "El programador."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 136,
+  "text": "Quin és el tipus de memòria caché de nivell 1 més adient per a un processador d’altes prestacions?",
+  "respostes": {
+      "a": "Mapejat Directe i Unificada.",
+      "b": "Mapejat Directe i separada en D-Caché i I-Caché.",
+      "c": "Associativa de k-camins i Unificada.",
+      "d": "Associativa de k-camins i separada en D-Caché i I-Caché."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+{
+  "id": 137,
+  "text": "Quina situació és ideal per a optimitzar la utilització dels busos quan tenim cachés?",
+  "respostes": {
+      "a": "Arquitectura Look-Through i política d’escriptura Write-Through.",
+      "b": "Arquitectura Look-Through i política d’escriptura Write-Back.",
+      "c": "Arquitectura Look-Aside i política d’escriptura Write-Through.",
+      "d": "Arquitectura Look-Aside i política d’escriptura Write-Back."
+  },
+  "correcta": "b",
+  "type": "multi"
+},
+{
+  "id": 138,
+  "text": "Quin/s bit/s d’estatus de les caché indica/quen que s’ha modificat una dada a caché i no a memòria principal?",
+  "respostes": {
+      "a": "El “Dirty Bit”.",
+      "b": "El “Valid Bit”.",
+      "c": "Els bits del camp LRU.",
+      "d": "Els bits del camp LFU."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 141,
+  "text": "Quina és la base del funcionament de la memòria virtual?",
+  "respostes": {
+      "a": "El procés de particions fixes.",
+      "b": "El model de particions variables.",
+      "c": "La utilització de cachés de tipus TLB.",
+      "d": "La paginació per demanda."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+{
+  "id": 142,
+  "text": "Quin tipus de processadors necessiten unitats de “Dispatch” o “Scheduling”?",
+  "respostes": {
+      "a": "Superescalars.",
+      "b": "Pipeline o Superpipeline.",
+      "c": "Von Neuman.",
+      "d": "Harvard."
+  },
+  "correcta": "a",
+  "type": "multi"
+},
+{
+  "id": 143,
+  "text": "Quina tasca gestionar millor la segmentació que la paginació?",
+  "respostes": {
+      "a": "Aconseguir CPI que tendeixi a 1.",
+      "b": "Executar d’una forma efectiva multitasques.",
+      "c": "Gestió de memòria virtual.",
+      "d": "Protecció entre tasques i de dades de diferent nivell de privilegi."
+  },
+  "correcta": "d",
+  "type": "multi"
+},
+{
+  "id": 144,
+  "text": "L’ample de banda de transferència entre CPU i memòria principal de què depèn?",
+  "respostes": {
+      "a": "Només de la mida del bus de dades.",
+      "b": "Només de la mida del bus d’adreces.",
+      "c": "De la mida del bus d’adreces i de la freqüència de rellotge del bus.",
+      "d": "De la mida del bus de dades i de la freqüència de rellotge del bus."
+  },
+  "correcta": "d",
+  "type": "multi"
 }
+
+
+
+
+
+
+
+
+
 
 
 
