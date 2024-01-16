@@ -1499,18 +1499,6 @@
   "type": "multi"
 },
 {
-  "id": 132,
-  "text": "Quin/s tipus de processador/s permet/en aconseguir CPI (Clocks per Instrucció) més petits de 1? (2 correctas si fallas es la otra que has dudado)",
-  "respostes": {
-      "a": "Processadors tipus Von Newman.",
-      "b": "Pipeline.",
-      "c": "Superpipeline.",
-      "d": "Escalars."
-  },
-  "correcta": "b",
-  "type": "multi"
-},
-{
   "id": 133,
   "text": "A un processador tipus VLIW qui fa les tasques de adreçar les instruccions a les diferents unitats d’execució?",
   "respostes": {
