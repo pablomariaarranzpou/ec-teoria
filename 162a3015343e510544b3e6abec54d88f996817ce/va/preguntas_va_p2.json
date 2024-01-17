@@ -460,7 +460,21 @@
     },
     "correcta": "b",
     "type": "multi"
+},
+{
+    "id": "45",
+    "text": "La técnica de eigenfaces es invariante a",
+    "respostes": {
+        "a": "La rotación de la cara",
+        "b": "La escala (lo cerca de la cara)",
+        "c": "La iluminación de la cara",
+        "d": "Todas las anteriores"
+    },
+    "correcta": "c",
+    "type": "multi"
 }
+
+
         
         
         

@@ -101,7 +101,7 @@
             var muteButton = document.getElementById('mute-button');
             
             if(Hls.isSupported()) {
-                var hls = new Hls();
+                var hls = new Hls(); 
                 hls.loadSource('https://up.476328473.xyz/_v10/582795244dedd66b58c16e21711a29d3205517f46b9bcf9ec0f0934aba7827ab01510ba79dc93007da3819a8717307396cde71e366269807668daa34a226923d556264db2a7d677c26638e6e75f006e87f8bfc197769f4586e129dc795a4fdb21b274d71e508d830e87beddf135e78d986e710d49b10b033566669102773805b0756893393864866e80b152898c2c919/playlist.m3u8.m3u8'); // Put your video source here
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, function() {
