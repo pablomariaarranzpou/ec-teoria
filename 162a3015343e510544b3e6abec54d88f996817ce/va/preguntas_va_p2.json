@@ -347,6 +347,18 @@
                 "c": "Capa convolucional - luego max-pooling - RELU y finalmente una capa completamente conectada.",
                 "d": "Capa max-pooling, seguida de ReLU, luego una capa convolucional y finalmente una capa completamente conectada."
             },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": "36",
+            "text": "¿Qué no permite el Cascade Classifier de Viola-Jones al añadir más clasificadores?",
+            "respostes": {
+                "a": "Añadir falsos negativos",
+                "b": "Añadir falsos positivos",
+                "c": "Añadir más características Haar",
+                "d": "Añadir más clasificadores débiles"
+            },
             "correcta": "a",
             "type": "multi"
         }
