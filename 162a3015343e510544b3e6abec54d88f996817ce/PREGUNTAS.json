@@ -868,18 +868,6 @@
       "type": "multi"
     },
     {
-      "id": 79,
-      "text": "Quin paràmetre d’un processador queda deteriorat quan es multiplexen senyals de dades i adreces?",
-      "respostes": {
-        "a": "El número de pins del xip queda incrementat.",
-        "b": "El temps de cicle de rellotge.",
-        "c": "El temps de cicle de Bus.",
-        "d": "El sincronisme amb dispositiu lents."
-      },
-      "correcta": "b",
-      "type": "multi"
-    },
-    {
       "id": 80,
       "text": "A quin tipus de bus connectaries una caché externa a un sistema modern?",
       "respostes": {
