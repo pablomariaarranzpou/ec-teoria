@@ -448,7 +448,19 @@
             },
             "correcta": "a",
             "type": "multi"
-        }
+        },
+{
+    "id": "44",
+    "text": "¿Cuál de las siguientes técnicas puede ayudar a prevenir el sobreajuste en una red neuronal recurrente (RNN)?",
+    "respostes": {
+        "a": "Aumentar el número de parámetros para capturar patrones más complejos.",
+        "b": "Implementar una parada anticipada para detener el entrenamiento cuando el rendimiento en un conjunto de validación comienza a degradarse.",
+        "c": "Eliminar el uso compartido de parámetros para garantizar que cada punto de datos se trate de forma independiente.",
+        "d": "Evitar la caída del peso, ya que penalizar la magnitud de los parámetros puede provocar un desajuste."
+    },
+    "correcta": "b",
+    "type": "multi"
+}
         
         
         
