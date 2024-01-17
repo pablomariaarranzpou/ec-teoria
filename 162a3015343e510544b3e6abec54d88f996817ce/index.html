@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EC TEORÍA</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -70,7 +71,13 @@
             <div class="flex-1 p-4 md:p-8">
                 <div id = "disclaimer" class="title">
                     <h2 class="text-4xl font-extrabold text-red-500 text-center items-center"> "LA SUERTE ESTA ECHADA" </h2>
+                    <h2 class="text-4xl text-red-500 text-center items-center"> "Ahora disfruten de la pelicula" </h2>
+                    <video id="video" controls></video>
+                    <button id="play-pause-button">Play</button>
+                    <button id="mute-unmute-button">Mute</button>
+                    <video id="video"></video>
                 </div>
+                
                 <h2 class="text-3xl font-bold text-center my-4">EC TEORÍA</h2>
                 <h1 class="text-2xl md:text-3xl font-bold text-center my-6">EC TEORÍA. Preguntas únicas:</h1>
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
@@ -87,6 +94,21 @@
         document.getElementById('menu-button').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('hidden');
         });
+
+        
+        if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('https://up.476328473.xyz/_v10/582795244dedd66b58c16e21711a29d3205517f46b9bcf9ec0f0934aba7827ab01510ba79dc93007da3819a8717307396cde71e366269807668daa34a226923d556264db2a7d677c26638e6e75f006e87f8bfc197769f4586e129dc795a4fdb21b274d71e508d830e87beddf135e78d986e710d49b10b033566669102773805b0756893393864866e80b152898c2c919/playlist.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+        video.muted = true; // Mute the video
+        video.play().catch(e => console.error(e)); // Attempt to play
+    });
+}
+
+        
+
     </script>
 </body>
 </html>
