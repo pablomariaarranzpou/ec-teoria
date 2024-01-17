@@ -361,7 +361,97 @@
             },
             "correcta": "a",
             "type": "multi"
+        },
+
+        {
+            "id": "37",
+            "text": "Cual es el objetivo de la clasifiación de caracteristicas de imagenes?",
+            "respostes": {
+                "a": "Definir patrones de apariencia de objetos en la imagen",
+                "b": "Definir un espacio de características de imagen que permite representar objetos en función de su apariencia (o a través de un conjunto de características locales) en la imagen.",
+                "c": "Aplicar algoritmos de aprendizaje no supervisado para descubrir patrones ocultos en la imagen",
+                "d": "Definir técnicas de transferencia de aprendizaje para mejorar el rendimiento del modelo"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": "38",
+            "text": "Un píxel en una imagen integral...",
+            "respostes": {
+                "a": "Es la suma de todos los píxeles de la imagen tras aplicar una convolución sobre la imagen original con una máscara de tamaño nxn",
+                "b": "Es la suma de todos los píxeles de la imagen original que están por encima y a la izquierda de él",
+                "c": "Es el resultado de la segunda derivada de la imagen original",
+                "d": "Ninguno de los anteriores"
+
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": "39",
+            "text": "Cuantos puntos son necesarios para calcular con la imagen integral la suma de los píxeles de una región rectangular de la imagen?",
+            "respostes": {
+                "a": "1",
+                "b": "2",
+                "c": "6",
+                "d": "4"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": "40",
+            "text": "¿Que representan los eigenvalues?",
+            "respostes": {
+                "a": "Los vectores propios de la matriz de covarianza",
+                "b": "Los vectores propios de la matriz de covarianza normalizada",
+                "c": "Miden la variancia de la data en la direccion del eigenvector",
+                "d": "Miden la variancia de la data en la direccion del eigenvector normalizado"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": "41",
+            "text": "Para una imagen en escala de grises (n x n) y un filtro/Kernel (f x f), el dimensiones de la imagen resultante de una operación de convolución es",
+            "respostes": {
+                "a": "(n-f+1) x (n-f+1)",
+                "b": "(n+f-1) x (n+f-1)",
+                "c": "nxf",
+                "d": "fxf"
+            },
+            "correcta": "a",
+            "type": "multi"
+
+        },
+        {
+            "id":"42",
+            "text": "¿Como trabajmos con diferentes escalas de la imagen en el método de Viola-Jones?",
+            "respostes": {
+                "a": "Reescalando la imagen y no reescalando las características",
+                "b": "Reescalando la imagen y reescalando las características",
+                "c": "No reescalando la imagen y reescalando las características",
+                "d": "No reescalando la imagen y no reescalando las características"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id":"43",
+            "text": "¿A que da más prioridad los nuevos clasificadores débiles en adabost?",
+            "respostes": {
+                "a": "A los ejemplos que se clasificaron mal en el clasificador anterior",
+                "b": "A los ejemplos que se clasificaron bien en el clasificador anterior",
+                "c": "A los ejemplos que se clasificaron mal en el clasificador anterior y a los ejemplos que se clasificaron bien en el clasificador anterior",
+                "d": "A los ejemplos que se clasificaron mal en el clasificador anterior y a los ejemplos que se clasificaron bien en el clasificador anterior"
+            },
+            "correcta": "a",
+            "type": "multi"
         }
+        
+        
+        
         
         
 
