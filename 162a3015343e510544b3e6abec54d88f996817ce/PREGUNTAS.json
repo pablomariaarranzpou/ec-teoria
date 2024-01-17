@@ -856,18 +856,6 @@
       "type": "multi"
     },
     {
-      "id": 78,
-      "text": "Quantes sortides necessita un decodificador de una caché completament associativa per seleccionar conjunt?",
-      "respostes": {
-        "a": "Cap.",
-        "b": "Tantes com conjunts tingui.",
-        "c": "Tantes com camins tingui.",
-        "d": "Cap de les anteriors respostes és correcte."
-      },
-      "correcta": "b",
-      "type": "multi"
-    },
-    {
       "id": 80,
       "text": "A quin tipus de bus connectaries una caché externa a un sistema modern?",
       "respostes": {
