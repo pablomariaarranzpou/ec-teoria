@@ -27,10 +27,9 @@ fetch('PREGUNTAS.json')
 
 function mostrarPregunta() {
   totalPreguntas = preguntas.length;
-  if(preguntaActualIndex > 0){
+  if(preguntaActualIndex != 0){
     //eliminar h2 id disclaimer
-    let disclaimer = document.getElementById('disclaimer');
-    disclaimer.parentNode.removeChild(disclaimer);
+    let disclaimer = document.getElementById('disclaimer').setAttribute("hidden", "true");
   }
   document.querySelector('h1').innerText = ` Pregunta ${preguntaActualIndex + 1} de ${totalPreguntas}`;
   if (preguntaActualIndex >= preguntas.length) {
