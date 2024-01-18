@@ -242,7 +242,7 @@
         },
         {
             "id": 27,
-            "text": "Cuál de las siguientes afirmaciones es FALSA ?",
+            "text": "Cuál de las siguientes afirmaciones es VERDADERA ?",
             "respostes": {
                 "a": "La función de entropía cruzada (cross-entropy) se utiliza para calcular el error de una red neuronal",
                 "b": "La función de entropía cruzada (cross-entropy) se utiliza para dividir la imagen en regiones",
@@ -434,7 +434,7 @@
                 "c": "No reescalando la imagen y reescalando las características",
                 "d": "No reescalando la imagen y no reescalando las características"
             },
-            "correcta": "b",
+            "correcta": "a",
             "type": "multi"
         },
         {
