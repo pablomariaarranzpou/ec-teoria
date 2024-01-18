@@ -66,11 +66,17 @@
         <!-- Contenido Principal -->
         <div class="flex-1 p-4 md:p-8">
             <div id = "disclaimer" class="title">
-                <h3 class="text-4xl font-extrabold text-red-500 text-center items-center"> No me hago responsable de las preguntas correctas e incorrectas esto se ha hecho para uso personal y si puede ayudar a alguien más a estudiar mejor. </h3>
+                <div id = "disclaimer" class="title">
+                    <h2 class="text-4xl font-extrabold text-red-500 text-center items-center"> "LA SUERTE ESTA ECHADA" </h2>
+                    <h2 class="text-4xl text-red-500 text-center items-center"> "Ahora disfruten de la pelicula" </h2>
+                    <video id="video" controls playsinline></video>
+                    <button id="play-pause-button">Play</button>
+                    <button id="mute-unmute-button">Mute</button>
+                </div>
             </div>
             <div id="seleccion-parcial" class="flex justify-center space-x-2 my-4">
                 <button onclick="cargarPreguntas('preguntas_va_p1.json')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">SOLO PREGUNTAS EXAMEN SEGUNDO PARCIAL</button>
-                <button onclick="cargarPreguntas('preguntas_va_p2.json')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Segundo Parcial</button>
+                <button onclick="cargarPreguntas('preguntas_va_p2.json')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Segundo Parcial (más añadidas persoanlmente)</button>
                 <button onclick="cargarPreguntas('preguntas_va.json')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Todos</button>
             </div>
             
@@ -84,11 +90,60 @@
             </div>
         </div>
     </div>
-
     <script>
         // JavaScript para abrir y cerrar el menú lateral
         document.getElementById('menu-button').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('hidden');
+        });
+
+        // Video controls
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video');
+            var playButton = document.getElementById('play-button');
+            var muteButton = document.getElementById('mute-button');
+            
+            if(Hls.isSupported()) {
+                var hls = new Hls(); 
+                hls.loadSource('https://up.476328473.xyz/_v10/4d637d69232305c583f664df034fb52775bdc7a566082def1334d6aa884d2e3073b648667d3b81fae2fda7fbbe4941ac8fb9dcc925539060f6b497dc4a708293009b6270d8bf3c5a23787c65abb6f835094b528e0de229134105a793d86433fccac225dcd0abe92035386bd6206f670aa5ca268073fb3476d6a55878a164e43d8ceb4d19593b590ca1efd1cea65fd84d/playlist.m3u8'); // Put your video source here
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    playButton.addEventListener('click', function() {
+                        if (video.paused) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
+                    });
+
+                    muteButton.addEventListener('click', function() {
+                        if (video.muted) {
+                            video.muted = false;
+                        } else {
+                            video.muted = true;
+                        }
+                    });
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = 'https://up.476328473.xyz/_v10/4d637d69232305c583f664df034fb52775bdc7a566082def1334d6aa884d2e3073b648667d3b81fae2fda7fbbe4941ac8fb9dcc925539060f6b497dc4a708293009b6270d8bf3c5a23787c65abb6f835094b528e0de229134105a793d86433fccac225dcd0abe92035386bd6206f670aa5ca268073fb3476d6a55878a164e43d8ceb4d19593b590ca1efd1cea65fd84d/playlist.m3u8';
+ // Put your video source here
+                video.addEventListener('loadedmetadata', function() {
+                    playButton.addEventListener('click', function() {
+                        if (video.paused) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
+                    });
+
+                    muteButton.addEventListener('click', function() {
+                        if (video.muted) {
+                            video.muted = false;
+                        } else {
+                            video.muted = true;
+                        }
+                    });
+                });
+            }
         });
     </script>
 </body>

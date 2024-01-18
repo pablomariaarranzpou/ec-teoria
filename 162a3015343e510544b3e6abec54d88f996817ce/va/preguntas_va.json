@@ -163,7 +163,7 @@
                 "a": "Los pesos de las capas completamente conectadas",
                 "b": "Los pesos de las máscaras convolucionales",
                 "c": "Los parámetros de la función de pérdida",
-                "d": "a. y b."
+                "d": "Los pesos de las capas completamente conectadas y los pesos de las máscaras convolucionales"
             },
             "correcta": "d",
             "type": "multi"
@@ -179,6 +179,118 @@
             },
             "correcta": "b",
             "type": "multi"
-        }
+        },
+        {
+            "id": 81,
+            "text": "(EXAMEN 2023)El método de Eigenfaces utiliza como espacio de características:",
+            "respostes": {
+                "a": "Las derivadas de las Gaussianas",
+                "b": "El espacio de los eigenfaces",
+                "c": "El espacio definido por los histogramas de los tres canales de las imágenes en color",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+            },
+            {
+            "id": 82,
+            "text": "(EXAMEN 2023)Los valores propios de la matriz de covarianza de las caras de aprendizaje em el método de los eigenfaces sirve para:",
+            "respostes": {
+                "a": "Descartar eigenfaces redundantes e innecesarias",
+                "b": "Encontrar imagenes defectuosas en el conjunto de las imagenes de aprendizaje",
+                "c": "Determinar si una imagen contiene una cara o no",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+            },
+            {
+            "id": 83,
+            "text": "(EXAMEN 2023)Dado el método de los eigenfaces, k eigenfaces u1,u2,...,uk , la cara promedia es /X y una imagen de cara X, aplicando la fórumla: (w1,w2,3,...,wk) = (X - /X)T * (u1,u2,...,uk)",
+            "respostes": {
+                "a": "Obtenemos las coordenadas (w1,w2,w3,...,wk) de la imagen X en el espacio de los eigenfaces",
+                "b": "(w1,w2,w3,...,wk) corresponden a los valores propios de los eigenfaces.",
+                "c": "(w1,w2,w3,...,wk) son las k caras más parecidas a la cara X",
+                "d": "Ninguna de las anteriores"      
+            },
+            "correcta": "a",
+            "type": "multi"
+            },
+            {
+            "id": 84,
+            "text": "(EXAMEN 2023)Dada la representación de una imagen en el espacio de los eigenfaces X = /X + sum(w_i * u_i) donde u_i son los eigenfaces, si consideramosla iamgen X2=X/2 y consideramos su representación en el espacio de los eigenfaces X2 = /X2 + sum(w_2_i * u_2_i), entonces:",
+            "respostes": {
+                "a": "/X2 = (/x)/2 Y w2_i = w_i/2",
+                "b": "/X2 = (/x)/2 y u2_i = u_i/2",
+                "c": "/X2 = (/x) y u2_i = u_i",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+            },
+            {
+                "id": 85,
+                "text": "(EXAMEN 2023)En una imagen integral construida a partir de una imagen uint8, si el píxel de la esquina abajo derecha es 0, significa que:",
+                "respostes": {
+                    "a": "la imagen es negra",
+                    "b": "la imagen tiene tantos píxeles positivos como negativos",
+                    "c": "la última fila contiene solo 0s",
+                    "d": "ninguno de los anteriores"
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            
+            {
+                "id": 86,
+                "text": "(EXAMEN 2023)Una cascada es una secuencia de clasificadores donde:",
+                "respostes": {
+                    "a": "Cada clasificador contiene un Adaboost que contiene un clasificador débil",
+                    "b": "Cada clasificador contiene un Adaboost que intenta corregir los falsos positivos del clasificador anterior",
+                    "c": "Cada clasificador contiene un Adaboost que intenta corregir los falsos negativos del clasificador anterior",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 87,
+                "text": "(EXAMEN 2023)Aplicar una característica Haar tiene complejidad:",
+                "respostes": {
+                    "a": "O(n*m) donde (n,m) representa el tamaño de la imagen",
+                    "b": "O(1)",
+                    "c": "O(n*m) donde (n,m) representa el tamaño de la característica Haar",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 88,
+                "text": "(EXAMEN 2023)Entrenamos una red neuronal:",
+                "respostes": {
+                    "a": "minimizando la función de puntuación (score function)",
+                    "b": "minimizando la función de pérdida (loss function)",
+                    "c": "minimizando el número de parámetros que tiene la red",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 89,
+                "text": "(EXAMEN 2023)Una red neuronal tiene un gran número de pesos (parámetros) por entrenar que vienen principalmente de:",
+                "respostes": {
+                    "a": "Las capas convolucionales",
+                    "b": "Las capas de activación",
+                    "c": "Las capas de pooling y la función de pérdida",
+                    "d": "Las capas completamente conectadas (fully connected)"
+                },
+                "correcta": "d",
+                "type": "multi"
+            }
     ]
 }
