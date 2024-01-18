@@ -37,6 +37,10 @@ window.onload = () => {
 };
 
 function mostrarPregunta() {
+  if(preguntaActualIndex != 0){
+    //eliminar h2 id disclaimer
+    document.getElementById('disclaimer').setAttribute("hidden", "true");
+  }
   document.querySelector('h1').innerText = ` Pregunta ${preguntaActualIndex + 1} de ${totalPreguntas}`;
   if (preguntaActualIndex >= preguntas.length) {
     document.getElementById('pregunta').innerText = 'No hay más preguntas.';
