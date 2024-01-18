@@ -472,8 +472,181 @@
     },
     "correcta": "c",
     "type": "multi"
-}
+},
 
-
+{
+    "id": 46,
+    "text": "¿Cuál de las siguientes no es una limitación de la técnica de eigenfaces para el reconocimiento facial?",
+    "respostes": {
+    "a": "Requiere que las caras estén alineadas",
+    "b": "Sensible a las variaciones de iluminación",
+    "c": "Incapaz de manejar bien las expresiones faciales",
+    "d": "Incapaz de realizar clasificaciones en tiempo real"
+    },
+    "correcta": "d",
+    "type": "multi"
+    },
+    {
+        "id": 51,
+        "text": "En la detección de caras utilizando la cascada de clasificadores de Viola-Jones, ¿cuál es la idea principal detrás de la cascada?",
+        "respostes": {
+        "a": "Aumentar la velocidad de detección evitando la clasificación detallada en todas las etapas",
+        "b": "Mejorar la precisión combinando múltiples clasificadores fuertes",
+        "c": "Reducir la dimensión de las imágenes antes de la clasificación",
+        "d": "Aplicar una transformación no lineal a las características de la imagen"
+        },
+        "correcta": "a",
+        "type": "multi"
+    },
+    {
+        "id": 57,
+        "text": "¿Cuál es la principal ventaja de utilizar las redes neuronales convolucionales (CNN) para el análisis de imágenes sobre los enfoques tradicionales?",
+        "respostes": {
+        "a": "Requieren menos preprocesamiento de datos",
+        "b": "Son más rápidas en la clasificación",
+        "c": "Tienen una mejor interpretación de los resultados",
+        "d": "Aprenden automáticamente las características importantes de las imágenes"
+        },
+        "correcta": "d",
+        "type": "multi"
+        },
+        {
+            "id": 58,
+            "text": "¿Qué característica es esencial para que las CNNs manejen eficazmente las variaciones en la posición de los objetos dentro de las imágenes?",
+            "respostes": {
+                "a": "Conexiones densas",
+                "b": "Invariancia de traslación",
+                "c": "Normalización de lotes",
+                "d": "Dropout regularizado"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        
+        {
+            "id": 59,
+            "text": "En el contexto de la detección de caras con eigenfaces, ¿qué representa un eigenvalue (valor propio) en el análisis de componentes principales (PCA)?",
+            "respostes": {
+                "a": "La varianza de los datos en la dirección del eigenvector correspondiente",
+                "b": "El promedio de los valores de pixel en una cara",
+                "c": "La distancia entre las caras en el espacio de características",
+                "d": "La cantidad de ruido presente en las imágenes de caras"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        
+        {
+            "id": 60,
+            "text": "¿Qué estrategia se emplea comúnmente en las CNNs para reducir el número de parámetros y controlar el sobreajuste?",
+            "respostes": {
+                "a": "Aumento de la tasa de aprendizaje",
+                "b": "Uso de un número mayor de capas convolucionales",
+                "c": "Aplicación de la técnica de max-pooling",
+                "d": "Incremento en el tamaño del batch de entrenamiento"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        
+        {
+            "id": 61,
+            "text": "En la técnica de eigenfaces para el reconocimiento facial, ¿cuál es la función principal del análisis de componentes principales (PCA)?",
+            "respostes": {
+                "a": "Clasificar directamente las caras",
+                "b": "Aumentar el contraste entre las caras en las imágenes",
+                "c": "Reducir la dimensionalidad del espacio de caras",
+                "d": "Generar nuevas caras para aumentar el conjunto de datos"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        
+        {
+            "id": 62,
+            "text": "¿Qué método se utiliza en las CNNs para actualizar los pesos de la red de manera efectiva durante el entrenamiento?",
+            "respostes": {
+                "a": "Backpropagation",
+                "b": "Forward propagation",
+                "c": "Descentrado de gradientes",
+                "d": "Regularización L1"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        
+        {
+            "id": 63,
+            "text": "En la detección de caras, ¿qué ventaja ofrece el uso de una cascada de clasificadores como en el método de Viola-Jones?",
+            "respostes": {
+                "a": "Reduce la necesidad de datos de entrenamiento",
+                "b": "Disminuye la posibilidad de falsos negativos a cada etapa",
+                "c": "Aumenta la robustez frente a variaciones de iluminación",
+                "d": "Mejora la eficiencia computacional al descartar rápidamente regiones no faciales"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 66,
+            "text": "¿En qué consiste la técnica de 'data augmentation' en el contexto del entrenamiento de modelos de visión artificial?",
+            "respostes": {
+            "a": "Aumentar la cantidad de datos eliminando características irrelevantes",
+            "b": "Generar artificialmente más datos a partir del conjunto de datos existente",
+            "c": "Aumentar el número de parámetros en el modelo para ajustarse mejor a los datos",
+            "d": "Incrementar la profundidad de la red para mejorar la capacidad de extracción de características"
+            },
+            "correcta": "b",
+            "type": "multi"
+            },
+            {
+                "id": 67,
+                "text": "¿Qué método de la técnica de eigenfaces es responsable de proyectar las imágenes de caras en un espacio de menor dimensión?",
+                "respostes": {
+                "a": "Análisis de conglomerados",
+                "b": "Análisis de componentes principales (PCA)",
+                "c": "Transformada de Fourier",
+                "d": "Máquinas de vectores de soporte (SVM)"
+                },
+                "correcta": "b",
+                "type": "multi"
+                },
+                {
+                    "id": 69,
+                    "text": "En la técnica de eigenfaces, ¿qué se utiliza para medir cuánta varianza de los datos de las caras es capturada por cada componente principal?",
+                    "respostes": {
+                    "a": "La distancia euclidiana",
+                    "b": "El valor medio de las caras",
+                    "c": "Los eigenvalues asociados a los eigenvectors",
+                    "d": "El error de clasificación del modelo"
+                    },
+                    "correcta": "c",
+                    "type": "multi"
+                    },
+                    {
+                        "id": 70,
+                        "text": "¿Cuál es la principal ventaja de utilizar AdaBoost en la detección de caras?",
+                        "respostes": {
+                        "a": "Disminuir el tiempo de entrenamiento del clasificador",
+                        "b": "Aumentar la capacidad de la red para manejar datos de alta dimensión",
+                        "c": "Combinar múltiples clasificadores débiles para formar uno robusto",
+                        "d": "Reducir la necesidad de preprocesamiento de imágenes"
+                        },
+                        "correcta": "c",
+                        "type": "multi"
+                        },
+                        {
+                            "id": 71,
+                            "text": "En el método de Viola-Jones para la detección de caras, ¿qué papel juega el clasificador en cascada?",
+                            "respostes": {
+                            "a": "Identificar características específicas de la cara como ojos o boca",
+                            "b": "Reducir rápidamente el número de regiones a evaluar para la presencia de una cara",
+                            "c": "Mejorar la resolución de las imágenes de entrada",
+                            "d": "Aumentar la cantidad de características de Haar utilizadas en el proceso de detección"
+                            },
+                            "correcta": "b",
+                            "type": "multi"
+                            }
     ]
 }
+    
