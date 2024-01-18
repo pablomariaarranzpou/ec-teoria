@@ -646,7 +646,120 @@
                             },
                             "correcta": "b",
                             "type": "multi"
-                            }
+                            },
+
+                            {
+                                "id": 72,
+                                "text": "¿Cómo clasificamos una nueva imagen en el método de eigenfaces?",
+                                "respostes": {
+                                "a": "Calculando la distancia euclidiana entre la nueva imagen y las imágenes de entrenamiento",
+                                "b": "Proyectando la nueva imagen en el espacio de eigenfaces y luego utilizando un clasificador como k-NN para determinar la etiqueta más cercana",
+                                "c": "Comparando directamente los histogramas de color de la nueva imagen con los de las imágenes de entrenamiento",
+                                "d": "Usando una red neuronal para determinar las características más importantes de la nueva imagen"
+                                },
+                                "correcta": "b",
+                                "type": "multi"
+                                },
+                                {
+                                    "id": 73,
+                                    "text": "El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
+                                    "respostes": {
+                                        "a": "Utiliza kmeans para detectar el clúster que corresponde a una cara vs no cara.",
+                                        "b": "Utiliza un conjunto de imágenes de aprendizaje para entrenar un clasificador, en particular el Adaboost.",
+                                        "c": "Utiliza el método de knn para detectar si una imagen o una región de una imagen representa una cara.",
+                                        "d": "Utiliza características Haar que después las proyecta y agrupa en el espacio de los eigenfaces para decidir si una imagen o una región es una cara o no."
+                                    },
+                                    "correcta": "b",
+                                    "type": "multi"
+                                },
+                                {
+                                    "id": 74,
+                                    "text": "Una característica Haar está determinada por:",
+                                    "respostes": {
+                                    "a": "Un conjunto de 2 o 3 rectángulos con signos opuestos (1 y -1) que se aplica en una posición concreta de la imagen.",
+                                    "b": "Un conjunto de 2 o 3 rectángulos con signos opuestos que se aplican sobre toda la imagen.",
+                                    "c": "Un conjunto de 1 o 2 rectángulos con signos opuestos (1 y -1) que se aplica sobre la imagen en una posición concreta.",
+                                    "d": "Una máscara que puede tener cualquier valor y que se aplica sobre la imagen en una posición concreta para entrenar un clasificador."
+                                    },
+                                    "correcta": "a",
+                                    "type": "multi"
+                                    },
+                                    {
+                                        "id": 75,
+                                        "text": "Dada una imagen de caras, podemos obtener la imagen integral:",
+                                        "respostes": {
+                                            "a": "Aplicando el integral sobre la imagen original.",
+                                            "b": "Aplicando un banco de filtros de las derivadas de la Gaussiana.",
+                                            "c": "A partir de la imagen original sumando los valores de todos los píxeles a la izquierda y hacia arriba.",
+                                            "d": "Convolucionando la imagen original con un conjunto de características Haar."
+                                        },
+                                        "correcta": "c",
+                                        "type": "multi"
+                                    },
+                                    {
+                                        "id": 76,
+                                        "text": "Una cascada de clasificadores:",
+                                        "respostes": {
+                                        "a": "Es sinónimo de un clasificador Adaboost.",
+                                        "b": "Es un conjunto de clasificadores débiles.",
+                                        "c": "Es un conjunto de clasificadores Adaboost, donde cada Adaboost es un conjunto de clasificadores débiles.",
+                                        "d": "Es un conjunto de clasificadores Adaboost donde cada Adaboost intenta corregir el error del anterior recuperando las imágenes de caras que haya perdido el anterior."
+                                        },
+                                        "correcta": "c",
+                                        "type": "multi"
+                                        },
+                                        {
+                                            "id": 77,
+                                            "text": "El método de reconocimiento de caras basado en eigenfaces:",
+                                            "respostes": {
+                                                "a": "Tiene como objetivo aplicar el método del análisis de los componentes principales para encontrar los eigenfaces donde cada eigenface es un prototipo que representa una persona. Dada una nueva imagen de una cara la clasificación consiste en encontrar a qué eigenface se parece esta cara.",
+                                                "b": "Pretende encontrar un nuevo espacio que tiene como bases los eigenfaces donde se hace la clasificación. La ventaja de este nuevo espacio es que es de menor dimensionalidad que el espacio original de las caras y que representa mejor las caras.",
+                                                "c": "Pretende construir una cascada de eigenfaces para reconocer personas.",
+                                                "d": "Se puede aplicar sólo si las imágenes están en color."
+                                            },
+                                            "correcta": "b",
+                                            "type": "multi"
+                                        },
+                                        {
+                                            "id": 78,
+                                            "text": "El problema de reconocimiento de caras es:",
+                                            "respostes": {
+                                                "a": "Una forma de crear un sistema biométrico.",
+                                                "b": "La única forma de tener un sistema biométrico.",
+                                                "c": "No tiene nada que ver con los sistemas biométricos.",
+                                                "d": "La última fase en cualquier sistema biométrico."
+                                            },
+                                            "correcta": "a",
+                                            "type": "multi"
+                                        },
+                                        {
+                                            "id": 79,
+                                            "text": "En el espacio de los eigenfaces, cada punto:",
+                                            "respostes": {
+                                            "a": "Corresponde a una cara.",
+                                            "b": "Corresponde a un píxel de una cara.",
+                                            "c": "Corresponde a una fila de una imagen de una cara.",
+                                            "d": "Corresponde a un eigenface."
+                                            },
+                                            "correcta": "a",
+                                            "type": "multi"
+                                            },
+                                            {
+                                                "id": 80,
+                                                "text": "En el espacio de los eigenfaces, para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
+                                                "respostes": {
+                                                "a": "Antes hemos de aplicar un clustering con kmeans para agrupar todos los ejemplos de caras de la misma persona.",
+                                                "b": "El método nos dará error ya que por definición el conjunto de aprendizaje y test han de ser diferentes.",
+                                                "c": "El método knn (lo más probable) nos retornará la misma imagen.",
+                                                "d": "El método knn nos retornará la eigenface más parecida."
+                                                },
+                                                "correcta": "c",
+                                                "type": "multi"
+                                                }
+
+
+
+                        
     ]
 }
     
