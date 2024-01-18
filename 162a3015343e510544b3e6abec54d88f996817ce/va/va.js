@@ -10,6 +10,14 @@ function cargarPreguntas(archivo) {
   fetch(`va/${archivo}`)
     .then(response => response.json())
     .then(data => {
+      //reset de variables si hemos abierto un archivo nuevo es que queremos empezar de 0
+      preguntaActualIndex = 0;
+      preguntasRespondidas = [];
+      correctas = 0;
+      incorrectas = 0;
+      totalPreguntas = 0;
+      preguntasInicial = 0;
+      // Cargar preguntas
       preguntas = data.preguntes;
       // Shuffle preguntas
       preguntas = preguntas.sort(() => Math.random() - 0.5);
