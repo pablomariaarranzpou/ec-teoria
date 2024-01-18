@@ -91,7 +91,7 @@
                 "a": "Los pesos de las capas completamente conectadas",
                 "b": "Los pesos de las máscaras convolucionales",
                 "c": "Los parámetros de la función de pérdida",
-                "d": "a. y b."
+                "d": "Los pesos de las capas completamente conectadas y Los pesos de las máscaras convolucionales."
             },
             "correcta": "d",
             "type": "multi"
@@ -339,7 +339,7 @@
             "type": "multi"
         },
         {
-            "id": "35",
+            "id": 35,
             "text": "En una CNN, ¿cómo se suele estructurar la secuencia de capas para el procesamiento efectivo de imágenes?",
             "respostes": {
                 "a": "Capa convolucional - ReLU - max-pooling y finalmente una capa completamente conectada.",
@@ -351,7 +351,7 @@
             "type": "multi"
         },
         {
-            "id": "36",
+            "id": 36,
             "text": "¿Qué no permite el Cascade Classifier de Viola-Jones al añadir más clasificadores?",
             "respostes": {
                 "a": "Añadir falsos negativos",
@@ -364,7 +364,7 @@
         },
 
         {
-            "id": "37",
+            "id": 37,
             "text": "Cual es el objetivo de la clasifiación de caracteristicas de imagenes?",
             "respostes": {
                 "a": "Definir patrones de apariencia de objetos en la imagen",
@@ -376,7 +376,7 @@
             "type": "multi"
         },
         {
-            "id": "38",
+            "id": 38,
             "text": "Un píxel en una imagen integral...",
             "respostes": {
                 "a": "Es la suma de todos los píxeles de la imagen tras aplicar una convolución sobre la imagen original con una máscara de tamaño nxn",
@@ -389,7 +389,7 @@
             "type": "multi"
         },
         {
-            "id": "39",
+            "id": 39,
             "text": "Cuantos puntos son necesarios para calcular con la imagen integral la suma de los píxeles de una región rectangular de la imagen?",
             "respostes": {
                 "a": "1",
@@ -401,7 +401,7 @@
             "type": "multi"
         },
         {
-            "id": "40",
+            "id": 40,
             "text": "¿Que representan los eigenvalues?",
             "respostes": {
                 "a": "Los vectores propios de la matriz de covarianza",
@@ -413,7 +413,7 @@
             "type": "multi"
         },
         {
-            "id": "41",
+            "id": 41,
             "text": "Para una imagen en escala de grises (n x n) y un filtro/Kernel (f x f), el dimensiones de la imagen resultante de una operación de convolución es",
             "respostes": {
                 "a": "(n-f+1) x (n-f+1)",
@@ -426,7 +426,7 @@
 
         },
         {
-            "id":"42",
+            "id":42,
             "text": "¿Como trabajmos con diferentes escalas de la imagen en el método de Viola-Jones?",
             "respostes": {
                 "a": "Reescalando la imagen y no reescalando las características",
@@ -438,7 +438,7 @@
             "type": "multi"
         },
         {
-            "id":"43",
+            "id":43,
             "text": "¿A que da más prioridad los nuevos clasificadores débiles en adabost?",
             "respostes": {
                 "a": "A los ejemplos que se clasificaron mal en el clasificador anterior",
@@ -450,8 +450,8 @@
             "type": "multi"
         },
 {
-    "id": "44",
-    "text": "¿Cuál de las siguientes técnicas puede ayudar a prevenir el sobreajuste en una red neuronal recurrente (RNN)?",
+    "id": 44,
+    "text": "¿Cuál de las siguientes técnicas puede ayudar a prevenir el sobreajuste en una red neuronal?",
     "respostes": {
         "a": "Aumentar el número de parámetros para capturar patrones más complejos.",
         "b": "Implementar una parada anticipada para detener el entrenamiento cuando el rendimiento en un conjunto de validación comienza a degradarse.",
@@ -462,7 +462,7 @@
     "type": "multi"
 },
 {
-    "id": "45",
+    "id": 45,
     "text": "La técnica de eigenfaces es invariante a",
     "respostes": {
         "a": "La rotación de la cara",
