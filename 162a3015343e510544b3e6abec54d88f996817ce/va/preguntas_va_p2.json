@@ -300,7 +300,6 @@
             "correcta": "a",
             "type": "multi"
         },
-
         {
             "id": 32,
             "text": "¿Si estamos en un clasificador con la formula f(x)=w*x+b, que es w?",
@@ -325,7 +324,6 @@
             "correcta": "d",
             "type": "multi"
         },
-
         {
             "id": 34,
             "text": "¿Si estamos en un clasificador con la formula f(x)=w*x+b, que es x?",
@@ -362,7 +360,6 @@
             "correcta": "a",
             "type": "multi"
         },
-
         {
             "id": 37,
             "text": "Cual es el objetivo de la clasifiación de caracteristicas de imagenes?",
@@ -383,7 +380,6 @@
                 "b": "Es la suma de todos los píxeles de la imagen original que están por encima y a la izquierda de él",
                 "c": "Es el resultado de la segunda derivada de la imagen original",
                 "d": "Ninguno de los anteriores"
-
             },
             "correcta": "b",
             "type": "multi"
@@ -423,10 +419,9 @@
             },
             "correcta": "a",
             "type": "multi"
-
         },
         {
-            "id":42,
+            "id": 42,
             "text": "¿Como trabajmos con diferentes escalas de la imagen en el método de Viola-Jones?",
             "respostes": {
                 "a": "Reescalando la imagen y no reescalando las características",
@@ -438,7 +433,7 @@
             "type": "multi"
         },
         {
-            "id":43,
+            "id": 43,
             "text": "¿A que da más prioridad los nuevos clasificadores débiles en adabost?",
             "respostes": {
                 "a": "A los ejemplos que se clasificaron mal en el clasificador anterior",
@@ -449,66 +444,65 @@
             "correcta": "a",
             "type": "multi"
         },
-{
-    "id": 44,
-    "text": "¿Cuál de las siguientes técnicas puede ayudar a prevenir el sobreajuste en una red neuronal?",
-    "respostes": {
-        "a": "Aumentar el número de parámetros para capturar patrones más complejos.",
-        "b": "Implementar una parada anticipada para detener el entrenamiento cuando el rendimiento en un conjunto de validación comienza a degradarse.",
-        "c": "Eliminar el uso compartido de parámetros para garantizar que cada punto de datos se trate de forma independiente.",
-        "d": "Evitar la caída del peso, ya que penalizar la magnitud de los parámetros puede provocar un desajuste."
-    },
-    "correcta": "b",
-    "type": "multi"
-},
-{
-    "id": 45,
-    "text": "La técnica de eigenfaces es invariante a",
-    "respostes": {
-        "a": "La rotación de la cara",
-        "b": "La escala (lo cerca de la cara)",
-        "c": "La iluminación de la cara",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "c",
-    "type": "multi"
-},
-
-{
-    "id": 46,
-    "text": "¿Cuál de las siguientes no es una limitación de la técnica de eigenfaces para el reconocimiento facial?",
-    "respostes": {
-    "a": "Requiere que las caras estén alineadas",
-    "b": "Sensible a las variaciones de iluminación",
-    "c": "Incapaz de manejar bien las expresiones faciales",
-    "d": "Incapaz de realizar clasificaciones en tiempo real"
-    },
-    "correcta": "d",
-    "type": "multi"
-    },
-    {
-        "id": 51,
-        "text": "En la detección de caras utilizando la cascada de clasificadores de Viola-Jones, ¿cuál es la idea principal detrás de la cascada?",
-        "respostes": {
-        "a": "Aumentar la velocidad de detección evitando la clasificación detallada en todas las etapas",
-        "b": "Mejorar la precisión combinando múltiples clasificadores fuertes",
-        "c": "Reducir la dimensión de las imágenes antes de la clasificación",
-        "d": "Aplicar una transformación no lineal a las características de la imagen"
+        {
+            "id": 44,
+            "text": "¿Cuál de las siguientes técnicas puede ayudar a prevenir el sobreajuste en una red neuronal?",
+            "respostes": {
+                "a": "Aumentar el número de parámetros para capturar patrones más complejos.",
+                "b": "Implementar una parada anticipada para detener el entrenamiento cuando el rendimiento en un conjunto de validación comienza a degradarse.",
+                "c": "Eliminar el uso compartido de parámetros para garantizar que cada punto de datos se trate de forma independiente.",
+                "d": "Evitar la caída del peso, ya que penalizar la magnitud de los parámetros puede provocar un desajuste."
+            },
+            "correcta": "b",
+            "type": "multi"
         },
-        "correcta": "a",
-        "type": "multi"
-    },
-    {
-        "id": 57,
-        "text": "¿Cuál es la principal ventaja de utilizar las redes neuronales convolucionales (CNN) para el análisis de imágenes sobre los enfoques tradicionales?",
-        "respostes": {
-        "a": "Requieren menos preprocesamiento de datos",
-        "b": "Son más rápidas en la clasificación",
-        "c": "Tienen una mejor interpretación de los resultados",
-        "d": "Aprenden automáticamente las características importantes de las imágenes"
+        {
+            "id": 45,
+            "text": "La técnica de eigenfaces es invariante a",
+            "respostes": {
+                "a": "La rotación de la cara",
+                "b": "La escala (lo cerca de la cara)",
+                "c": "La iluminación de la cara",
+                "d": "Todas las anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
         },
-        "correcta": "d",
-        "type": "multi"
+        {
+            "id": 46,
+            "text": "¿Cuál de las siguientes no es una limitación de la técnica de eigenfaces para el reconocimiento facial?",
+            "respostes": {
+                "a": "Requiere que las caras estén alineadas",
+                "b": "Sensible a las variaciones de iluminación",
+                "c": "Incapaz de manejar bien las expresiones faciales",
+                "d": "Incapaz de realizar clasificaciones en tiempo real"
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 51,
+            "text": "En la detección de caras utilizando la cascada de clasificadores de Viola-Jones, ¿cuál es la idea principal detrás de la cascada?",
+            "respostes": {
+                "a": "Aumentar la velocidad de detección evitando la clasificación detallada en todas las etapas",
+                "b": "Mejorar la precisión combinando múltiples clasificadores fuertes",
+                "c": "Reducir la dimensión de las imágenes antes de la clasificación",
+                "d": "Aplicar una transformación no lineal a las características de la imagen"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 57,
+            "text": "¿Cuál es la principal ventaja de utilizar las redes neuronales convolucionales (CNN) para el análisis de imágenes sobre los enfoques tradicionales?",
+            "respostes": {
+                "a": "Requieren menos preprocesamiento de datos",
+                "b": "Son más rápidas en la clasificación",
+                "c": "Tienen una mejor interpretación de los resultados",
+                "d": "Aprenden automáticamente las características importantes de las imágenes"
+            },
+            "correcta": "d",
+            "type": "multi"
         },
         {
             "id": 58,
@@ -522,7 +516,6 @@
             "correcta": "b",
             "type": "multi"
         },
-        
         {
             "id": 59,
             "text": "En el contexto de la detección de caras con eigenfaces, ¿qué representa un eigenvalue (valor propio) en el análisis de componentes principales (PCA)?",
@@ -535,7 +528,6 @@
             "correcta": "a",
             "type": "multi"
         },
-        
         {
             "id": 60,
             "text": "¿Qué estrategia se emplea comúnmente en las CNNs para reducir el número de parámetros y controlar el sobreajuste?",
@@ -548,7 +540,6 @@
             "correcta": "c",
             "type": "multi"
         },
-        
         {
             "id": 61,
             "text": "En la técnica de eigenfaces para el reconocimiento facial, ¿cuál es la función principal del análisis de componentes principales (PCA)?",
@@ -561,7 +552,6 @@
             "correcta": "c",
             "type": "multi"
         },
-        
         {
             "id": 62,
             "text": "¿Qué método se utiliza en las CNNs para actualizar los pesos de la red de manera efectiva durante el entrenamiento?",
@@ -574,7 +564,6 @@
             "correcta": "a",
             "type": "multi"
         },
-        
         {
             "id": 63,
             "text": "En la detección de caras, ¿qué ventaja ofrece el uso de una cascada de clasificadores como en el método de Viola-Jones?",
@@ -591,175 +580,169 @@
             "id": 66,
             "text": "¿En qué consiste la técnica de 'data augmentation' en el contexto del entrenamiento de modelos de visión artificial?",
             "respostes": {
-            "a": "Aumentar la cantidad de datos eliminando características irrelevantes",
-            "b": "Generar artificialmente más datos a partir del conjunto de datos existente",
-            "c": "Aumentar el número de parámetros en el modelo para ajustarse mejor a los datos",
-            "d": "Incrementar la profundidad de la red para mejorar la capacidad de extracción de características"
+                "a": "Aumentar la cantidad de datos eliminando características irrelevantes",
+                "b": "Generar artificialmente más datos a partir del conjunto de datos existente",
+                "c": "Aumentar el número de parámetros en el modelo para ajustarse mejor a los datos",
+                "d": "Incrementar la profundidad de la red para mejorar la capacidad de extracción de características"
             },
             "correcta": "b",
             "type": "multi"
-            },
-            {
-                "id": 67,
-                "text": "¿Qué método de la técnica de eigenfaces es responsable de proyectar las imágenes de caras en un espacio de menor dimensión?",
-                "respostes": {
+        },
+        {
+            "id": 67,
+            "text": "¿Qué método de la técnica de eigenfaces es responsable de proyectar las imágenes de caras en un espacio de menor dimensión?",
+            "respostes": {
                 "a": "Análisis de conglomerados",
                 "b": "Análisis de componentes principales (PCA)",
                 "c": "Transformada de Fourier",
                 "d": "Máquinas de vectores de soporte (SVM)"
-                },
-                "correcta": "b",
-                "type": "multi"
-                },
-                {
-                    "id": 69,
-                    "text": "En la técnica de eigenfaces, ¿qué se utiliza para medir cuánta varianza de los datos de las caras es capturada por cada componente principal?",
-                    "respostes": {
-                    "a": "La distancia euclidiana",
-                    "b": "El valor medio de las caras",
-                    "c": "Los eigenvalues asociados a los eigenvectors",
-                    "d": "El error de clasificación del modelo"
-                    },
-                    "correcta": "c",
-                    "type": "multi"
-                    },
-                    {
-                        "id": 70,
-                        "text": "¿Cuál es la principal ventaja de utilizar AdaBoost en la detección de caras?",
-                        "respostes": {
-                        "a": "Disminuir el tiempo de entrenamiento del clasificador",
-                        "b": "Aumentar la capacidad de la red para manejar datos de alta dimensión",
-                        "c": "Combinar múltiples clasificadores débiles para formar uno robusto",
-                        "d": "Reducir la necesidad de preprocesamiento de imágenes"
-                        },
-                        "correcta": "c",
-                        "type": "multi"
-                        },
-                        {
-                            "id": 71,
-                            "text": "En el método de Viola-Jones para la detección de caras, ¿qué papel juega el clasificador en cascada?",
-                            "respostes": {
-                            "a": "Identificar características específicas de la cara como ojos o boca",
-                            "b": "Reducir rápidamente el número de regiones a evaluar para la presencia de una cara",
-                            "c": "Mejorar la resolución de las imágenes de entrada",
-                            "d": "Aumentar la cantidad de características de Haar utilizadas en el proceso de detección"
-                            },
-                            "correcta": "b",
-                            "type": "multi"
-                            },
-
-                            {
-                                "id": 72,
-                                "text": "¿Cómo clasificamos una nueva imagen en el método de eigenfaces?",
-                                "respostes": {
-                                "a": "Calculando la distancia euclidiana entre la nueva imagen y las imágenes de entrenamiento",
-                                "b": "Proyectando la nueva imagen en el espacio de eigenfaces y luego utilizando un clasificador como k-NN para determinar la etiqueta más cercana",
-                                "c": "Comparando directamente los histogramas de color de la nueva imagen con los de las imágenes de entrenamiento",
-                                "d": "Usando una red neuronal para determinar las características más importantes de la nueva imagen"
-                                },
-                                "correcta": "b",
-                                "type": "multi"
-                                },
-                                {
-                                    "id": 73,
-                                    "text": "El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
-                                    "respostes": {
-                                        "a": "Utiliza kmeans para detectar el clúster que corresponde a una cara vs no cara.",
-                                        "b": "Utiliza un conjunto de imágenes de aprendizaje para entrenar un clasificador, en particular el Adaboost.",
-                                        "c": "Utiliza el método de knn para detectar si una imagen o una región de una imagen representa una cara.",
-                                        "d": "Utiliza características Haar que después las proyecta y agrupa en el espacio de los eigenfaces para decidir si una imagen o una región es una cara o no."
-                                    },
-                                    "correcta": "b",
-                                    "type": "multi"
-                                },
-                                {
-                                    "id": 74,
-                                    "text": "Una característica Haar está determinada por:",
-                                    "respostes": {
-                                    "a": "Un conjunto de 2 o 3 rectángulos con signos opuestos (1 y -1) que se aplica en una posición concreta de la imagen.",
-                                    "b": "Un conjunto de 2 o 3 rectángulos con signos opuestos que se aplican sobre toda la imagen.",
-                                    "c": "Un conjunto de 1 o 2 rectángulos con signos opuestos (1 y -1) que se aplica sobre la imagen en una posición concreta.",
-                                    "d": "Una máscara que puede tener cualquier valor y que se aplica sobre la imagen en una posición concreta para entrenar un clasificador."
-                                    },
-                                    "correcta": "a",
-                                    "type": "multi"
-                                    },
-                                    {
-                                        "id": 75,
-                                        "text": "Dada una imagen de caras, podemos obtener la imagen integral:",
-                                        "respostes": {
-                                            "a": "Aplicando el integral sobre la imagen original.",
-                                            "b": "Aplicando un banco de filtros de las derivadas de la Gaussiana.",
-                                            "c": "A partir de la imagen original sumando los valores de todos los píxeles a la izquierda y hacia arriba.",
-                                            "d": "Convolucionando la imagen original con un conjunto de características Haar."
-                                        },
-                                        "correcta": "c",
-                                        "type": "multi"
-                                    },
-                                    {
-                                        "id": 76,
-                                        "text": "Una cascada de clasificadores:",
-                                        "respostes": {
-                                        "a": "Es sinónimo de un clasificador Adaboost.",
-                                        "b": "Es un conjunto de clasificadores débiles.",
-                                        "c": "Es un conjunto de clasificadores Adaboost, donde cada Adaboost es un conjunto de clasificadores débiles.",
-                                        "d": "Es un conjunto de clasificadores Adaboost donde cada Adaboost intenta corregir el error del anterior recuperando las imágenes de caras que haya perdido el anterior."
-                                        },
-                                        "correcta": "c",
-                                        "type": "multi"
-                                        },
-                                        {
-                                            "id": 77,
-                                            "text": "El método de reconocimiento de caras basado en eigenfaces:",
-                                            "respostes": {
-                                                "a": "Tiene como objetivo aplicar el método del análisis de los componentes principales para encontrar los eigenfaces donde cada eigenface es un prototipo que representa una persona. Dada una nueva imagen de una cara la clasificación consiste en encontrar a qué eigenface se parece esta cara.",
-                                                "b": "Pretende encontrar un nuevo espacio que tiene como bases los eigenfaces donde se hace la clasificación. La ventaja de este nuevo espacio es que es de menor dimensionalidad que el espacio original de las caras y que representa mejor las caras.",
-                                                "c": "Pretende construir una cascada de eigenfaces para reconocer personas.",
-                                                "d": "Se puede aplicar sólo si las imágenes están en color."
-                                            },
-                                            "correcta": "b",
-                                            "type": "multi"
-                                        },
-                                        {
-                                            "id": 78,
-                                            "text": "El problema de reconocimiento de caras es:",
-                                            "respostes": {
-                                                "a": "Una forma de crear un sistema biométrico.",
-                                                "b": "La única forma de tener un sistema biométrico.",
-                                                "c": "No tiene nada que ver con los sistemas biométricos.",
-                                                "d": "La última fase en cualquier sistema biométrico."
-                                            },
-                                            "correcta": "a",
-                                            "type": "multi"
-                                        },
-                                        {
-                                            "id": 79,
-                                            "text": "En el espacio de los eigenfaces, cada punto:",
-                                            "respostes": {
-                                            "a": "Corresponde a una cara.",
-                                            "b": "Corresponde a un píxel de una cara.",
-                                            "c": "Corresponde a una fila de una imagen de una cara.",
-                                            "d": "Corresponde a un eigenface."
-                                            },
-                                            "correcta": "a",
-                                            "type": "multi"
-                                            },
-                                            {
-                                                "id": 80,
-                                                "text": "En el espacio de los eigenfaces, para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
-                                                "respostes": {
-                                                "a": "Antes hemos de aplicar un clustering con kmeans para agrupar todos los ejemplos de caras de la misma persona.",
-                                                "b": "El método nos dará error ya que por definición el conjunto de aprendizaje y test han de ser diferentes.",
-                                                "c": "El método knn (lo más probable) nos retornará la misma imagen.",
-                                                "d": "El método knn nos retornará la eigenface más parecida."
-                                                },
-                                                "correcta": "c",
-                                                "type": "multi"
-                                                }
-
-
-
-                        
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 69,
+            "text": "En la técnica de eigenfaces, ¿qué se utiliza para medir cuánta varianza de los datos de las caras es capturada por cada componente principal?",
+            "respostes": {
+                "a": "La distancia euclidiana",
+                "b": "El valor medio de las caras",
+                "c": "Los eigenvalues asociados a los eigenvectors",
+                "d": "El error de clasificación del modelo"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 70,
+            "text": "¿Cuál es la principal ventaja de utilizar AdaBoost en la detección de caras?",
+            "respostes": {
+                "a": "Disminuir el tiempo de entrenamiento del clasificador",
+                "b": "Aumentar la capacidad de la red para manejar datos de alta dimensión",
+                "c": "Combinar múltiples clasificadores débiles para formar uno robusto",
+                "d": "Reducir la necesidad de preprocesamiento de imágenes"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 71,
+            "text": "En el método de Viola-Jones para la detección de caras, ¿qué papel juega el clasificador en cascada?",
+            "respostes": {
+                "a": "Identificar características específicas de la cara como ojos o boca",
+                "b": "Reducir rápidamente el número de regiones a evaluar para la presencia de una cara",
+                "c": "Mejorar la resolución de las imágenes de entrada",
+                "d": "Aumentar la cantidad de características de Haar utilizadas en el proceso de detección"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 72,
+            "text": "¿Cómo clasificamos una nueva imagen en el método de eigenfaces?",
+            "respostes": {
+                "a": "Calculando la distancia euclidiana entre la nueva imagen y las imágenes de entrenamiento",
+                "b": "Proyectando la nueva imagen en el espacio de eigenfaces y luego utilizando un clasificador como k-NN para determinar la etiqueta más cercana",
+                "c": "Comparando directamente los histogramas de color de la nueva imagen con los de las imágenes de entrenamiento",
+                "d": "Usando una red neuronal para determinar las características más importantes de la nueva imagen"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 73,
+            "text": "El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
+            "respostes": {
+                "a": "Utiliza kmeans para detectar el clúster que corresponde a una cara vs no cara.",
+                "b": "Utiliza un conjunto de imágenes de aprendizaje para entrenar un clasificador, en particular el Adaboost.",
+                "c": "Utiliza el método de knn para detectar si una imagen o una región de una imagen representa una cara.",
+                "d": "Utiliza características Haar que después las proyecta y agrupa en el espacio de los eigenfaces para decidir si una imagen o una región es una cara o no."
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 74,
+            "text": "Una característica Haar está determinada por:",
+            "respostes": {
+                "a": "Un conjunto de 2 o 3 rectángulos con signos opuestos (1 y -1) que se aplica en una posición concreta de la imagen.",
+                "b": "Un conjunto de 2 o 3 rectángulos con signos opuestos que se aplican sobre toda la imagen.",
+                "c": "Un conjunto de 1 o 2 rectángulos con signos opuestos (1 y -1) que se aplica sobre la imagen en una posición concreta.",
+                "d": "Una máscara que puede tener cualquier valor y que se aplica sobre la imagen en una posición concreta para entrenar un clasificador."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 75,
+            "text": "Dada una imagen de caras, podemos obtener la imagen integral:",
+            "respostes": {
+                "a": "Aplicando el integral sobre la imagen original.",
+                "b": "Aplicando un banco de filtros de las derivadas de la Gaussiana.",
+                "c": "A partir de la imagen original sumando los valores de todos los píxeles a la izquierda y hacia arriba.",
+                "d": "Convolucionando la imagen original con un conjunto de características Haar."
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 76,
+            "text": "Una cascada de clasificadores:",
+            "respostes": {
+                "a": "Es sinónimo de un clasificador Adaboost.",
+                "b": "Es un conjunto de clasificadores débiles.",
+                "c": "Es un conjunto de clasificadores Adaboost, donde cada Adaboost es un conjunto de clasificadores débiles.",
+                "d": "Es un conjunto de clasificadores Adaboost donde cada Adaboost intenta corregir el error del anterior recuperando las imágenes de caras que haya perdido el anterior."
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 77,
+            "text": "El método de reconocimiento de caras basado en eigenfaces:",
+            "respostes": {
+                "a": "Tiene como objetivo aplicar el método del análisis de los componentes principales para encontrar los eigenfaces donde cada eigenface es un prototipo que representa una persona. Dada una nueva imagen de una cara la clasificación consiste en encontrar a qué eigenface se parece esta cara.",
+                "b": "Pretende encontrar un nuevo espacio que tiene como bases los eigenfaces donde se hace la clasificación. La ventaja de este nuevo espacio es que es de menor dimensionalidad que el espacio original de las caras y que representa mejor las caras.",
+                "c": "Pretende construir una cascada de eigenfaces para reconocer personas.",
+                "d": "Se puede aplicar sólo si las imágenes están en color."
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 78,
+            "text": "El problema de reconocimiento de caras es:",
+            "respostes": {
+                "a": "Una forma de crear un sistema biométrico.",
+                "b": "La única forma de tener un sistema biométrico.",
+                "c": "No tiene nada que ver con los sistemas biométricos.",
+                "d": "La última fase en cualquier sistema biométrico."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 79,
+            "text": "En el espacio de los eigenfaces, cada punto:",
+            "respostes": {
+                "a": "Corresponde a una cara.",
+                "b": "Corresponde a un píxel de una cara.",
+                "c": "Corresponde a una fila de una imagen de una cara.",
+                "d": "Corresponde a un eigenface."
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 80,
+            "text": "En el espacio de los eigenfaces, para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
+            "respostes": {
+                "a": "Antes hemos de aplicar un clustering con kmeans para agrupar todos los ejemplos de caras de la misma persona.",
+                "b": "El método nos dará error ya que por definición el conjunto de aprendizaje y test han de ser diferentes.",
+                "c": "El método knn (lo más probable) nos retornará la misma imagen.",
+                "d": "El método knn nos retornará la eigenface más parecida."
+            },
+            "correcta": "c",
+            "type": "multi"
+        }
     ]
 }
-    
