@@ -71,6 +71,30 @@
             },
             "correcta": "c",
             "type": "multi"
+        },
+        {
+            "id": 7,
+            "text": "Una imagen digital en color de tipo uint8: ",
+            "respostes": {
+                "a": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (256, 256, 256)",
+                "b": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (0, 0, 0)",
+                "c": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (255, 255, 255)",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+        },
+        {
+            "id": 8,
+            "text": "La máscara que permite obtener el gradiente de una imagen:",
+            "respostes": {
+                "a": "No tiene coeficientes negativos",
+                "b": "Tiene coeficientes opuestos y la suma ha de ser 1",
+                "c": "Tiene coeficientes opuestos y la suma ha de ser 0",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
         }
     ]
 }
