@@ -1,100 +1,212 @@
 {
     "preguntes": [
         {
-            "id": 1,
-            "text": "Dada una imagen I de tipo float, e I2=I/2",
-            "respostes": {
-                "a": "La localización de los puntos SIFT de I e I2 coincide",
-                "b": "La localización de la mitad de los puntos SIFT de I coinciden con los puntos SIFT de I2",
-                "c": "No solo la localización de los puntos SIFT de I e I2 coincide, pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "a",
-            "type": "multi"
-        },
-        {
-            "id": 2,
-            "text": "El ORB es una alternativa de:",
-            "respostes": {
-                "a": "El detector de esquina de Harris",
-                "b": "El detector SIFT de características de la imagen",
-                "c": "Los puntos CENSURE",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "b",
-            "type": "multi"
-        },
-        {
-            "id": 3,
-            "text": "El método RANSAC se utiliza:",
-            "respostes": {
-                "a": "Para detectar puntos característicos (esquinas) en la imagen equivalentes a los puntos SIFT",
-                "b": "Para detectar la transformación de los puntos SIFT de una imagen a otra",
-                "c": "Para calcular la precisión de la detección de puntos características en una imagen (como por ejemplo puntos SIFT)",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "b",
-            "type": "multi"
-        },
-        {
-            "id": 4,
-            "text": "El banco de filtros de la Gausiana visto en clase para caracterizar texturas:",
-            "respostes": {
-                "a": "Contiene derivadas de la Gausiana de orden 1",
-                "b": "Contiene derivadas de la Gausiana de orden 2",
-                "c": "Contiene derivadas de la Gausiana de orden 0, 1 y 2",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "c",
-            "type": "multi"
-        },
-        {
-            "id": 5,
-            "text": "En el Local Binary Patterns, usamos el histograma para:",
-            "respostes": {
-                "a": "Calcular la frecuencia de los números decimales que codifican los correspondientes números binarios representando la relación entre las intensidades del píxel central y sus vecinos",
-                "b": "Para construir un histograma del gradiente",
-                "c": "Para calcular la frecuencia de los valores del pixel central y de los vecinos",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "a",
-            "type": "multi"
-        },
-        {
-            "id": 6,
-            "text": "El descriptor de texturas basado en Local binary patterns es invariante a:",
-            "respostes": {
-                "a": "La orientación de la textura",
-                "b": "La escala de la textura",
-                "c": "El cambio de contraste de las imágenes",
-                "d": "Ninguno de los anteriores"
-            },
-            "correcta": "c",
-            "type": "multi"
-        },
-        {
             "id": 7,
-            "text": "Una imagen digital en color de tipo uint8: ",
+            "text": "(EXAMEN 2022) En una imagen integral construida a partir de cualquier imagen, el píxel más abajo y a la derecha:",
             "respostes": {
-                "a": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (256, 256, 256)",
-                "b": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (0, 0, 0)",
-                "c": "Esta compuesta por tres planos/canales que representan el canal rojo, verde y azul. Un pixel blanco en la imagen tiene valores (255, 255, 255)",
+                "a": "Es la suma de todos los píxeles de la imagen integral",
+                "b": "Es la suma de todos los píxeles de la imagen original",
+                "c": "Es el resultado de aplicar una convolución sobre la imagen original con una máscara de tamaño de la imagen original",
                 "d": "Ninguno de los anteriores"
             },
-            "correcta": "c",
+            "correcta": "b",
             "type": "multi"
         },
         {
             "id": 8,
-            "text": "La máscara que permite obtener el gradiente de una imagen:",
+            "text": "(EXAMEN 2022) Los clasificadores débiles en el clasificador Adaboost se necesitan para construir el clasificador Adaboost donde añadimos el siguiente clasificador débil para",
             "respostes": {
-                "a": "No tiene coeficientes negativos",
-                "b": "Tiene coeficientes opuestos y la suma ha de ser 1",
-                "c": "Tiene coeficientes opuestos y la suma ha de ser 0",
+                "a": "mejorar el último clasificador débil añadido",
+                "b": "mejorar clasificador Adaboost construido hasta la iteración actual",
+                "c": "para convolucionar con alguna de las características Haar",
+                "d": "ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 9,
+            "text": "(EXAMEN 2022) El clasificador cascada para detectar caras en imágenes combina:",
+            "respostes": {
+                "a": "Características Haar",
+                "b": "Clasificadores débiles",
+                "c": "Clasificadores Adaboost",
                 "d": "Ninguno de los anteriores"
             },
             "correcta": "c",
             "type": "multi"
-        }
+        },
+        {
+            "id": 10,
+            "text": "(EXAMEN 2022) El clasificador cascada para detectar caras en imágenes:",
+            "respostes": {
+                "a": "Sirve sólo para detectar caras ya que las características Haar están diseñadas para 'imitar' características faciales",
+                "b": "Es aplicable para detectar cualquier tipo de objetos siempre y cuando se utilizan imágenes etiquetadas de estos objetos para entrenar los adalboosts",
+                "c": "Es aplicable para detectar los eigenfaces y así reconocer las caras",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        {
+            "id": 11,
+            "text": "(EXAMEN 2022) En los eigenfaces, usamos el trick de los eigenfaces para",
+            "respostes": {
+                "a": "Simplificar el proceso de obtener los vectores propios a partir de imágenes de tamaño más pequeño",
+                "b": "Poder aprender a reconocer las caras con menos ejemplos de caras de aprendizaje",
+                "c": "Para compactar el conjunto de imágenes de caras en un espacio de dimensionalidad menor",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 12,
+            "text": "(EXAMEN 2022) En los eigenfaces, el trick de los eigenfaces tiene sentido cuando:",
+            "respostes": {
+                "a": "El número de datos de aprendizaje es menor que el número de píxeles de las imágenes",
+                "b": "El número de datos de aprendizaje es mayor que el número de píxeles de las imágenes",
+                "c": "Cuando queremos reducir el número de vectores propios",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 13,
+            "text": "(EXAMEN 2022) En las redes neuronales convolucionales, la función de pérdida (loss) se utiliza:",
+            "respostes": {
+                "a": "Dentro del descenso del gradiente para actualizar los pesos de la red",
+                "b": "Para calcular cuántas neuronas ha de tener cada capa",
+                "c": "Para calcular cuántas capas ha de tener la red neuronal",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        {
+            "id": 14,
+            "text": "(EXAMEN 2022)El proceso de entrenamiento de una red (sin capas congeladas) sirve para modificar:",
+            "respostes": {
+                "a": "Los pesos de las capas completamente conectadas",
+                "b": "Los pesos de las máscaras convolucionales",
+                "c": "Los parámetros de la función de pérdida",
+                "d": "Los pesos de las capas completamente conectadas y Los pesos de las máscaras convolucionales."
+            },
+            "correcta": "d",
+            "type": "multi"
+        },
+        {
+            "id": 81,
+            "text": "(EXAMEN 2023)El método de Eigenfaces utiliza como espacio de características:",
+            "respostes": {
+                "a": "Las derivadas de las Gaussianas",
+                "b": "El espacio de los eigenfaces",
+                "c": "El espacio definido por los histogramas de los tres canales de las imágenes en color",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+            },
+            {
+            "id": 82,
+            "text": "(EXAMEN 2023)Los valores propios de la matriz de covarianza de las caras de aprendizaje em el método de los eigenfaces sirve para:",
+            "respostes": {
+                "a": "Descartar eigenfaces redundantes e innecesarias",
+                "b": "Encontrar imagenes defectuosas en el conjunto de las imagenes de aprendizaje",
+                "c": "Determinar si una imagen contiene una cara o no",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+            },
+            {
+            "id": 83,
+            "text": "(EXAMEN 2023)Dado el método de los eigenfaces, k eigenfaces u1,u2,...,uk , la cara promedia es /X y una imagen de cara X, aplicando la fórumla: (w1,w2,3,...,wk) = (X - /X)T * (u1,u2,...,uk)",
+            "respostes": {
+                "a": "Obtenemos las coordenadas (w1,w2,w3,...,wk) de la imagen X en el espacio de los eigenfaces",
+                "b": "(w1,w2,w3,...,wk) corresponden a los valores propios de los eigenfaces.",
+                "c": "(w1,w2,w3,...,wk) son las k caras más parecidas a la cara X",
+                "d": "Ninguna de las anteriores"      
+            },
+            "correcta": "a",
+            "type": "multi"
+            },
+            {
+            "id": 84,
+            "text": "(EXAMEN 2023)Dada la representación de una imagen en el espacio de los eigenfaces X = /X + sum(w_i * u_i) donde u_i son los eigenfaces, si consideramosla iamgen X2=X/2 y consideramos su representación en el espacio de los eigenfaces X2 = /X2 + sum(w_2_i * u_2_i), entonces:",
+            "respostes": {
+                "a": "/X2 = (/x)/2 Y w2_i = w_i/2",
+                "b": "/X2 = (/x)/2 y u2_i = u_i/2",
+                "c": "/X2 = (/x) y u2_i = u_i",
+                "d": "Ninguna de las anteriores"
+            },
+            "correcta": "c",
+            "type": "multi"
+            },
+            {
+                "id": 85,
+                "text": "(EXAMEN 2023)En una imagen integral construida a partir de una imagen uint8, si el píxel de la esquina abajo derecha es 0, significa que:",
+                "respostes": {
+                    "a": "la imagen es negra",
+                    "b": "la imagen tiene tantos píxeles positivos como negativos",
+                    "c": "la última fila contiene solo 0s",
+                    "d": "ninguno de los anteriores"
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            
+            {
+                "id": 86,
+                "text": "(EXAMEN 2023)Una cascada es una secuencia de clasificadores donde:",
+                "respostes": {
+                    "a": "Cada clasificador contiene un Adaboost que contiene un clasificador débil",
+                    "b": "Cada clasificador contiene un Adaboost que intenta corregir los falsos positivos del clasificador anterior",
+                    "c": "Cada clasificador contiene un Adaboost que intenta corregir los falsos negativos del clasificador anterior",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 87,
+                "text": "(EXAMEN 2023)Aplicar una característica Haar tiene complejidad:",
+                "respostes": {
+                    "a": "O(n*m) donde (n,m) representa el tamaño de la imagen",
+                    "b": "O(1)",
+                    "c": "O(n*m) donde (n,m) representa el tamaño de la característica Haar",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 88,
+                "text": "(EXAMEN 2023)Entrenamos una red neuronal:",
+                "respostes": {
+                    "a": "minimizando la función de puntuación (score function)",
+                    "b": "minimizando la función de pérdida (loss function)",
+                    "c": "minimizando el número de parámetros que tiene la red",
+                    "d": "Ninguno de los anteriores"
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            
+            {
+                "id": 89,
+                "text": "(EXAMEN 2023)Una red neuronal tiene un gran número de pesos (parámetros) por entrenar que vienen principalmente de:",
+                "respostes": {
+                    "a": "Las capas convolucionales",
+                    "b": "Las capas de activación",
+                    "c": "Las capas de pooling y la función de pérdida",
+                    "d": "Las capas completamente conectadas (fully connected)"
+                },
+                "correcta": "d",
+                "type": "multi"
+            }
     ]
 }

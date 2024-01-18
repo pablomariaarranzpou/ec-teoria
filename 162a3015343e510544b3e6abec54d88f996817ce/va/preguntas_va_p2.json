@@ -2,7 +2,7 @@
     "preguntes": [
         {
             "id": 7,
-            "text": "En una imagen integral construida a partir de cualquier imagen, el píxel más abajo y a la derecha:",
+            "text": "(EXAMEN 2022) En una imagen integral construida a partir de cualquier imagen, el píxel más abajo y a la derecha:",
             "respostes": {
                 "a": "Es la suma de todos los píxeles de la imagen integral",
                 "b": "Es la suma de todos los píxeles de la imagen original",
@@ -14,7 +14,7 @@
         },
         {
             "id": 8,
-            "text": "Los clasificadores débiles en el clasificador Adaboost se necesitan para construir el clasificador Adaboost donde añadimos el siguiente clasificador débil para",
+            "text": "(EXAMEN 2022) Los clasificadores débiles en el clasificador Adaboost se necesitan para construir el clasificador Adaboost donde añadimos el siguiente clasificador débil para",
             "respostes": {
                 "a": "mejorar el último clasificador débil añadido",
                 "b": "mejorar clasificador Adaboost construido hasta la iteración actual",
@@ -26,7 +26,7 @@
         },
         {
             "id": 9,
-            "text": "El clasificador cascada para detectar caras en imágenes combina:",
+            "text": "(EXAMEN 2022) El clasificador cascada para detectar caras en imágenes combina:",
             "respostes": {
                 "a": "Características Haar",
                 "b": "Clasificadores débiles",
@@ -38,7 +38,7 @@
         },
         {
             "id": 10,
-            "text": "El clasificador cascada para detectar caras en imágenes:",
+            "text": "(EXAMEN 2022) El clasificador cascada para detectar caras en imágenes:",
             "respostes": {
                 "a": "Sirve sólo para detectar caras ya que las características Haar están diseñadas para 'imitar' características faciales",
                 "b": "Es aplicable para detectar cualquier tipo de objetos siempre y cuando se utilizan imágenes etiquetadas de estos objetos para entrenar los adalboosts",
@@ -50,7 +50,7 @@
         },
         {
             "id": 11,
-            "text": "En los eigenfaces, usamos el trick de los eigenfaces para",
+            "text": "(EXAMEN 2022) En los eigenfaces, usamos el trick de los eigenfaces para",
             "respostes": {
                 "a": "Simplificar el proceso de obtener los vectores propios a partir de imágenes de tamaño más pequeño",
                 "b": "Poder aprender a reconocer las caras con menos ejemplos de caras de aprendizaje",
@@ -62,7 +62,7 @@
         },
         {
             "id": 12,
-            "text": "En los eigenfaces, el trick de los eigenfaces tiene sentido cuando:",
+            "text": "(EXAMEN 2022) En los eigenfaces, el trick de los eigenfaces tiene sentido cuando:",
             "respostes": {
                 "a": "El número de datos de aprendizaje es menor que el número de píxeles de las imágenes",
                 "b": "El número de datos de aprendizaje es mayor que el número de píxeles de las imágenes",
@@ -74,7 +74,7 @@
         },
         {
             "id": 13,
-            "text": "En las redes neuronales convolucionales, la función de pérdida (loss) se utiliza:",
+            "text": "(EXAMEN 2022) En las redes neuronales convolucionales, la función de pérdida (loss) se utiliza:",
             "respostes": {
                 "a": "Dentro del descenso del gradiente para actualizar los pesos de la red",
                 "b": "Para calcular cuántas neuronas ha de tener cada capa",
@@ -86,7 +86,7 @@
         },
         {
             "id": 14,
-            "text": "El proceso de entrenamiento de una red (sin capas congeladas) sirve para modificar:",
+            "text": "(EXAMEN 2022)El proceso de entrenamiento de una red (sin capas congeladas) sirve para modificar:",
             "respostes": {
                 "a": "Los pesos de las capas completamente conectadas",
                 "b": "Los pesos de las máscaras convolucionales",
@@ -650,7 +650,7 @@
         },
         {
             "id": 73,
-            "text": "El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
+            "text": "(EXAMEN 2017)El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
             "respostes": {
                 "a": "Utiliza kmeans para detectar el clúster que corresponde a una cara vs no cara.",
                 "b": "Utiliza un conjunto de imágenes de aprendizaje para entrenar un clasificador, en particular el Adaboost.",
@@ -662,7 +662,7 @@
         },
         {
             "id": 74,
-            "text": "Una característica Haar está determinada por:",
+            "text": "(EXAMEN 2017)Una característica Haar está determinada por:",
             "respostes": {
                 "a": "Un conjunto de 2 o 3 rectángulos con signos opuestos (1 y -1) que se aplica en una posición concreta de la imagen.",
                 "b": "Un conjunto de 2 o 3 rectángulos con signos opuestos que se aplican sobre toda la imagen.",
@@ -674,7 +674,7 @@
         },
         {
             "id": 75,
-            "text": "Dada una imagen de caras, podemos obtener la imagen integral:",
+            "text": "(EXAMEN 2017)Dada una imagen de caras, podemos obtener la imagen integral:",
             "respostes": {
                 "a": "Aplicando el integral sobre la imagen original.",
                 "b": "Aplicando un banco de filtros de las derivadas de la Gaussiana.",
@@ -686,7 +686,7 @@
         },
         {
             "id": 76,
-            "text": "Una cascada de clasificadores:",
+            "text": "(EXAMEN 2017)Una cascada de clasificadores:",
             "respostes": {
                 "a": "Es sinónimo de un clasificador Adaboost.",
                 "b": "Es un conjunto de clasificadores débiles.",
@@ -698,7 +698,7 @@
         },
         {
             "id": 77,
-            "text": "El método de reconocimiento de caras basado en eigenfaces:",
+            "text": "(EXAMEN 2017)El método de reconocimiento de caras basado en eigenfaces:",
             "respostes": {
                 "a": "Tiene como objetivo aplicar el método del análisis de los componentes principales para encontrar los eigenfaces donde cada eigenface es un prototipo que representa una persona. Dada una nueva imagen de una cara la clasificación consiste en encontrar a qué eigenface se parece esta cara.",
                 "b": "Pretende encontrar un nuevo espacio que tiene como bases los eigenfaces donde se hace la clasificación. La ventaja de este nuevo espacio es que es de menor dimensionalidad que el espacio original de las caras y que representa mejor las caras.",
@@ -710,7 +710,7 @@
         },
         {
             "id": 78,
-            "text": "El problema de reconocimiento de caras es:",
+            "text": "(EXAMEN 2017)El problema de reconocimiento de caras es:",
             "respostes": {
                 "a": "Una forma de crear un sistema biométrico.",
                 "b": "La única forma de tener un sistema biométrico.",
@@ -722,7 +722,7 @@
         },
         {
             "id": 79,
-            "text": "En el espacio de los eigenfaces, cada punto:",
+            "text": "(EXAMEN 2017)En el espacio de los eigenfaces, cada punto:",
             "respostes": {
                 "a": "Corresponde a una cara.",
                 "b": "Corresponde a un píxel de una cara.",
@@ -734,7 +734,7 @@
         },
         {
             "id": 80,
-            "text": "En el espacio de los eigenfaces, para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
+            "text": "(EXAMEN 2017)En el espacio de los eigenfaces, para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
             "respostes": {
                 "a": "Antes hemos de aplicar un clustering con kmeans para agrupar todos los ejemplos de caras de la misma persona.",
                 "b": "El método nos dará error ya que por definición el conjunto de aprendizaje y test han de ser diferentes.",
@@ -742,6 +742,119 @@
                 "d": "El método knn nos retornará la eigenface más parecida."
             },
             "correcta": "c",
+            "type": "multi"
+        },
+
+        {
+        "id": 81,
+        "text": "(EXAMEN 2023)El método de Eigenfaces utiliza como espacio de características:",
+        "respostes": {
+            "a": "Las derivadas de las Gaussianas",
+            "b": "El espacio de los eigenfaces",
+            "c": "El espacio definido por los histogramas de los tres canales de las imágenes en color",
+            "d": "Ninguna de las anteriores"
+        },
+        "correcta": "b",
+        "type": "multi"
+        },
+        {
+        "id": 82,
+        "text": "(EXAMEN 2023)Los valores propios de la matriz de covarianza de las caras de aprendizaje em el método de los eigenfaces sirve para:",
+        "respostes": {
+            "a": "Descartar eigenfaces redundantes e innecesarias",
+            "b": "Encontrar imagenes defectuosas en el conjunto de las imagenes de aprendizaje",
+            "c": "Determinar si una imagen contiene una cara o no",
+            "d": "Ninguna de las anteriores"
+        },
+        "correcta": "a",
+        "type": "multi"
+        },
+        {
+        "id": 83,
+        "text": "(EXAMEN 2023)Dado el método de los eigenfaces, k eigenfaces u1,u2,...,uk , la cara promedia es /X y una imagen de cara X, aplicando la fórumla: (w1,w2,3,...,wk) = (X - /X)T * (u1,u2,...,uk)",
+        "respostes": {
+            "a": "Obtenemos las coordenadas (w1,w2,w3,...,wk) de la imagen X en el espacio de los eigenfaces",
+            "b": "(w1,w2,w3,...,wk) corresponden a los valores propios de los eigenfaces.",
+            "c": "(w1,w2,w3,...,wk) son las k caras más parecidas a la cara X",
+            "d": "Ninguna de las anteriores"      
+        },
+        "correcta": "a",
+        "type": "multi"
+        },
+        {
+        "id": 84,
+        "text": "(EXAMEN 2023)Dada la representación de una imagen en el espacio de los eigenfaces X = /X + sum(w_i * u_i) donde u_i son los eigenfaces, si consideramosla iamgen X2=X/2 y consideramos su representación en el espacio de los eigenfaces X2 = /X2 + sum(w_2_i * u_2_i), entonces:",
+        "respostes": {
+            "a": "/X2 = (/x)/2 Y w2_i = w_i/2",
+            "b": "/X2 = (/x)/2 y u2_i = u_i/2",
+            "c": "/X2 = (/x) y u2_i = u_i",
+            "d": "Ninguna de las anteriores"
+        },
+        "correcta": "c",
+        "type": "multi"
+        },
+        {
+            "id": 85,
+            "text": "(EXAMEN 2023)En una imagen integral construida a partir de una imagen uint8, si el píxel de la esquina abajo derecha es 0, significa que:",
+            "respostes": {
+                "a": "la imagen es negra",
+                "b": "la imagen tiene tantos píxeles positivos como negativos",
+                "c": "la última fila contiene solo 0s",
+                "d": "ninguno de los anteriores"
+            },
+            "correcta": "a",
+            "type": "multi"
+        },
+        
+        {
+            "id": 86,
+            "text": "(EXAMEN 2023)Una cascada es una secuencia de clasificadores donde:",
+            "respostes": {
+                "a": "Cada clasificador contiene un Adaboost que contiene un clasificador débil",
+                "b": "Cada clasificador contiene un Adaboost que intenta corregir los falsos positivos del clasificador anterior",
+                "c": "Cada clasificador contiene un Adaboost que intenta corregir los falsos negativos del clasificador anterior",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        
+        {
+            "id": 87,
+            "text": "(EXAMEN 2023)Aplicar una característica Haar tiene complejidad:",
+            "respostes": {
+                "a": "O(n*m) donde (n,m) representa el tamaño de la imagen",
+                "b": "O(1)",
+                "c": "O(n*m) donde (n,m) representa el tamaño de la característica Haar",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        
+        {
+            "id": 88,
+            "text": "(EXAMEN 2023)Entrenamos una red neuronal:",
+            "respostes": {
+                "a": "minimizando la función de puntuación (score function)",
+                "b": "minimizando la función de pérdida (loss function)",
+                "c": "minimizando el número de parámetros que tiene la red",
+                "d": "Ninguno de los anteriores"
+            },
+            "correcta": "b",
+            "type": "multi"
+        },
+        
+        {
+            "id": 89,
+            "text": "(EXAMEN 2023)Una red neuronal tiene un gran número de pesos (parámetros) por entrenar que vienen principalmente de:",
+            "respostes": {
+                "a": "Las capas convolucionales",
+                "b": "Las capas de activación",
+                "c": "Las capas de pooling y la función de pérdida",
+                "d": "Las capas completamente conectadas (fully connected)"
+            },
+            "correcta": "d",
             "type": "multi"
         }
     ]
