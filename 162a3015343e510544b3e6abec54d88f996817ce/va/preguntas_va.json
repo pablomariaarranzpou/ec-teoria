@@ -650,7 +650,128 @@
                 },
                 "correcta": "a",
                 "type": "multi"
+            },
+            {
+                "id": 121,
+                "text": "Pendiente de revisar: En el algoritmo de substracción de fondo (background substraction),",
+                "respostes": {
+                    "a": "Necesitamos segmentar y separar las escenas porque los objetos de foreground pueden ser diferentes",
+                    "b": "Necesitamos segmentar y separar las escenas porque las diferentes escenas se han de representar con histogramas de diferente número de bins",
+                    "c": "Necesitamos segmentar y separar las escenas porque el filtro de la mediana presupone que cada pixel en más de la mitad de frames del shot será estático correspondiente al fondo de esta escena",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 122,
+                "text": "Pendiente de revisar: Para suavizar una imagen necesitamos:",
+                "respostes": {
+                    "a": "Introducir ruido gausiano y aplicar una máscara de 1s.",
+                    "b": "Introducir ruido tipo impulso y aplicar una máscara de 1s.",
+                    "c": "Introducir ruido gausiano y aplicar una máscara de 1s.",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 123,
+                "text": "Pendiente de revisar: Determinar la respuesta correcta:",
+                "respostes": {
+                    "a": "La calidad fotométrica de las imágenes depende de la diferencia entre el nivel de gris mayor y menor.",
+                    "b": "La calidad fotométrica de las imágenes depende de cuántos niveles de gris tiene en total.",
+                    "c": "La calidad fotométrica de las imágenes depende del número de píxeles de la imagen.",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 124,
+                "text": "Pendiente de revisar: Aplicando la convolución con una máscara [[3,3,3]],",
+                "respostes": {
+                    "a": "Da error porque la máscara no es bidimensional",
+                    "b": "Es equivalente a multiplicar la imagen por el escalar 3.",
+                    "c": "Suaviza la imagen pero cambia el rango de los valores porque la máscara no está normalizada",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 125,
+                "text": "Pendiente de revisar: Para aumentar el contraste de una imagen:",
+                "respostes": {
+                    "a": "Es necesario restar de cada pixel el valor del pixel menor de la imagen y dividir por la resta del pixel mayor y pixel menor de la imagen.",
+                    "b": "Es necesario pasar la imagen en tipo float, de esta forma el skimage automáticamente aumenta el contraste.",
+                    "c": "Es necesario convolucionar la imagen con una máscara compuesta de 1s y -1s.",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 126,
+                "text": "Pendiente de revisar: Decimos que una convolución es un filtro lineal, porque",
+                "respostes": {
+                    "a": "sumamos los coeficientes de una máscara a cada pixel y sus vecinos para obtener el valor del pixel en la imagen de resultado",
+                    "b": "multiplicamos cada pixel con sus vecinos para obtener el valor del pixel en la imagen de resultado",
+                    "c": "multiplicamos cada píxel y sus vecinos con los coeficientes de una máscara y sumamos estas multiplicaciones para obtener el valor del pixel en la imagen de resultado",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 127,
+                "text": "Pendiente de revisar: Aplicando una convolución con una gausiana discretizada,",
+                "respostes": {
+                    "a": "Suavizamos la imagen",
+                    "b": "Obtenemos los contornos de la imagen",
+                    "c": "Aumentamos el contraste de la imagen",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 128,
+                "text": "Pendiente de revisar: El método de template matching que está basado en Normalized Cross-correlation,",
+                "respostes": {
+                    "a": "Es invariante a rotación del patron (template) pero no a la tralsación",
+                    "b": "Es invariante a cambio de contraste pero no a la rotación del patron (template)",
+                    "c": "Es invariante a cambio de contraste tanto en la imagen como en el patron (template)",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 129,
+                "text": "Pendiente de revisar: El descriptor en el método SIFT es:",
+                "respostes": {
+                    "a": "Invariante a la orientación, explorando diferentes ángulos y quedándose con la orientación de máxima respuesta",
+                    "b": "Invariante a la escala de la apariencia de los objetos explorando diferentes escalas y quedándose con la escala que obtiene máxima respuesta",
+                    "c": "Invariante al contraste de la imagen explorando diferentes contrastes y quedándose con el contraste de máxima respuesta",
+                    "d": "Todos los anteriores."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 130,
+                "text": "Pendiente de revisar: Dada una imagen I y el siguiente código: from numpy import histogram >> h2=I/2 >> h=histogram(I) >> h2=histogram(I2) Determinar la frase correcta:",
+                "respostes": {
+                    "a": "h2[0][0] es igual a h[0][0]/2 pero h2[0][0] es diferente de h[0][0]/2",
+                    "b": "h2[1][0] es igual a h[1][0]/2 h2[1][0] es diferente a h[1][0]/2",
+                    "c": "h2[1] es igual a h[1]/2",
+                    "d": "h2[0] es igual a h[0]/2"
+                },
+                "correcta": "c",
+                "type": "multi"
             }
+            
             
             
     ]
