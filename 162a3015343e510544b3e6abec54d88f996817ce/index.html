@@ -26,30 +26,23 @@
             <h2 class="text-3xl font-bold text-white text-center my-4">ZONA EN CONSTRUCCIÓN</h2>
             <nav class="text-white text-base font-semibold pt-3">
                 <a onclick="location.reload();" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
-                    Tot
-                </a>
-                <a href= "optimitzacio.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
-                    Optimització de processadors
+                    Estructura de Computadors
                 </a>
 
-                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
-                    Memória Cache
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                    Empresa
                 </a>
 
-                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
-                    Memória Principal
+                <a href="pis.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
+                    PIS
                 </a>
 
-                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
-                    Memória Secundaria
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                    DS
                 </a>
 
-                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
-                    Administració de Memòria
-                </a>
-
-                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link">
-                    E/S
+                <a class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
+                    Electrónica
                 </a>
 
                 <a  href= "va.html" class="flex items-center text-white py-4 pl-6 nav-item active-nav-link hover:bg-gray-700">
@@ -71,10 +64,6 @@
             <div class="flex-1 p-4 md:p-8">
                 <div id = "disclaimer" class="title">
                     <h2 class="text-4xl font-extrabold text-red-500 text-center items-center"> "LA SUERTE ESTA ECHADA" </h2>
-                    <h2 class="text-4xl text-red-500 text-center items-center"> "Ahora disfruten de la pelicula" </h2>
-                    <video id="video" controls playsinline></video>
-                    <button id="play-pause-button">Play</button>
-                    <button id="mute-unmute-button">Mute</button>
                 </div>
                 
                 <h2 class="text-3xl font-bold text-center my-4">EC TEORÍA</h2>
@@ -92,56 +81,6 @@
         // JavaScript para abrir y cerrar el menú lateral
         document.getElementById('menu-button').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('hidden');
-        });
-
-        // Video controls
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
-            var playButton = document.getElementById('play-button');
-            var muteButton = document.getElementById('mute-button');
-            
-            if(Hls.isSupported()) {
-                var hls = new Hls(); 
-                hls.loadSource('https://up.476328473.xyz/_v10/582795244dedd66b58c16e21711a29d3205517f46b9bcf9ec0f0934aba7827ab01510ba79dc93007da3819a8717307396cde71e366269807668daa34a226923d556264db2a7d677c26638e6e75f006e87f8bfc197769f4586e129dc795a4fdb21b274d71e508d830e87beddf135e78d986e710d49b10b033566669102773805b0756893393864866e80b152898c2c919/playlist.m3u8.m3u8'); // Put your video source here
-                hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                    playButton.addEventListener('click', function() {
-                        if (video.paused) {
-                            video.play();
-                        } else {
-                            video.pause();
-                        }
-                    });
-
-                    muteButton.addEventListener('click', function() {
-                        if (video.muted) {
-                            video.muted = false;
-                        } else {
-                            video.muted = true;
-                        }
-                    });
-                });
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = 'https://up.476328473.xyz/_v10/582795244dedd66b58c16e21711a29d3205517f46b9bcf9ec0f0934aba7827ab01510ba79dc93007da3819a8717307396cde71e366269807668daa34a226923d556264db2a7d677c26638e6e75f006e87f8bfc197769f4586e129dc795a4fdb21b274d71e508d830e87beddf135e78d986e710d49b10b033566669102773805b0756893393864866e80b152898c2c919/playlist.m3u8';
- // Put your video source here
-                video.addEventListener('loadedmetadata', function() {
-                    playButton.addEventListener('click', function() {
-                        if (video.paused) {
-                            video.play();
-                        } else {
-                            video.pause();
-                        }
-                    });
-
-                    muteButton.addEventListener('click', function() {
-                        if (video.muted) {
-                            video.muted = false;
-                        } else {
-                            video.muted = true;
-                        }
-                    });
-                });
-            }
         });
     </script>
 </body>
