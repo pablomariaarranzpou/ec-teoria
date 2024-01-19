@@ -169,18 +169,6 @@
             "type": "multi"
         },
         {
-            "id": 15,
-            "text": "En una red UNET, la última capa contiene tantas neuronas:",
-            "respostes": {
-                "a": "cuantas clases estamos segmentando",
-                "b": "cuantos píxeles contiene la imagen original",
-                "c": "cuantos objetos hay en la imagen",
-                "d": "ninguno de los anteriores"
-            },
-            "correcta": "b",
-            "type": "multi"
-        },
-        {
             "id": 81,
             "text": "(EXAMEN 2023)El método de Eigenfaces utiliza como espacio de características:",
             "respostes": {
@@ -291,6 +279,379 @@
                 },
                 "correcta": "d",
                 "type": "multi"
+            },{
+                "id": 90,
+                "text": "Determinar la frase correcta:",
+                "respostes": {
+                    "a": "El método SIFT necesita como parámetro de entrada un punto o región de la imagen para calcular el descriptor del SIFT.",
+                    "b": "El método SIFT calcula los puntos salientes de una imagen determinando automáticamente su posición escala orientación y calculando el descriptor de los puntos salientes.",
+                    "c": "El descriptor SIFT se calcula a partir del histograma de las magnitudes del gradiente en la vecindad del punto SIFT.",
+                    "d": "El descriptor SIFT es un escalar que muestra hasta qué grado el punto SIFT es saliente cuánto más saliente mayor magnitud del valor escalar."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 91,
+                "text": "Dada una imagen el método SIFT:",
+                "respostes": {
+                    "a": "Retorna un único punto característico SIFT.",
+                    "b": "Retorna cero uno o varios puntos SIFT donde el número de puntos SIFT sólo depende del tamaño de la imagen.",
+                    "c": "Retorna tantos puntos característicos SIFT cuantos píxeles tiene la imagen.",
+                    "d": "Retorna cero uno o varios puntos SIFT en función del contenido de la imagen."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 92,
+                "text": "Dada una imagen A y el conjunto de características SIFT (SA) obtenemos la imagen B rotando A a 180 grados. Denominemos el conjunto de características SIFT de la imagen rotada SB.",
+                "respostes": {
+                    "a": "Los puntos de SA y SB coinciden por su localización (coordenadas xy) y descripción.",
+                    "b": "Los puntos de SA y SB coinciden en su localización (coordenadas xy).",
+                    "c": "SA y SB coinciden en su descripción pero no en su localización (coordenadas xy).",
+                    "d": "SA y SB no coinciden ni en su descripción ni en su localización (coordenadas xy)."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 93,
+                "text": "Dada una imagen con el logo de UB para comprobar si una segunda imagen contiene el mismo logo utilizando la correspondencia de puntos:",
+                "respostes": {
+                    "a": "Podemos utilizar el método SIFT si las 2 imágenes enteras representan el logo pero el SIFT no funciona si una imagen representa el logo y en la otra el logo es una subregión de la imagen.",
+                    "b": "El método SIFT funcionaría sólo si los logos son subregiones de las 2 imágenes y su fondo son imágenes homogéneas.",
+                    "c": "El método de SIFT nos serviría si utilizamos logo en color pero no en blanco y negro.",
+                    "d": "Podemos utilizar el método SIFT (convirtiendo las imágenes en niveles de gris) y cuántas más correspondencias de puntos SIFT encontremos en las dos imágenes más probable es que la segunda imagen contenga el logo."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 94,
+                "text": "Los métodos automáticos de análisis de texturas basados en el banco de los filtros de la Gaussiana están diseñados para discriminar:",
+                "respostes": {
+                    "a": "Las texturas estocásticas de las estructurales.",
+                    "b": "Las texturas preatentivamente discriminantes de las texturas preatentivamente no discriminantes.",
+                    "c": "Las texturas naturales de las artificiales.",
+                    "d": "Los filtros de las derivadas de la Gaussiana están basados en la estadística de las respuestas de las derivadas de la Gaussiana para discriminar las diferentes texturas en las imágenes."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 95,
+                "text": "El banco de filtros de la Gaussiana para analizar las texturas es:",
+                "respostes": {
+                    "a": "Invariante a la rotación es decir si una imagen la rotamos el banco nos dará exactamente el mismo descriptor.",
+                    "b": "Invariante a la escala es decir si una imagen la reescalamos el banco nos dará exactamente el mismo descriptor.",
+                    "c": "Son invariantes a la rotación y a la escala.",
+                    "d": "Ninguno de las anteriores."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 96,
+                "text": "La ventaja principal de los LBPs respecto el banco de filtros de la Gaussiana es:",
+                "respostes": {
+                    "a": "Que es invariante a la iluminación ya que está basado en la relación de la orientación del gradiente.",
+                    "b": "Que es invariante a la iluminación ya que está basado en la relación de la intensidad de los píxeles.",
+                    "c": "Que es invariante a la escala ya que el método calcula los LBPs en ventanas de diferente escala y selecciona la escala que da máxima respuesta.",
+                    "d": "Que automáticamente y de forma explícita retorna información tanto sobre la magnitud de la textura como de su orientación."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 97,
+                "text": "Decimos que dos imágenes con texturas son diferentes si:",
+                "respostes": {
+                    "a": "Todos los filtros del banco de filtros de la Gaussiana retornan valores muy diferentes.",
+                    "b": "Por lo menos algunos de los filtros del banco de filtros de la Gaussiana tienen valores muy diferentes.",
+                    "c": "Si hay uno y sólo un filtro del banco de filtros de la Gaussiana que tiene para las dos imágenes valores muy diferentes.",
+                    "d": "Si todos los filtros que representan la primera derivada de la Gaussiana tienen valores muy diferentes."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 98,
+                "text": "El método de Viola-Jones de detección de caras es un método de aprendizaje automático porque:",
+                "respostes": {
+                    "a": "Utiliza kmeans para detectar el clúster que corresponde a una cara vs no cara.",
+                    "b": "Utiliza un conjunto de imágenes de aprendizaje para entrenar un clasificador en particular el Adaboost.",
+                    "c": "Utiliza el método de knn para detectar si una imagen o una región de una imagen representa una cara.",
+                    "d": "Utiliza características Haar que después las proyecta y agrupa en el espacio de los eigenfaces para decidir si una imagen o una región es una cara o no."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 99,
+                "text": "Una característica Haar está determinada por:",
+                "respostes": {
+                    "a": "Un conjunto de 2 o 3 rectángulos con signos opuestos (1 y -1) que se aplica en una posición concreta de la imagen.",
+                    "b": "Un conjunto de 2 o 3 rectángulos con signos opuestos que se aplican sobre toda la imagen.",
+                    "c": "Un conjunto de 1 o 2 rectángulos con signos opuestos (1 y -1) que se aplica sobre la imagen en una posición concreta.",
+                    "d": "Una máscara que puede tener cualquier valor y que se aplica sobre la imagen en una posición concreta para entrenar un clasificador."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 100,
+                "text": "Dada una imagen de caras podemos obtener la imagen integral:",
+                "respostes": {
+                    "a": "Aplicando el integral sobre la imagen original.",
+                    "b": "Aplicando un banco de filtros de las derivadas de la Gaussiana.",
+                    "c": "A partir de la imagen original sumando los valores de todos los píxeles a la izquierda y hacia arriba.",
+                    "d": "Convolucionando la imagen original con un conjunto de características Haar."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 101,
+                "text": "Una cascada de clasificadores:",
+                "respostes": {
+                    "a": "Es sinónimo de un clasificador Adaboost.",
+                    "b": "Es un conjunto de clasificadores débiles.",
+                    "c": "Es un conjunto de clasificadores Adaboost donde cada Adaboost es un conjunto de clasificadores débiles.",
+                    "d": "Es un conjunto de clasificadores Adaboost donde cada Adaboost intenta corregir el error del anterior recuperando las imágenes de caras que haya perdido el anterior."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 102,
+                "text": "El método de reconocimiento de caras basado en eigenfaces:",
+                "respostes": {
+                    "a": "Tiene como objetivo aplicar el método del análisis de los componentes principales para encontrar los eigenfaces donde cada eigenface es un prototipo que representa una persona. Dada una nueva imagen de una cara la clasificación consiste en encontrar a qué eigenface se parece esta cara.",
+                    "b": "Pretende encontrar un nuevo espacio que tiene como bases los eigenfaces donde se hace la clasificación. La ventaja de este nuevo espacio es que es de menor dimensionalidad que el espacio original de las caras y que representa mejor las caras.",
+                    "c": "Pretende construir una cascada de eigenfaces para reconocer personas.",
+                    "d": "Se puede aplicar sólo si las imágenes están en color."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 103,
+                "text": "El problema de reconocimiento de caras es:",
+                "respostes": {
+                    "a": "Una forma de crear un sistema biométrico.",
+                    "b": "La única forma de tener un sistema biométrico.",
+                    "c": "No tiene nada que ver con los sistemas biométricos.",
+                    "d": "La última fase en cualquier sistema biométrico."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 104,
+                "text": "En el espacio de los eigenfaces cada punto:",
+                "respostes": {
+                    "a": "Corresponde a una cara.",
+                    "b": "Corresponde a un píxel de una cara.",
+                    "c": "Corresponde a una fila de una imagen de una cara.",
+                    "d": "Corresponde a un eigenface."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 105,
+                "text": "En el espacio de los eigenfaces para clasificar una imagen de cara del conjunto de aprendizaje con el knn:",
+                "respostes": {
+                    "a": "Antes hemos de aplicar un clustering con kmeans para agrupar todos los ejemplos de caras de la misma persona.",
+                    "b": "El método nos dará error ya que por definición el conjunto de aprendizaje y test han de ser diferentes.",
+                    "c": "El método knn (lo más probable) nos retornará la misma imagen.",
+                    "d": "El método knn nos retornará la eigenface más parecida."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 106,
+                "text": "Dada una imagen I de tipo float e I2=I/2",
+                "respostes": {
+                    "a": "La localización de los puntos SIFT de I e I2 coincide",
+                    "b": "La localización de la mitad de los puntos SIFT de I coinciden con los puntos SIFT de I2",
+                    "c": "No solo la localización de los puntos SIFT de I e I2 coincide, pero además los descriptores de I2 se pueden obtener dividiendo los descriptores de I por 2",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 107,
+                "text": "El ORB es una alternativa de:",
+                "respostes": {
+                    "a": "el detector de esquina de Harris",
+                    "b": "el detector SIFT de características de la imagen",
+                    "c": "los puntos CENSURE",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 108,
+                "text": "El método RANSAC se utiliza:",
+                "respostes": {
+                    "a": "Para detectar puntos característicos (esquinas) en la imagen equivalentes a los puntos SIFT",
+                    "b": "Para detectar la transformación de los puntos SIFT de una imagen a otra",
+                    "c": "Para calcular la precisión de la detección de puntos características en una imagen (como por ejemplo puntos SIFT)",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 109,
+                "text": "El banco de filtros de la Gausiana visto en clase para caracterizar texturas:",
+                "respostes": {
+                    "a": "Contiene derivadas de la Gausiana de orden 1",
+                    "b": "Contiene derivadas de la Gausiana de orden 2",
+                    "c": "Contiene derivadas de la Gausiana de orden 01 y 2",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 110,
+                "text": "En el Local Binary Patterns usamos el histograma para:",
+                "respostes": {
+                    "a": "Calcular la frecuencia de los números decimales que codifican los correspondientes números binarios representando la relación entre las intensidades del píxel central y sus vecinos",
+                    "b": "Para construir un histograma del gradiente",
+                    "c": "Para calcular la frecuencia de los valores del pixel central y de los vecinos",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 111,
+                "text": "El descriptor de texturas basado en Local binary patterns es invariante a:",
+                "respostes": {
+                    "a": "La orientación de la textura",
+                    "b": "La escala de la textura",
+                    "c": "El cambio de contraste de las imágenes",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 112,
+                "text": "En una imagen integral construida a partir de cualquier imagen, el píxel más abajo y a la derecha:",
+                "respostes": {
+                    "a": "es la suma de todos los píxeles de la imagen integral",
+                    "b": "es la suma de todos los píxeles de la imagen original",
+                    "c": "es el resultado de aplicar una convolución sobre la imagen original con una máscara de tamaño de la imagen original",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 113,
+                "text": "Los clasificadores débiles en el clasificador Adaboost se necesitan para construir el clasificador Adaboost donde añadimos el siguiente clasificador débil para",
+                "respostes": {
+                    "a": "mejorar el último clasificador débil añadido",
+                    "b": "mejorar clasificador Adaboost construido hasta la iteración actual",
+                    "c": "para convolucionar con alguna de las características Haar",
+                    "d": "ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 114,
+                "text": "El clasificador cascada para detectar caras en imágenes combina:",
+                "respostes": {
+                    "a": "Características Haar",
+                    "b": "Clasificadores débiles",
+                    "c": "Clasificadores Adaboost",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 115,
+                "text": "El clasificador cascada para detectar caras en imágenes:",
+                "respostes": {
+                    "a": "Sirve sólo para detectar caras ya que las características Haar están diseñadas para “imitar” características faciales",
+                    "b": "Es aplicable para detectar cualquier tipo de objetos siempre y cuando se utilizan imágenes etiquetadas de estos objetos para entrenar los adalboosts",
+                    "c": "Es aplicable para detectar los eigenfaces y así reconocer las caras",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "b",
+                "type": "multi"
+            },
+            {
+                "id": 116,
+                "text": "En los eigenfaces usamos el trick de los eigenfaces para",
+                "respostes": {
+                    "a": "Simplificar el proceso de obtener los vectores propios a partir de imágenes de tamaño más pequeño",
+                    "b": "Poder aprender a reconocer las caras con menos ejemplos de caras de aprendizaje",
+                    "c": "Para compactar el conjunto de imágenes de caras en un espacio de dimensionalidad menor",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "c",
+                "type": "multi"
+            },
+            {
+                "id": 117,
+                "text": "En los eigenfaces, el trick de los eigenfaces tiene sentido cuando:",
+                "respostes": {
+                    "a": "El número de datos de aprendizaje es menor que el número de píxeles de las imágenes",
+                    "b": "El número de datos de aprendizaje es mayor que el número de píxeles de las imágenes",
+                    "c": "Cuando queremos reducir el número de vectores propios",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 118,
+                "text": "En las redes neuronales convolucionales la función de pérdida (loss) se utiliza:",
+                "respostes": {
+                    "a": "Dentro del descenso del gradiente para actualizar los pesos de la red",
+                    "b": "Para calcular cuántas neuronas ha de tener cada capa",
+                    "c": "Para calcular cuántas capas ha de tener la red neuronal",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
+            },
+            {
+                "id": 119,
+                "text": "El proceso de entrenamiento de una red (sin capas congeladas) sirve para modificar:",
+                "respostes": {
+                    "a": "Los pesos de las capas completamente conectadas",
+                    "b": "Los pesos de las máscaras convolucionales",
+                    "c": "Los parámetros de la función de pérdida",
+                    "d": "a. y b."
+                },
+                "correcta": "d",
+                "type": "multi"
+            },
+            {
+                "id": 120,
+                "text": "En una red UNET, la última capa contiene tantas neuronas",
+                "respostes": {
+                    "a": "cuantas clases estamos segmentando",
+                    "b": "cuantos píxeles contiene la imagen original",
+                    "c": "cuantos objetos hay en la imagen",
+                    "d": "Ninguno de los anteriores."
+                },
+                "correcta": "a",
+                "type": "multi"
             }
+            
+            
     ]
 }
